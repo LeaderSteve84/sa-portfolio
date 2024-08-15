@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>
+	{% block title %}
+
+        {% endblock %}
+     </title>
+  </head>
+  <body>
+    <section>
+      <div>
+              <h3>LOGO</h3>
+        <p>Building Bridging Between Technology and Innovation</p>
+      </div>
+      <div>
+              {% block page_heading %}
+
+              {% endblock %}
+      </div>
+      </div>
+        <h3><a href="{{ url_for('main.auth.logoutForm') }}">Logout</a></h3>
+      </div>
+    </section>
+    <section>
+      <nav>
+        <ul>
+                <li><a href="{{ url_for('main.projects.create_projects') }}">Create Project Done</a></li>
+                <li><a href="{{ url_for('main.tech_writings.create_technical_writings') }}">Create Technical Writing</a></li>
+        </ul>
+      </nav>
+      {% block content %}
+   
+      {% endblock %}
+    </section>
+  </body>
+  <style>
+      body {
+      background-color: #212121;
+      color: white
+      }
+   </style>
+  <footer>
+    <div>
+       <div>
+         <h3>LOGO<h3>
+       </div>
+       <div>
+         <p>Contacts</p>
+         <p>(c)2024 Stephen Adah | All Right Reserved<p>
+         <p>Version: 1.0.0</p>
+       </div>
+       <ul>
+          <li>linkedIn</li>
+          <li>Twitter</li>
+          <li>Github</li> 
+       </ul>
+    </div>
+  </footer>
+</html>

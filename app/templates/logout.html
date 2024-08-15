@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>Logout Page</title>
+  </head>
+  </body>
+  <p>Are you sure you want to Logout? <a href="{{ url_for('main.admindashboard.admindashboard_page') }}">No</a></p>
+    <form method='POST' action="{{ url_for('main.auth.logout') }}">
+       {{ form.hidden_tag() }}
+       {{ form.submit() }}
+    </form>
+  </body>
+</html>

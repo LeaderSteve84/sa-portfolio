@@ -501,3 +501,809 @@ INFO  [alembic.env] No changes in schema detected.
 [2024-08-14 13:04:09,254] None requested None     INFO in __init__: Default Admin created successfully
 [2024-08-14 13:04:09,867] None requested None     WARNING in _internal:  * Debugger is active!
 [2024-08-14 13:04:09,870] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-15 10:26:18,435] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:26:18,556] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:26:18,557] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:27:47,098] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:27:47,193] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:27:47,194] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:27:51,552] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-15 10:27:51,592] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-15 10:27:51,623] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:27:58,865] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:27:58,973] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:27:58,975] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:27:59,631] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:28:31,157] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:28:49,172] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:28:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-08-15 10:29:06,645] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:06] "GET /about HTTP/1.1" 200 -
+[2024-08-15 10:29:14,118] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:14] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 10:29:18,967] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:18] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 10:29:27,532] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:27] "[35m[1mGET /loginForm HTTP/1.1[0m" 500 -
+[2024-08-15 10:29:29,266] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:29] "[36mGET /loginForm?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:29:29,268] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:29] "[36mGET /loginForm?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:29:31,324] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:31] "[36mGET /loginForm?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:29:31,506] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:29:31] "[36mGET /loginForm?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:33:25,964] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/forms/adminLogin.py', reloading
+[2024-08-15 10:33:27,366] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:33:33,308] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:33:33,425] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:33:33,435] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:33:34,374] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:33:34,388] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:33:34,828] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:33:34] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:34:07,261] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:34:07] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2024-08-15 10:34:07,878] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:34:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:34:07,894] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:34:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:34:08,638] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:34:08] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:34:08,907] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:34:08] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:35:47,506] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 10:35:48,828] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:35:52,150] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:35:52,210] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:35:52,212] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:35:52,630] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:35:52,637] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:36:08,724] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 10:36:09,629] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:36:16,436] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:36:16,485] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:36:16,486] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:36:16,770] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:36:16,774] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:36:27,719] 127.0.0.1 requested http://localhost:5000/login     INFO in csrf: The CSRF token is missing.
+[2024-08-15 10:36:27,723] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:36:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 10:36:28,222] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:36:28] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:36:43,495] 127.0.0.1 requested http://localhost:5000/login     INFO in csrf: The CSRF token is missing.
+[2024-08-15 10:36:43,537] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:36:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 10:36:43,648] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:36:43] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:42:26,417] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:42:26] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:43:00,518] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:43:00] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2024-08-15 10:43:00,857] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:43:00] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:43:00,954] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:43:00] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:43:01,757] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:43:01] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:43:03,240] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:43:03] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:45:28,511] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 10:45:29,543] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:45:34,391] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:45:34,470] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:45:34,471] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:45:34,814] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:45:34,819] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:45:40,089] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:40] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2024-08-15 10:45:40,798] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:40] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:45:40,839] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:40] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:45:41,191] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:41] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:45:41,666] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:41] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:45:50,745] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:50] "GET /about HTTP/1.1" 200 -
+[2024-08-15 10:45:52,446] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:45:52] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:46:18,461] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:46:18] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2024-08-15 10:46:18,789] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:46:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:46:18,812] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:46:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:46:19,878] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:46:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:47:40,469] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 10:47:42,258] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:47:46,754] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:47:46,817] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:47:46,824] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:47:47,113] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:47:47,118] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:47:52,455] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:47:52] "GET /about HTTP/1.1" 200 -
+[2024-08-15 10:47:55,016] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:47:55] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:48:19,749] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:48:19] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2024-08-15 10:48:20,089] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:48:20] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:48:20,092] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:48:20] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:48:21,023] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:48:21] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:52:49,777] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 10:52:50,680] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:52:55,343] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:52:55,588] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:52:55,773] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:52:56,291] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:52:56,304] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:53:01,903] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:01] "GET /about HTTP/1.1" 200 -
+[2024-08-15 10:53:05,528] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:05] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 10:53:30,469] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 10:53:30,650] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:30] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 10:53:31,309] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:31] "GET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-08-15 10:53:31,327] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:31] "GET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-08-15 10:53:31,731] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:31] "GET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-08-15 10:53:32,230] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:53:32] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 10:55:32,050] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/__init__.py', reloading
+[2024-08-15 10:55:33,080] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 10:55:38,576] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 10:55:38,655] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 10:55:38,656] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 10:55:39,065] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 10:55:39,074] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 10:55:49,246] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:55:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 10:55:49,533] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:55:49] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 10:55:51,252] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:55:51] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 10:55:51,268] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:55:51] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 10:55:52,572] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 10:55:52] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:03:08,610] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:03:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:03:08,732] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:03:08] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:03:09,524] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:03:09] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:03:09,555] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:03:09] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:03:09,917] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:03:09] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:08:48,385] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:08:49,206] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:08:54,747] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:08:54,815] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:08:54,818] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:08:55,765] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:08:55,768] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:09:08,650] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:09:09,093] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:09] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:09:09,938] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:09] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:09,957] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:09] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:10,607] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:10] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:15,320] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:15] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:09:16,278] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:16] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:16,356] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:16] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:16,825] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:16] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:20,595] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:20] "GET /about HTTP/1.1" 200 -
+[2024-08-15 11:09:21,497] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:21] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 11:09:22,412] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:22] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 11:09:46,338] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:09:46,607] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:46] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:09:46,872] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:46] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:47,433] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:47] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:48,692] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:48] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:09:49,006] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:09:49] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:09,607] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:11:11,470] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:11:18,619] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:11:18,675] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:11:18,676] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:11:19,035] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:11:19,060] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:11:19,214] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:19] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:11:19,814] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:19] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:21,229] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:21] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:22,544] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:22] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:23,139] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:23] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:42,125] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:11:42,186] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:42] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:11:42,519] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:42] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:42,920] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:42] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:11:43,818] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:11:43] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:19,722] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:19] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:14:19,922] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:19] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:19,928] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:19] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:21,467] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:21] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:21,696] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:21] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:26,587] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:26] "GET /about HTTP/1.1" 200 -
+[2024-08-15 11:14:28,447] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:28] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 11:14:53,269] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:14:53,498] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:53] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:14:54,160] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:54] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:54,441] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:54] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:14:54,925] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:14:54] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:16:58,706] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:16:58,775] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:16:58,776] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:16:59,533] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-15 11:16:59,534] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-15 11:16:59,537] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:17:05,812] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:17:05,871] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:17:05,872] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:17:06,854] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:17:06,939] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:17:08,666] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:08] "GET /about HTTP/1.1" 200 -
+[2024-08-15 11:17:10,696] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:10] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 11:17:31,095] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:17:31,189] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:31] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:17:31,952] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:31] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:17:31,955] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:31] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:17:32,401] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:17:32] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:21:04,967] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:21:05,701] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:21:09,783] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:21:09,862] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:21:09,863] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:21:10,174] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:21:10,178] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:21:18,138] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:21:18,233] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:18] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:21:19,350] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:19] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:21:19,394] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:19] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:21:20,578] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:20] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:21:32,847] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:32] "GET / HTTP/1.1" 200 -
+[2024-08-15 11:21:38,465] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:38] "GET /about HTTP/1.1" 200 -
+[2024-08-15 11:21:39,612] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:39] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 11:21:40,885] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:40] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 11:21:42,743] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:21:42] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-15 11:22:00,929] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:22:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:22:01,007] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:22:01] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:22:01,622] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:22:01] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:22:01,733] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:22:01] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:22:02,098] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:22:02] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:23:59,171] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:24:00,512] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:24:04,169] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:24:04,222] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:24:04,224] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:24:04,624] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:24:04,627] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:24:10,454] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:10] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:24:10,756] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:10] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:24:10,767] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:10] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:24:11,515] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:11] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:24:11,759] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:11] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:24:16,957] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:24:17,106] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:17] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:24:17,660] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:17] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:24:17,679] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:17] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:24:18,029] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:24:18] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:26:59,536] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:27:00,435] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:27:03,816] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:27:03,857] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:27:03,859] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:27:04,216] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:27:04,219] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:30:15,753] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 11:30:17,028] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:30:19,837] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:30:19,909] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:30:19,910] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:30:20,207] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:30:20,212] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:31:41,122] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:31:41] "[33mGET /loginForm HTTP/1.1[0m" 404 -
+[2024-08-15 11:32:39,348] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 11:32:40,109] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:32:43,058] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:32:43,095] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:32:43,097] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:32:43,346] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:32:43,381] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:34:14,757] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 11:34:15,720] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:34:20,641] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:34:20,711] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:34:20,721] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:34:20,986] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:34:20,988] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:34:25,669] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:25] "GET /about HTTP/1.1" 200 -
+[2024-08-15 11:34:27,507] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:27] "GET /login HTTP/1.1" 200 -
+[2024-08-15 11:34:51,569] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:34:51,671] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:51] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:34:52,605] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:52] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:34:52,674] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:52] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:34:53,124] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:34:53] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:41:49,285] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 11:41:50,197] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:41:54,131] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:41:54,198] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:41:54,200] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:41:54,472] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:41:54,483] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:43:21,538] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:43:22,692] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:43:25,562] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:43:25,608] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:43:25,610] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:43:25,904] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:43:25,914] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:46:18,062] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 11:46:18,726] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:46:22,326] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:46:22,370] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:46:22,374] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:46:22,840] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:46:22,847] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:51:22,003] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/admindashboard.py', reloading
+[2024-08-15 11:51:22,815] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:51:27,773] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:51:27,815] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:51:27,817] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:51:28,255] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:51:28,258] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:51:50,411] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:51:50] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:51:50,760] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:51:50] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:51:50,770] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:51:50] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:51:51,634] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:51:51] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:51:55,220] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:51:55] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:51:55,998] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:51:55] "GET /login HTTP/1.1" 200 -
+[2024-08-15 11:52:12,106] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:52:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:52:12,175] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:52:12] "[35m[1mGET /admin-dashboard HTTP/1.1[0m" 500 -
+[2024-08-15 11:52:12,397] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:52:12] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 11:52:12,786] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:52:12] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 11:52:13,431] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:52:13] "[36mGET /admin-dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 11:53:16,519] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/admindashboard.py', reloading
+[2024-08-15 11:53:17,371] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:53:25,072] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:53:25,168] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:53:25,170] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:53:26,020] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:53:26,033] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 11:53:26,545] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:53:26] "[33mGET /admin-dashboard HTTP/1.1[0m" 404 -
+[2024-08-15 11:53:28,091] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:53:28] "GET /login HTTP/1.1" 200 -
+[2024-08-15 11:53:39,865] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:53:39] "POST /login HTTP/1.1" 200 -
+[2024-08-15 11:54:08,455] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:54:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 11:54:08,824] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:54:08] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 11:55:18,757] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 11:55:18] "[31m[1mGET /logout HTTP/1.1[0m" 405 -
+[2024-08-15 11:56:08,386] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 11:56:09,121] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 11:56:12,292] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 11:56:12,453] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 11:56:12,455] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 11:56:13,259] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 11:56:13,454] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 12:00:19,687] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/admindashboard.py', reloading
+[2024-08-15 12:00:20,872] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 12:00:26,424] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 12:00:26,534] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 12:00:26,535] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 12:00:27,274] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 12:00:27,287] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 12:01:30,499] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:01:30] "GET /logout HTTP/1.1" 200 -
+[2024-08-15 12:02:13,120] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 12:02:14,173] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 12:02:18,184] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 12:02:18,309] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 12:02:18,309] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 12:02:18,834] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 12:02:18,837] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 12:02:19,677] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:02:19] "GET /logout HTTP/1.1" 200 -
+[2024-08-15 12:02:53,756] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:02:53] "GET /logout HTTP/1.1" 200 -
+[2024-08-15 12:03:01,080] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:03:01] "GET / HTTP/1.1" 200 -
+[2024-08-15 12:03:05,299] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:03:05] "GET /login HTTP/1.1" 200 -
+[2024-08-15 12:03:16,782] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:03:16] "POST /login HTTP/1.1" 200 -
+[2024-08-15 12:05:38,012] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:05:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 12:05:42,924] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:05:42] "[35m[1mGET /admindashboard HTTP/1.1[0m" 500 -
+[2024-08-15 12:05:46,166] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:05:46] "GET /admindashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-08-15 12:05:46,430] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:05:46] "GET /admindashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-08-15 12:05:46,560] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:05:46] "GET /admindashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-08-15 12:05:47,120] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:05:47] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 12:12:25,092] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/__init__.py', reloading
+[2024-08-15 12:12:25,950] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 12:12:29,866] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 12:12:29,963] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 12:12:29,965] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 12:12:30,345] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 12:12:30,349] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 12:13:19,539] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:13:19] "GET /login HTTP/1.1" 200 -
+[2024-08-15 12:13:39,331] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:13:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 12:13:39,386] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:13:39] "[35m[1mGET /admindashboard HTTP/1.1[0m" 500 -
+[2024-08-15 12:13:39,796] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:13:39] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 12:13:40,091] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:13:40] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 12:13:41,217] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 12:13:41] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 14:54:03,319] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 14:54:03,434] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 14:54:03,435] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 14:54:04,994] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-15 14:54:05,007] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-15 14:54:05,045] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 14:54:14,583] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 14:54:14,915] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 14:54:14,919] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 14:54:17,349] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 14:54:17,366] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 14:55:11,165] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:55:11] "GET /login HTTP/1.1" 200 -
+[2024-08-15 14:55:38,386] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:55:38] "GET / HTTP/1.1" 200 -
+[2024-08-15 14:55:42,504] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:55:42] "GET /about HTTP/1.1" 200 -
+[2024-08-15 14:55:43,748] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:55:43] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 14:55:45,440] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:55:45] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 14:55:46,486] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:55:46] "GET /login HTTP/1.1" 200 -
+[2024-08-15 14:56:05,922] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:56:05] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2024-08-15 14:56:06,876] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:56:06] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 14:56:07,179] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:56:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 14:56:07,942] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:56:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 14:57:36,010] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 14:57:36,729] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 14:57:40,124] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 14:57:40,153] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 14:57:40,154] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 14:57:40,388] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 14:57:40,394] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 14:57:54,618] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:57:54] "GET /about HTTP/1.1" 200 -
+[2024-08-15 14:58:00,908] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:58:00] "GET / HTTP/1.1" 200 -
+[2024-08-15 14:58:02,982] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:58:02] "GET /about HTTP/1.1" 200 -
+[2024-08-15 14:58:04,765] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:58:04] "GET /login HTTP/1.1" 200 -
+[2024-08-15 14:58:18,772] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:58:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 14:58:18,906] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 14:58:18] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 15:01:52,765] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/config.py', reloading
+[2024-08-15 15:01:53,669] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:01:56,835] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:01:56,909] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:01:56,911] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:01:57,289] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:01:57,293] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:02:58,552] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/__init__.py', reloading
+[2024-08-15 15:02:59,542] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:03:04,606] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:03:04,822] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:03:04,849] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:03:05,575] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:03:05,578] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:03:08,875] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:03:08] "GET /logout HTTP/1.1" 200 -
+[2024-08-15 15:03:18,858] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:03:18] "GET / HTTP/1.1" 200 -
+[2024-08-15 15:03:22,560] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:03:22] "GET /about HTTP/1.1" 200 -
+[2024-08-15 15:03:23,881] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:03:23] "GET /login HTTP/1.1" 200 -
+[2024-08-15 15:03:57,036] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:03:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 15:03:57,148] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:03:57] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 15:11:23,838] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 15:11:24,752] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:11:28,693] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:11:28,729] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:11:28,731] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:11:29,001] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:11:29,006] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:12:37,620] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/home.py', reloading
+[2024-08-15 15:12:38,423] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:12:42,754] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:12:42,816] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:12:42,819] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:12:43,481] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:12:43,484] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:12:50,482] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:12:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2024-08-15 15:12:50,585] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:12:50] "GET /home HTTP/1.1" 200 -
+[2024-08-15 15:13:44,051] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 15:13:44,759] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:13:47,318] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:13:47,383] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:13:47,384] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:13:47,751] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:13:47,760] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:17:55,172] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/forms/adminLogin.py', reloading
+[2024-08-15 15:17:55,856] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:17:58,648] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:17:58,736] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:17:58,747] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:17:59,446] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:17:59,469] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:36:36,386] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 15:36:37,212] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:36:40,690] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:36:40,733] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:36:40,734] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:36:41,246] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:36:41,249] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:45:05,267] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:05] "GET /about HTTP/1.1" 200 -
+[2024-08-15 15:45:07,201] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:07] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 15:45:14,988] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:14] "GET /login HTTP/1.1" 200 -
+[2024-08-15 15:45:47,311] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 15:45:48,193] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:48] "[35m[1mGET /admindashboard HTTP/1.1[0m" 500 -
+[2024-08-15 15:45:49,113] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:49] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 15:45:49,344] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:49] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 15:45:50,424] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:45:50] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 15:47:33,415] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:47:33] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 15:49:31,577] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:49:31] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 15:50:53,738] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:50:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2024-08-15 15:50:53,913] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:50:53] "GET /home HTTP/1.1" 200 -
+[2024-08-15 15:51:42,947] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:51:42] "GET /about HTTP/1.1" 200 -
+[2024-08-15 15:51:44,269] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:51:44] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 15:51:45,957] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:51:45] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 15:51:48,228] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:51:48] "GET /login HTTP/1.1" 200 -
+[2024-08-15 15:52:48,864] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:52:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 15:52:48,918] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:52:48] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 15:54:00,564] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:54:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2024-08-15 15:54:00,903] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:54:00] "GET /home HTTP/1.1" 200 -
+[2024-08-15 15:54:09,649] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:54:09] "GET /about HTTP/1.1" 200 -
+[2024-08-15 15:54:10,901] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:54:10] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 15:54:12,388] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:54:12] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 15:55:27,629] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 15:55:28,496] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 15:55:35,472] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 15:55:35,518] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 15:55:35,519] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 15:55:35,981] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 15:55:35,983] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 15:55:36,254] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:55:36] "GET /login HTTP/1.1" 200 -
+[2024-08-15 15:55:58,064] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:55:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 15:55:58,118] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:55:58] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 15:56:00,508] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:56:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2024-08-15 15:56:00,676] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 15:56:00] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:04:03,561] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 16:04:05,015] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 16:04:10,506] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 16:04:10,556] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 16:04:10,559] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 16:04:11,050] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 16:04:11,053] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 16:05:54,804] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:05:54] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:05:55,940] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:05:55] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:05:56,976] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:05:56] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:06:16,217] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:06:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:06:16,681] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:06:16] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:06:19,435] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:06:19] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:08:51,528] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:08:51] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:09:02,135] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:09:02] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 16:09:02,358] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:09:02] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:09:09,004] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:09:09] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:09:30,024] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:09:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:09:30,191] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:09:30] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:11:29,400] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:11:29] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:11:33,133] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:11:33] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:19:48,233] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:19:48] "[35m[1mGET /logout-form HTTP/1.1[0m" 500 -
+[2024-08-15 16:19:49,227] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:19:49] "GET /logout-form?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-08-15 16:19:49,260] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:19:49] "GET /logout-form?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-08-15 16:19:51,192] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:19:51] "GET /logout-form?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-08-15 16:19:51,719] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:19:51] "[36mGET /logout-form?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 16:21:10,126] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:10] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:21:13,098] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:13] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:21:19,925] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:19] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:21:26,299] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:26] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 16:21:26,536] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:26] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:21:36,121] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:36] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:21:42,152] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:42] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:21:45,851] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:45] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:21:48,097] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:48] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:21:48,734] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:48] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:21:51,572] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:21:51] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:22:01,165] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:22:01] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:22:25,707] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:22:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:22:25,784] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:22:25] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:22:29,904] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:22:29] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:22:33,031] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:22:33] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:23:28,265] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:23:28] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:23:38,910] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:23:38] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 16:23:39,132] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:23:39] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:24:15,994] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:24:15] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:24:33,515] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:24:33] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:24:35,544] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:24:35] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:29:10,040] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:29:10] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:29:18,591] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:29:18] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:29:56,405] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:29:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:29:56,617] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:29:56] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:31:42,748] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 16:31:42,829] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 16:31:42,831] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 16:31:43,369] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-15 16:31:43,371] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-15 16:31:43,385] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 16:31:49,788] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 16:31:50,706] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 16:31:50,708] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 16:31:51,431] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 16:31:51,434] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 16:31:51,772] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:31:51] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:32:01,097] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:32:01] "GET / HTTP/1.1" 200 -
+[2024-08-15 16:32:06,681] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:32:06] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:32:08,890] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:32:08] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:32:54,311] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:32:54] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:33:31,448] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:33:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:33:32,216] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:33:32] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:33:46,769] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:33:46] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:33:53,616] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:33:53] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:34:22,447] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:34:22] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:34:25,890] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:34:25] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:42:50,190] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:42:50] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:42:52,838] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:42:52] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:44:04,310] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:04] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:44:07,511] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:07] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:44:13,843] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:13] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:44:19,987] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:19] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 16:44:20,049] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:20] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:44:23,195] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:23] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:44:24,647] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:24] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:44:26,607] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:26] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:44:28,712] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:28] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:44:47,859] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:44:47,919] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:47] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:44:51,440] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:51] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:44:54,005] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:44:54] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:45:35,360] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:45:35] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:45:38,471] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:45:38] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:49:04,104] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:49:04] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:49:11,292] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:49:11] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 16:49:11,384] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:49:11] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:49:16,678] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:49:16] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:49:18,513] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:49:18] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:49:19,584] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:49:19] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:50:32,529] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:50:32] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:50:33,872] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:50:33] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:50:37,060] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:50:37] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:51:00,626] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:00] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:51:02,327] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:02] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:51:04,497] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:04] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:51:05,442] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:05] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:51:06,309] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:06] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:51:07,121] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:07] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:51:12,735] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:51:12] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:52:11,186] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:11] "GET / HTTP/1.1" 200 -
+[2024-08-15 16:52:16,377] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:16] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:52:36,701] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:52:36,864] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:36] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:52:43,361] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:43] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:52:44,660] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:44] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 16:52:53,289] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:53] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 16:52:55,094] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:55] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 16:52:55,247] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:55] "GET /home HTTP/1.1" 200 -
+[2024-08-15 16:52:58,530] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:52:58] "GET /about HTTP/1.1" 200 -
+[2024-08-15 16:53:02,986] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:53:02] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 16:53:04,075] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:53:04] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 16:53:59,782] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:53:59] "GET /login HTTP/1.1" 200 -
+[2024-08-15 16:54:29,201] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:54:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 16:54:29,244] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 16:54:29] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:16:10,963] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:16:11,005] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:16:11,007] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:16:13,793] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-15 17:16:13,794] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-15 17:16:13,801] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:16:21,286] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:16:21,584] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:16:21,585] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:16:22,643] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:16:22,775] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:16:29,794] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:16:29] "GET / HTTP/1.1" 200 -
+[2024-08-15 17:16:35,879] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:16:35] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:16:36,238] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:16:36] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:16:37,137] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:16:37] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:16:38,621] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:16:38] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:17:07,988] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:07] "POST /login HTTP/1.1" 200 -
+[2024-08-15 17:17:24,215] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:24] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:17:25,395] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:25] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:17:30,011] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:30] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:17:31,478] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:31] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:17:40,416] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:40] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:17:42,642] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:42] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:17:43,849] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:43] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:17:45,115] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:17:45] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:18:17,506] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:18:17] "POST /login HTTP/1.1" 200 -
+[2024-08-15 17:18:49,261] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:18:49] "POST /login HTTP/1.1" 200 -
+[2024-08-15 17:19:16,719] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:19:16] "POST /login HTTP/1.1" 200 -
+[2024-08-15 17:19:49,685] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:19:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 17:19:49,855] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:19:49] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:20:11,462] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:20:11] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 17:20:14,987] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:20:14] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:21:06,257] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 17:21:07,367] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:21:11,692] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:21:11,792] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:21:11,803] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:21:12,529] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:21:12,532] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:24:01,181] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:24:01] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:24:03,209] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:24:03] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 17:24:06,876] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:24:06] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:24:08,799] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:24:08] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 17:24:10,125] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:24:10] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 17:24:10,498] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:24:10] "GET /home HTTP/1.1" 200 -
+[2024-08-15 17:28:37,595] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 17:28:38,300] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:28:41,367] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:28:41,434] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:28:41,435] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:28:41,809] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:28:41,818] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:29:52,084] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 17:29:53,144] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:29:55,901] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:29:55,954] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:29:55,956] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:29:56,575] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:29:56,589] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:30:01,701] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:01] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:30:02,450] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:02] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:30:03,751] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:03] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:30:05,070] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:05] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:30:36,450] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 17:30:36,614] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:36] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:30:40,696] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:40] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 17:30:43,235] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:43] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:30:46,025] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:46] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 17:30:47,854] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:47] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 17:30:48,210] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:30:48] "GET /home HTTP/1.1" 200 -
+[2024-08-15 17:32:15,184] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 17:32:16,407] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:32:20,043] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:32:20,109] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:32:20,320] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:32:20,593] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:32:20,606] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:33:43,277] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 17:33:44,181] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:33:47,308] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:33:47,371] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:33:47,374] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:33:47,808] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:33:47,811] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:40:54,923] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:40:54] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:40:56,059] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:40:56] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:40:56,894] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:40:56] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:40:58,281] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:40:58] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:41:51,749] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:41:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 17:41:51,862] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:41:51] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:42:00,564] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:00] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:42:20,535] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:20] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:42:21,189] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:21] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:42:23,621] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:23] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:42:27,254] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:27] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:42:47,586] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 17:42:47,643] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:47] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:42:54,061] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:42:54] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:44:37,052] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 17:44:37,999] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:44:42,704] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:44:42,737] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:44:43,020] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:44:43,469] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:44:43,527] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:44:43,723] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:44:43] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:44:47,460] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:44:47] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:44:58,180] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:44:58] "POST /login HTTP/1.1" 200 -
+[2024-08-15 17:45:28,916] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:45:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 17:45:28,983] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:45:28] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:45:32,523] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:45:32] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:47:39,066] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 17:47:41,182] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:47:45,103] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:47:45,175] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:47:45,352] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:47:45,875] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:47:45,884] None requested None     INFO in _internal:  * Debugger PIN: 606-305-378
+[2024-08-15 17:48:48,720] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/auth.py', reloading
+[2024-08-15 17:48:49,950] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:48:53,157] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:48:53,199] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:48:53,200] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:48:53,223] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:48:53,226] None requested None     INFO in _internal:  * Debugger PIN: 606-305-378
+[2024-08-15 17:50:42,729] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 17:50:43,744] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:50:48,163] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:50:48,207] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:50:49,577] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:50:49,605] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:50:49,610] None requested None     INFO in _internal:  * Debugger PIN: 606-305-378
+[2024-08-15 17:50:52,320] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:50:52] "[35m[1mGET /admindashboard HTTP/1.1[0m" 500 -
+[2024-08-15 17:50:53,392] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:50:53] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-15 17:50:53,407] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:50:53] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-15 17:50:56,497] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:50:56] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 17:50:57,286] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:50:57] "[36mGET /admindashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-15 17:51:33,684] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 17:51:34,395] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:51:41,594] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:51:41,707] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:51:41,718] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:51:42,525] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:51:42,528] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 17:51:43,388] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:51:43] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:51:48,903] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:51:48] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:51:54,660] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:51:54] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:52:22,055] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-15 17:52:22,136] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:22] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-15 17:52:27,037] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:27] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 17:52:45,529] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:45] "GET /logout-form HTTP/1.1" 200 -
+[2024-08-15 17:52:47,958] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:47] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-08-15 17:52:48,062] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:48] "GET /home HTTP/1.1" 200 -
+[2024-08-15 17:52:51,187] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:51] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:52:59,610] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:52:59] "GET /about HTTP/1.1" 200 -
+[2024-08-15 17:53:01,669] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:53:01] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 17:53:05,175] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 17:53:05] "GET /login HTTP/1.1" 200 -
+[2024-08-15 17:55:29,718] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 17:55:30,566] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 17:55:33,441] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 17:55:33,481] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 17:55:33,485] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 17:55:33,829] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 17:55:33,833] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 18:07:02,705] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:07:02] "GET /about HTTP/1.1" 200 -
+[2024-08-15 18:07:02,878] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:07:02] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 18:07:03,445] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:07:03] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 18:07:05,696] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:07:05] "GET /about HTTP/1.1" 200 -
+[2024-08-15 18:07:06,380] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:07:06] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 18:07:20,256] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:07:20] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 18:08:59,446] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-15 18:09:01,280] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-15 18:09:08,176] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-15 18:09:08,272] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-15 18:09:08,273] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-15 18:09:09,090] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-15 18:09:09,103] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-15 18:09:09,408] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 18:09:09,460] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /about HTTP/1.1" 200 -
+[2024-08-15 18:09:09,481] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /about HTTP/1.1" 200 -
+[2024-08-15 18:09:09,546] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 18:09:09,592] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-15 18:09:11,396] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:11] "GET /login HTTP/1.1" 200 -
