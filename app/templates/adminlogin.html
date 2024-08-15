@@ -8,9 +8,22 @@
   <body>
        <h1>LOGO</h1>
        <h1>Admin Login Only</h1>
-       <p>{{ error }}</p>
+       <p>
+       {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="">
+              {% for category, message in messages %}
+                <li class="{{ category }}">
+                   {{ message }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+       {% endwith %}
+       </p>
     <div>
        <form method="POST" action="{{ url_for('main.auth.login') }}">
+         {{ form.hidden_tag() }}
          {{ form.username_email.label() }}
          {{ form.username_email(placeholder="User Name/Email") }}
        
