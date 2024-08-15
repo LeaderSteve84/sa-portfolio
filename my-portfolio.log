@@ -1,0 +1,503 @@
+[2024-08-11 17:56:58,738] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-11 17:56:58,771] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-11 17:56:58,883] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-11 17:56:58,886] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-11 17:56:58,893] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-11 17:57:01,761] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-11 17:57:01,799] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-11 17:57:01,889] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-11 17:57:01,892] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-11 17:58:24,703] None requested None     INFO in _internal: 127.0.0.1 - - [11/Aug/2024 17:58:24] "GET /tech_writings/ HTTP/1.1" 200 -
+[2024-08-11 17:58:38,752] None requested None     INFO in _internal: 127.0.0.1 - - [11/Aug/2024 17:58:38] "GET / HTTP/1.1" 200 -
+[2024-08-11 17:58:46,980] None requested None     INFO in _internal: 127.0.0.1 - - [11/Aug/2024 17:58:46] "GET /home HTTP/1.1" 200 -
+[2024-08-11 17:58:56,022] None requested None     INFO in _internal: 127.0.0.1 - - [11/Aug/2024 17:58:56] "GET /about HTTP/1.1" 200 -
+[2024-08-11 17:59:04,024] None requested None     INFO in _internal: 127.0.0.1 - - [11/Aug/2024 17:59:04] "GET /login HTTP/1.1" 200 -
+[2024-08-12 23:25:51,297] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:25:51,486] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:26:06,301] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:26:06,336] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:34:06,572] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:34:06,632] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:34:27,847] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:34:27,890] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:38:16,835] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:38:16,876] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:38:28,403] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:38:28,466] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:43:25,907] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:43:27,437] None requested None     INFO in config: admin i.e instance of Admin created successfully
+[2024-08-12 23:43:27,767] None requested None     INFO in config: Default admin user created: LeaderSteve
+[2024-08-12 23:43:27,768] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:43:27,881] None requested None     ERROR in __init__: Error: Directory migrations already exists and is not empty
+[2024-08-12 23:44:55,025] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:44:55,126] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:44:55,619] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-12 23:44:55,620] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-12 23:44:55,708] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-12 23:44:59,614] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-12 23:44:59,667] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-12 23:44:59,735] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-12 23:44:59,927] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 00:44:43,798] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 00:44:43,856] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 00:44:43,966] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-13 00:44:43,968] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-13 00:44:43,979] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 00:44:48,229] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 00:44:48,298] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 00:44:48,366] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 00:44:48,377] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 00:45:39,576] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 00:45:39,695] None requested None     INFO in config: admin i.e instance of Admin created successfully
+[2024-08-13 00:45:40,027] None requested None     INFO in config: Default admin user created: LeaderSteve
+[2024-08-13 00:45:40,029] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 00:46:02,767] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 00:46:02,816] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 00:46:02,878] None requested None     ERROR in __init__: Error: Directory migrations already exists and is not empty
+[2024-08-13 09:14:39,533] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:14:40,011] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:14:56,123] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:14:56,290] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:22:27,556] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:22:27,623] None requested None     INFO in config: admin i.e instance of Admin created successfully
+[2024-08-13 09:22:27,896] None requested None     INFO in config: Default admin user created: LeaderSteve
+[2024-08-13 09:22:27,898] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:22:29,665] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-13 09:22:29,666] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-13 09:22:30,030] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 09:22:39,558] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:22:39,637] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:22:39,711] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 09:22:40,835] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 09:24:52,189] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:24:52,250] None requested None     INFO in config: admin i.e instance of Admin created successfully
+[2024-08-13 09:24:52,436] None requested None     INFO in config: Default admin user created: LeaderSteve
+[2024-08-13 09:24:52,439] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:25:07,791] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:25:07,874] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:25:08,004] None requested None     ERROR in __init__: Error: Directory migrations already exists and is not empty
+[2024-08-13 09:25:21,049] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:25:21,103] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:40:00,109] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:40:00,174] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:40:20,506] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:40:20,584] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:46:31,538] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:46:31,593] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:48:16,441] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:48:16,505] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:48:45,887] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:48:45,944] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:49:19,250] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:49:19,301] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 09:54:34,140] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 09:54:34,184] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 10:00:10,647] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 10:00:10,704] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 10:19:21,850] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 10:19:21,927] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 10:20:15,025] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 10:20:15,093] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 10:21:12,293] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 10:21:12,352] None requested None     INFO in __init__: Default Admin created successfully
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.env] No changes in schema detected.
+INFO  [alembic.env] No changes in schema detected.
+[2024-08-13 15:44:42,283] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 15:44:43,007] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 15:44:45,210] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-13 15:44:45,211] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-13 15:44:45,288] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 15:47:27,744] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 15:47:31,535] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 15:47:32,611] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 15:47:35,343] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 15:47:37,747] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:47:37] "GET /login HTTP/1.1" 200 -
+[2024-08-13 15:47:41,990] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:47:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-08-13 15:47:48,889] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:47:48] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 15:47:48,917] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:47:48] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 15:47:53,150] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:47:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 15:48:39,591] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:48:39] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+[2024-08-13 15:48:40,648] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:48:40] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 15:48:41,003] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:48:41] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 15:48:42,368] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:48:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 15:48:42,470] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:48:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 15:49:03,432] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:49:03] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+[2024-08-13 15:49:03,647] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:49:03] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 15:49:03,658] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:49:03] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 15:49:04,327] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:49:04] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 15:49:04,943] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:49:04] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 15:53:40,362] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/routes.py', reloading
+[2024-08-13 15:53:41,900] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 15:53:56,651] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 15:53:57,933] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 15:53:58,690] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 15:53:58,693] None requested None     INFO in _internal:  * Debugger PIN: 836-773-162
+[2024-08-13 15:54:38,698] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/__init__.py', reloading
+[2024-08-13 15:54:39,656] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 15:54:43,156] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 15:54:43,199] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 15:54:43,544] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 15:54:43,547] None requested None     INFO in _internal:  * Debugger PIN: 836-773-162
+[2024-08-13 15:55:34,862] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/__init__.py', reloading
+[2024-08-13 15:55:35,844] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 15:55:53,308] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 15:55:53,374] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 15:55:53,434] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 15:55:53,439] None requested None     INFO in _internal:  * Debugger PIN: 836-773-162
+[2024-08-13 15:57:57,983] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:57:57] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+[2024-08-13 15:57:58,841] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:57:58] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 15:57:59,317] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:57:59] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 15:58:00,116] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:58:00] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 15:58:00,641] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 15:58:00] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:01:17,585] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/__init__.py', reloading
+[2024-08-13 16:01:18,404] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:01:40,511] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:01:40,610] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:01:40,715] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:01:40,729] None requested None     INFO in _internal:  * Debugger PIN: 836-773-162
+[2024-08-13 16:01:40,943] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:01:40] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+[2024-08-13 16:01:42,676] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:01:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 16:01:42,756] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:01:42] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 16:01:43,106] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:01:43] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:01:43,711] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:01:43] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:03:32,680] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/__init__.py', reloading
+[2024-08-13 16:03:33,420] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:03:39,647] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:03:39,775] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:03:41,199] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:03:41,432] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:03:43,284] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:03:43] "[35m[1mGET /home HTTP/1.1[0m" 500 -
+[2024-08-13 16:03:44,743] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:03:44] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 16:03:44,763] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:03:44] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 16:03:46,923] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:03:46] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:03:47,418] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:03:47] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:11:16,797] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:11:16,839] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:11:18,037] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-13 16:11:18,038] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-13 16:11:18,041] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:12:01,706] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:12:01,752] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:12:01,807] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:12:02,038] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:12:07,067] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:12:07] "GET /home HTTP/1.1" 200 -
+[2024-08-13 16:12:46,633] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:12:46] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:13:06,603] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:13:06] "[33mGET /contact HTTP/1.1[0m" 404 -
+[2024-08-13 16:13:18,167] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:13:18] "GET /login HTTP/1.1" 200 -
+[2024-08-13 16:18:01,585] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:01] "GET / HTTP/1.1" 200 -
+[2024-08-13 16:18:06,567] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:06] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:18:13,151] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:13] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:18:17,533] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:17] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-13 16:18:40,443] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:40] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:18:43,182] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:43] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:18:45,064] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:18:45] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-13 16:23:46,005] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/about.py', reloading
+[2024-08-13 16:23:47,857] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:23:52,918] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:23:53,006] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:23:53,261] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:23:53,297] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:24:36,997] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:24:36] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+[2024-08-13 16:24:37,633] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:24:37] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+[2024-08-13 16:24:42,883] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:24:42] "GET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-08-13 16:24:42,885] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:24:42] "GET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-08-13 16:24:44,979] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:24:44] "GET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-08-13 16:24:45,784] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:24:45] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:35:54,284] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:35:54] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+[2024-08-13 16:35:54,349] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:35:54] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+[2024-08-13 16:35:56,998] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:35:56] "[36mGET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-13 16:35:57,000] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:35:57] "[36mGET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-13 16:35:58,039] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:35:58] "[36mGET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-13 16:39:20,185] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:39:20] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:39:24,420] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:39:24] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:39:26,864] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:39:26] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:39:28,814] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:39:28] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:45:20,097] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:20] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:45:21,388] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:21] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:45:23,200] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:23] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:45:25,737] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:25] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-13 16:45:31,852] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:31] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-13 16:45:33,124] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:33] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:45:34,065] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:45:34] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:46:00,678] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:46:00] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:48:11,510] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-13 16:48:20,370] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:49:09,102] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:49:09,295] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:49:09,506] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:49:09,825] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:50:45,484] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/projects.py', reloading
+[2024-08-13 16:50:46,177] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:50:50,803] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:50:51,044] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:50:51,230] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:50:51,235] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:52:16,104] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/tech_writings.py', reloading
+[2024-08-13 16:52:16,766] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:52:20,435] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:52:20,492] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:52:20,562] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:52:20,616] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:52:51,059] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/projects.py', reloading
+[2024-08-13 16:52:51,745] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:52:54,499] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:52:54,569] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:52:54,627] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:52:54,630] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:54:23,920] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-13 16:54:25,173] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-13 16:54:28,622] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-13 16:54:28,676] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-13 16:54:28,798] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-13 16:54:28,819] None requested None     INFO in _internal:  * Debugger PIN: 468-565-492
+[2024-08-13 16:54:33,641] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:54:33] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:54:36,585] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:54:36] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:54:42,248] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:54:42] "GET /login HTTP/1.1" 200 -
+[2024-08-13 16:55:17,147] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:55:17] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-13 16:55:21,473] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:55:21] "GET /about HTTP/1.1" 200 -
+[2024-08-13 16:55:22,529] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:55:22] "GET /projects HTTP/1.1" 200 -
+[2024-08-13 16:55:23,980] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:55:23] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-13 16:56:10,835] None requested None     INFO in _internal: 127.0.0.1 - - [13/Aug/2024 16:56:10] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:07:38,444] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:07:38,682] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:10:18,266] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:10:18,312] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:10:23,098] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-14 10:10:23,100] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-14 10:10:23,154] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 10:10:25,943] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:10:26,057] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:10:27,095] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 10:10:46,601] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 10:14:55,485] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:14:55] "GET / HTTP/1.1" 200 -
+[2024-08-14 10:15:04,235] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-08-14 10:15:13,991] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:13] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:15:16,419] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:16] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+[2024-08-14 10:15:17,228] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:17] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-08-14 10:15:17,248] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:17] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-08-14 10:15:19,151] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:19] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-08-14 10:15:19,291] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:15:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-14 10:18:03,560] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/config.py', reloading
+[2024-08-14 10:18:05,208] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 10:18:10,954] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:18:11,104] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:18:11,855] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 10:18:11,871] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 10:18:18,561] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:18:18] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:18:23,600] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:18:23] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:27:11,966] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:27:12,016] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:27:12,274] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-14 10:27:12,275] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-14 10:27:12,311] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 10:27:15,356] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:27:15,470] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:27:16,190] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 10:27:16,192] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 10:27:22,391] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:27:22] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:27:24,923] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:27:24] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:28:51,070] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:28:51] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:28:52,172] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:28:52] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 10:28:54,007] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:28:54] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:28:55,129] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:28:55] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 10:28:57,159] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:28:57] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:29:00,817] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:29:00] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 10:29:03,017] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:29:03] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:29:03,442] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:29:03] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 10:29:04,844] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:29:04] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 10:29:06,688] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:29:06] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:29:14,796] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:29:14] "GET /login?username_email=steveadah&password=Shagreat&submit=Login HTTP/1.1" 200 -
+[2024-08-14 10:33:44,079] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:33:44,152] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:33:44,582] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-14 10:33:44,583] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-14 10:33:44,601] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 10:33:47,363] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:33:47,510] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:33:48,306] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 10:33:48,319] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 10:33:51,436] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:33:51] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:33:53,565] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:33:53] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:34:24,312] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:34:24] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 10:34:25,542] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:34:25] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:34:27,028] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:34:27] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 10:34:28,782] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:34:28] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 10:34:29,845] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:34:29] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:53:15,799] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:53:15,845] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:54:21,472] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:54:21,522] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:54:22,111] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-08-14 10:54:22,115] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-08-14 10:54:22,120] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 10:54:26,721] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:54:26,788] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:54:27,148] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 10:54:27,280] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 10:54:28,277] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:54:28] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+[2024-08-14 10:54:28,725] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:54:28] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-08-14 10:54:29,178] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:54:29] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-08-14 10:54:31,395] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:54:31] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-14 10:54:33,006] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:54:33] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-14 10:56:27,848] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 10:56:28,712] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 10:56:33,849] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 10:56:33,937] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 10:56:34,397] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 10:56:34,401] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 10:56:34,579] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:56:34] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:56:38,983] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:56:38] "GET /login?username_email=steveadah&password=Shagreat&submit=Login HTTP/1.1" 200 -
+[2024-08-14 10:57:10,492] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:57:10] "GET /login?username_email=steveadah&password=Shagreat&submit=Login HTTP/1.1" 200 -
+[2024-08-14 10:57:19,664] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:57:19] "GET /about HTTP/1.1" 200 -
+[2024-08-14 10:57:20,868] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:57:20] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 10:57:22,203] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:57:22] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 10:57:23,914] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:57:23] "GET /login HTTP/1.1" 200 -
+[2024-08-14 10:58:01,196] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:58:01] "GET /login?username_email=steveadahson@gmail.com&password=Shaloms@portfolio2014&submit=Login HTTP/1.1" 200 -
+[2024-08-14 10:59:38,929] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 10:59:38] "GET /login?username_email=steveadahson@gmail.com&password=Shaloms@portfolio2014&submit=Login HTTP/1.1" 200 -
+[2024-08-14 11:01:07,108] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 11:01:07,946] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:01:10,734] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:01:10,787] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:01:11,505] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:01:11,508] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:02:56,605] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/admindashboard.py', reloading
+[2024-08-14 11:02:57,268] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:03:03,096] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:03:03,194] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:03:03,646] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:03:03,651] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:03:03,935] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:03:03] "GET /login HTTP/1.1" 200 -
+[2024-08-14 11:03:21,581] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:03:21] "GET /login?username_email=steveadahson@gmail.com&password=Shajkru&submit=Login HTTP/1.1" 200 -
+[2024-08-14 11:03:28,327] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:03:28] "GET /login?username_email=&password=&submit=Login HTTP/1.1" 200 -
+[2024-08-14 11:05:11,548] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:05:11] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 11:08:17,491] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 11:08:18,594] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:08:21,569] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:08:21,613] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:08:21,858] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:08:21,860] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:10:10,201] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 11:10:10,836] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:10:15,867] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:10:15,921] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:10:16,163] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:10:16,165] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:10:40,493] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/__init__.py', reloading
+[2024-08-14 11:10:41,960] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:10:45,757] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:10:45,905] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:10:46,414] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:10:46,432] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:10:47,992] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:10:47] "GET /login HTTP/1.1" 200 -
+[2024-08-14 11:10:56,950] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:10:56] "GET /login?username_email=steveadahson@gmail.com&password=sgthj&submit=Login HTTP/1.1" 200 -
+[2024-08-14 11:26:13,000] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 11:26:13,620] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:26:19,193] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:26:19,237] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:26:19,261] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:26:19,267] None requested None     INFO in _internal:  * Debugger PIN: 475-281-984
+[2024-08-14 11:29:12,134] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 11:29:12,852] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:29:18,314] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:29:18,358] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:29:18,597] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:29:18,599] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:29:26,269] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:29:26] "GET /login?username_email=steveadahson@gmail.com&password=sgthj&submit=Login HTTP/1.1" 200 -
+[2024-08-14 11:29:29,823] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:29:29] "GET /about HTTP/1.1" 200 -
+[2024-08-14 11:29:31,219] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:29:31] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 11:29:32,433] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:29:32] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 11:29:33,779] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:29:33] "GET /login HTTP/1.1" 200 -
+[2024-08-14 11:29:47,420] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:29:47] "GET /login?username_email=steveadahson@gmail.com&password=fghtu@gmail.com&submit=Login HTTP/1.1" 200 -
+[2024-08-14 11:33:43,677] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 11:33:44,307] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:33:47,901] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:33:47,942] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:33:48,177] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:33:48,188] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:34:13,386] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/forms/adminLogin.py', reloading
+[2024-08-14 11:34:14,315] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 11:34:18,930] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 11:34:18,967] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 11:34:19,334] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 11:34:19,399] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 11:37:47,955] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:37:47] "GET /about HTTP/1.1" 200 -
+[2024-08-14 11:37:48,962] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:37:48] "GET /login HTTP/1.1" 200 -
+[2024-08-14 11:37:56,568] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:37:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-14 11:37:56,864] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:37:56] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 11:48:24,038] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 11:48:24] "GET /about HTTP/1.1" 200 -
+[2024-08-14 12:13:58,936] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:13:58] "GET /about HTTP/1.1" 200 -
+[2024-08-14 12:13:59,964] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:13:59] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 12:14:01,033] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:14:01] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 12:14:14,345] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:14:14] "GET /login HTTP/1.1" 200 -
+[2024-08-14 12:14:41,628] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:14:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-14 12:14:41,956] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:14:41] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 12:25:26,543] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 12:25:32,252] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 12:25:38,916] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 12:25:39,116] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 12:25:39,587] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 12:25:39,595] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 12:32:34,414] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 12:32:35,495] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 12:32:38,538] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 12:32:38,580] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 12:32:39,128] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 12:32:39,142] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 12:41:30,175] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 12:41:31,293] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 12:41:34,579] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 12:41:34,618] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 12:41:34,915] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 12:41:34,929] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 12:49:50,437] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:49:50] "GET /about HTTP/1.1" 200 -
+[2024-08-14 12:49:53,203] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:49:53] "GET /projects HTTP/1.1" 200 -
+[2024-08-14 12:49:54,536] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:49:54] "GET /tech_writings HTTP/1.1" 200 -
+[2024-08-14 12:50:02,669] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:50:02] "[35m[1mGET /loginForm HTTP/1.1[0m" 500 -
+[2024-08-14 12:50:04,421] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:50:04] "GET /loginForm?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-08-14 12:50:04,429] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:50:04] "GET /loginForm?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-08-14 12:50:05,523] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:50:05] "GET /loginForm?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-08-14 12:50:05,978] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:50:05] "[36mGET /loginForm?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-08-14 12:51:51,350] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:51:51] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-14 12:55:17,752] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:55:17] "GET /about HTTP/1.1" 200 -
+[2024-08-14 12:55:20,093] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:55:20] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-14 12:55:33,795] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:55:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-14 12:55:34,359] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:55:34] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 12:56:01,526] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:56:01] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-14 12:56:05,982] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:56:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-14 12:56:06,330] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:56:06] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 12:59:40,394] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 12:59:41,411] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 12:59:47,588] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 12:59:47,719] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 12:59:48,275] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 12:59:48,368] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
+[2024-08-14 12:59:49,522] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:59:49] "GET /about HTTP/1.1" 200 -
+[2024-08-14 12:59:50,963] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:59:50] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-14 12:59:53,761] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 12:59:53] "POST /login HTTP/1.1" 200 -
+[2024-08-14 13:00:11,493] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:00:11] "POST /login HTTP/1.1" 200 -
+[2024-08-14 13:00:18,083] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:00:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-14 13:00:18,240] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:00:18] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 13:01:10,560] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:01:10] "GET /about HTTP/1.1" 200 -
+[2024-08-14 13:01:13,712] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:01:13] "GET /loginForm HTTP/1.1" 200 -
+[2024-08-14 13:01:25,536] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:01:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-08-14 13:01:25,755] None requested None     INFO in _internal: 127.0.0.1 - - [14/Aug/2024 13:01:25] "GET /admindashboard HTTP/1.1" 200 -
+[2024-08-14 13:04:04,349] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/my-portfolio/app/routes/auth.py', reloading
+[2024-08-14 13:04:05,529] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-14 13:04:09,190] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-14 13:04:09,254] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-14 13:04:09,867] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-14 13:04:09,870] None requested None     INFO in _internal:  * Debugger PIN: 596-055-726
