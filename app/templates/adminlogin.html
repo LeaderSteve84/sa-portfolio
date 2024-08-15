@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Admin Login
+{% endblock %}
+
+{% block content %}
+  <body>
+       <h1>LOGO</h1>
+       <h1>Admin Login Only</h1>
+       <p>{{ error }}</p>
+    <div>
+       <form method="POST" action="{{ url_for('main.auth.login') }}">
+         {{ form.username_email.label() }}
+         {{ form.username_email(placeholder="User Name/Email") }}
+       
+         {{ form.password.label() }}
+         {{ form.password(placeholder="Password") }}
+
+         {{ form.submit() }}
+       </form>
+    </div>
+  </body>
+{% endblock %}

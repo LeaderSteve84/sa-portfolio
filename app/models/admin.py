@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""models"""
+
+from flask import current_app
+from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy import Integer, String
+
+db = current_app.db
+
+class Admin(db.Model):
+    """class of Admin table"""
+    __tablename__ = 'admin'
+    id: Mapped[int] = mapped_column(primary_key=True)
+    username: Mapped[str] = mapped_column(db.String(length=20), unique=True)
+    email: Mapped[str] = mapped_column(db.String(length=30), unique=True)
+    password_hash: Mapped[str] = mapped_column(db.String(length=128))
+    phone: Mapped[str] = mapped_column(db.String(length=30), unique=True)
