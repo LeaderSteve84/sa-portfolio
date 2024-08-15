@@ -10,6 +10,7 @@ from logging.handlers import SMTPHandler
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
 from flask_migrate import Migrate
+from flask_jwt_extended import JWTManager
 
 # Initialize mail instance globally
 mail = Mail()
@@ -46,6 +47,9 @@ class Base(DeclarativeBase):
 db = SQLAlchemy(model_class=Base)
 migrate = Migrate()
 
+# Create the jwt instance
+jwt = JWTManager()
+
 def create_app():
     """function to create flask app"""
     app = Flask(__name__)
@@ -60,6 +64,10 @@ def create_app():
     db.init_app(app)
     app.db = db  # set db into app context
     migrate.init_app(app, db)
+
+    # Initialize JWT Manager
+    jwt.init_app(app)
+    app.jwt = jwt
 
     # create SMTP handler and added to the root logger
     mail_handler = SMTPHandler(
