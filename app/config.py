@@ -23,6 +23,11 @@ class Config:
     MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER')
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = os.environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')
+    JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
+    JWT_ACCESS_TOKEN_EXPIRES = int(os.environ.get('JWT_ACCESS_TOKEN_EXPIRES'))
+    JWT_REFRESH_TOKEN_EXPIRES = int(os.environ.get('JWT_REFRESH_TOKEN_EXPIRES'))
+    JWT_TOKEN_LOCATION = os.environ.get('JWT_TOKEN_LOCATION').split(',')
+    JWT_COOKIE_SECURE = os.environ.get('JWT_COOKIE_SECURE')
 
 
 class RequestFormatter(logging.Formatter):
@@ -50,14 +55,6 @@ def create_default_admin():
     # check if username already exist
     admin = Admin.query.filter_by(username=default_admin_username).first()
     if not admin:
-        # Generata a secure password hash
-        """
-        hashed_password = generate_password_hash(
-            os.environ.get('DEFAULT_ADMIN_PASSWORD')
-        )
-        """
-		# import the Admin class
-        # from app.models.models import Admin
         # create an Admin instance
         admin = Admin(
             username=default_admin_username,
@@ -70,3 +67,4 @@ def create_default_admin():
         db.session.add(admin)
         db.session.commit()
         current_app.logger.info(f"Default admin user created: {default_admin_username}")
+    current_app.logger.info(f"Default admin {default_admin_username} already exist")
