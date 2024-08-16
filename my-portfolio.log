@@ -1307,3 +1307,29 @@ INFO  [alembic.env] No changes in schema detected.
 [2024-08-15 18:09:09,546] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /projects HTTP/1.1" 200 -
 [2024-08-15 18:09:09,592] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:09] "GET /tech_writings HTTP/1.1" 200 -
 [2024-08-15 18:09:11,396] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:09:11] "GET /login HTTP/1.1" 200 -
+[2024-08-15 18:23:46,647] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:23:46] "GET /about HTTP/1.1" 200 -
+[2024-08-15 18:23:48,805] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:23:48] "GET /projects HTTP/1.1" 200 -
+[2024-08-15 18:23:50,073] None requested None     INFO in _internal: 127.0.0.1 - - [15/Aug/2024 18:23:50] "GET /about HTTP/1.1" 200 -
+[2024-08-16 08:27:00,002] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects.py', reloading
+[2024-08-16 08:28:41,311] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-16 08:32:08,095] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-16 08:32:09,076] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-16 08:32:09,078] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-16 08:32:17,306] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-16 08:32:18,167] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-16 08:35:30,363] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/project.py', reloading
+[2024-08-16 08:35:31,119] None requested None     INFO in _internal:  * Restarting with stat
+[2024-08-16 08:35:34,214] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-16 08:35:34,254] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-16 08:35:34,258] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-16 08:35:34,509] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-08-16 08:35:34,513] None requested None     INFO in _internal:  * Debugger PIN: 449-361-956
+[2024-08-16 08:37:49,616] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-16 08:37:49,648] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-16 08:37:49,649] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-16 08:43:08,544] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-16 08:43:08,596] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-16 08:43:08,598] None requested None     INFO in __init__: Default Admin created successfully
+[2024-08-16 08:44:28,723] None requested None     INFO in __init__: DB Tables created successfully
+[2024-08-16 08:44:28,761] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-08-16 08:44:28,762] None requested None     INFO in __init__: Default Admin created successfully
