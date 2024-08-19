@@ -13,11 +13,24 @@ class Project(db.Model):
     """class of Projects done"""
     __tablename__ = 'projects'
     project_id: Mapped[int] = mapped_column(primary_key=True)
-    date_created: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
-    date_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    date_created: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow
+    )
+    date_updated: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
+    )
     title: Mapped[str] = mapped_column(String(length=1024))
     description: Mapped[str] = mapped_column(Text)
-    image_link: Mapped[str] = mapped_column(String(length=1024))
+    image_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
     stacks: Mapped[str] = mapped_column(String(length=1024))
-    domain_link: Mapped[Optional[str]] = mapped_column(String(length=1024), unique=False)
-    github_link: Mapped[Optional[str]] = mapped_column(String(length=1024), unique=False)
+    domain_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
+    github_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
+
+    def __repr__(self):
+        return f'<Project {self.title}>'
