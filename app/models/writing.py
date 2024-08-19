@@ -10,11 +10,24 @@ from typing import Optional
 db = current_app.db
 
 class Writing(db.Model):
-    """class of Projects done"""
+    """class of Technical writings done"""
     __tablename__ = 'writings'
     writing_id: Mapped[int] = mapped_column(primary_key=True)
-    date_created: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
-    date_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    date_created: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow
+    )
+    date_updated: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow,
+        onupdate=datetime.utcnow
+    )
     title: Mapped[str] = mapped_column(String(length=1024))
+    image_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
     description: Mapped[str] = mapped_column(Text)
-    published_link: Mapped[Optional[str]] = mapped_column(String(length=1024), unique=False)
+    published_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
+
+    def __repr__(self):
+        return f"<Technical Writing {self.title}>"
