@@ -28,10 +28,32 @@
     <section>
       <nav>
         <ul>
-                <li><a href="{{ url_for('main.projects.create_projects') }}">Create Project Done</a></li>
-                <li><a href="{{ url_for('main.tech_writings.create_technical_writings') }}">Create Technical Writing</a></li>
+                <li>Projects Done</li>
+                <ul>
+                   <li><a href="{{ url_for('main.projects.create_project') }}">Add Project Done</a></li>
+                   <li><a href="{{ url_for('main.projects.list_projects') }}">List Projects Done</a></li>
+                </ul>
+                <li>Technical Writings</li>
+                <ul>
+                   <li><a href="{{ url_for('main.tech_writings.create_writing') }}">Create Technical Writing</a></li>
+                   <li><a href="{{ url_for('main.tech_writings.list_writings') }}">List Technical Writings</a></li>
+                </ul>
         </ul>
       </nav>
+      <p>
+       <!-- flash message -->
+       {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="">
+              {% for category, message in messages %}
+                <li class="{{ category }}">
+                   {{ message }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+       {% endwith %}
+       </p>
       {% block content %}
    
       {% endblock %}
