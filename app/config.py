@@ -28,6 +28,7 @@ class Config:
     JWT_REFRESH_TOKEN_EXPIRES = int(os.environ.get('JWT_REFRESH_TOKEN_EXPIRES'))
     JWT_TOKEN_LOCATION = os.environ.get('JWT_TOKEN_LOCATION').split(',')
     JWT_COOKIE_SECURE = os.environ.get('JWT_COOKIE_SECURE')
+    JWT_COOKIE_CSRF_PROTECT = os.environ.get('JWT_COOKIE_CSRF_PROTECT')
 
 
 class RequestFormatter(logging.Formatter):
