@@ -11,6 +11,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
+from flask_wtf.csrf import CSRFProtect
 
 # Initialize mail instance globally
 mail = Mail()
@@ -50,6 +51,9 @@ migrate = Migrate()
 # Create the jwt instance
 jwt = JWTManager()
 
+# create instance of CSRFProtect
+csrf = CSRFProtect()
+
 def create_app():
     """function to create flask app"""
     app = Flask(__name__)
@@ -68,6 +72,10 @@ def create_app():
     # Initialize JWT Manager
     jwt.init_app(app)
     app.jwt = jwt
+
+    # initialize CSRFProtect instance
+    csrf.init_app(app)
+    app.csrf = csrf
 
     # create SMTP handler and added to the root logger
     mail_handler = SMTPHandler(
@@ -93,24 +101,6 @@ def create_app():
         create_default_admin()
         app.logger.info("Default Admin created successfully")
 
-        """
-        initialized = False  # initialize flag
-        @app.before_request
-        def initialize_database():
-            nonlocal initialized
-            if not initialized:
-                # create models and tables
-                # from app.models.models import Admin, Project
-                db.create_all()
-                app.logger.info("DB Tables created successfully")
-
-                # create default admin
-                from app.config import create_default_admin
-                create_default_admin()
-                app.logger.info("Default Admin created successfully")
-                # set flag to prevent re-initialization
-                initialized = True
-        """
         # import main blueprint
         from app.routes import bp
 
