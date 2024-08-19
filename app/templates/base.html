@@ -24,14 +24,32 @@
       <nav>
         <ul>
                 <li><a href="{{ url_for('main.about.about_page') }}">About Me</a></li>
-                <li><a href="{{ url_for('main.projects.get_projects') }}">Projects Done</a></li>
+                <li><a href="{{ url_for('main.projects.view_projects') }}">Projects Done</a></li>
                 <li><a href="#">Resume</a></li>
+                <li><a href="#">Certifications</a></li>
+                  <ul>
+                    <li><a href="#">ALX_SE Powered by Holberton Inc</a></li>
+                  </ul>
                 <li><a href="#">Contacts</a></li>
         </ul>
         <div>
-                <p><a href="{{ url_for('main.tech_writings.get_technical_writings') }}">Technical Writings</a></p>
+                <p><a href="{{ url_for('main.tech_writings.view_writings') }}">Technical Writings</a></p>
         </div>
       </nav>
+      <p>
+       <!-- flash message -->
+       {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="">
+              {% for category, message in messages %}
+                <li class="{{ category }}">
+                   {{ message }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+       {% endwith %}
+       </p>
       {% block content %}
    
       {% endblock %}
