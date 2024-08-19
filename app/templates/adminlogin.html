@@ -7,29 +7,18 @@
 {% block content %}
   <body>
        <h1>LOGO</h1>
-       <h1>Admin Login Only</h1>
-       <p>
-       {% with messages = get_flashed_messages(with_categories=true) %}
-          {% if messages %}
-            <ul class="">
-              {% for category, message in messages %}
-                <li class="{{ category }}">
-                   {{ message }}
-                </li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-       {% endwith %}
-       </p>
+       <p>Admin Login Only</p>
     <div>
        <form method="POST" action="{{ url_for('main.auth.login') }}">
+         <!-- CSRF token -->
          {{ form.hidden_tag() }}
+         <!-- username -->
          {{ form.username_email.label() }}
          {{ form.username_email(placeholder="User Name/Email") }}
-       
+         <!-- password -->
          {{ form.password.label() }}
          {{ form.password(placeholder="Password") }}
-
+         <!-- submit -->
          {{ form.submit() }}
        </form>
     </div>
