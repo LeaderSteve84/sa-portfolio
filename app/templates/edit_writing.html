@@ -1,0 +1,36 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+   Edit Writings     
+{% endblock %}
+
+{% block content %}
+   <body>
+     <h1>Edit Technical Writing</h1>
+     <div>
+       <form method="POST" action="{{ url_for('main.tech_writings.update_writing', writing_id=writing.writing_id) }}">
+         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+         <div>
+            <label for="title">Writing Title</label>
+            <input type="text" id="title" name="title" value="{{ writing.title }}" required>
+         </div>
+	 <div>
+            <label for="image_link">Writing Image Link</label>
+            <input type="url" id="image_link" name="image_link" value="{{ writing.image_link }}">
+         </div>
+         <div>
+            <label for="description">Writing Description</label>
+            <textarea id="description" name="description" required>{{ writing.description }}</textarea>
+         </div>
+	 <div>
+            <label for="published_link">Published Link</label>
+	    <input type="url" id="published_link" name="published_link" value="{{ writing.published_link }}">
+         </div>
+	 <div>
+            <button type="submit">Update Technical writing</button>
+	</div>
+       </form>
+       <a href="{{ url_for('main.tech_writings.list_writings') }}">Back to Writing List</a>
+     </div>
+   </body>
+{% endblock %}
