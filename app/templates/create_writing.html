@@ -1,0 +1,35 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+     Add Technical Writing
+{% endblock %}
+
+{% block content %}
+   <body>
+     <h1>LOGO</h1>
+     <p>Add Technical Writing</p>
+     <div>
+       <form method="POST" action="{{ url_for('main.tech_writings.create_writing') }}">
+         {{ form.hidden_tag() }}
+         <!-- writing title -->
+         {{ form.title.label() }}
+         {{ form.title(placeholder="Enter Title") }}
+        
+	 <!-- technical writing image link -->
+         {{ form.image_link.label() }}
+         {{ form.image_link(placeholder="Enter Image URL") }}
+ 
+         <!-- writing description -->
+         {{ form.description.label() }}
+         {{ form.description(placeholder="Type Technical Writing") }}
+         
+         <!-- technical writing published link -->
+         {{ form.published_link.label() }}
+         {{ form.published_link(placeholder="Enter Published URL") }}
+         
+         <!-- submit -->
+         {{ form.submit() }}
+       </form>
+     </div>
+   </body>
+{% endblock %}
