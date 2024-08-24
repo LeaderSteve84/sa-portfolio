@@ -44,7 +44,7 @@ def list_writings():
 def view_writings():
         """get list of all technical writings"""
         writings = Writing.query.all()
-        return render_template('all_writings.html', writings=writings)
+        return render_template('view_writings.html', writings=writings)
 
 @tech_writings_bp.route("/writings/<int:writing_id>/edit", methods=['GET'], strict_slashes=False)
 def edit_writing(writing_id):
