@@ -44,4 +44,5 @@ def logout():
     response = jsonify({"msg": "Logout successfully"})
     # unset the JWT cookies to log out
     unset_jwt_cookies(response)
+    flash("log out successfully", "success")
     return redirect(url_for('main.home.home_page'))

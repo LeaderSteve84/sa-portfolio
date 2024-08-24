@@ -9,4 +9,4 @@ about_bp = Blueprint('about', __name__)
 @about_bp.route("/about", methods=['GET'], strict_slashes=False)
 def about_page():
     """about me route"""
-    return render_template('about.html')
+    return render_template('about_me.html')
