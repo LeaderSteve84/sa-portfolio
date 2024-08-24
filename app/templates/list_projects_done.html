@@ -1,0 +1,56 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+   Projects Done     
+{% endblock %}
+
+{% block content %}
+   <body>
+    <h1 class="h5 text-center fw-bold">Projects Done</h1>
+     <div class="container mt-5">
+      <div class="row">
+      <div class="col-md-12"> 
+       <table class="table table-hover table-bordered table-striped">
+         <thead class="table-light text-primary">
+           <tr>
+             <th scope="col">#</th>
+             <th scope="col">Date Created</th>
+             <th scope="col">Last Updated</th>
+             <th scope="col">Title</th>
+             <th scope="col">Type</th>
+             <th scope="col">Description</th>
+             <th scope="col">Stacks Used</th>
+             <th scope="col">Role</th>
+             <th scope="col">Date Completed</th>
+             <th scope="col">Actions</th>
+           </tr>
+         </thead>
+         <tbody class="table-light">
+           {% for project_done in projects_done[::-1] %}
+             <tr>
+                <th scope="row text-dark">{{ loop.index }}</th>
+                <td>{{ project_done.date_created }}</td>
+                <td>{{ project_done.date_updated }}</td>
+                <td>{{ project_done.title }}</td>
+                <td>{{ project_done.project_type }}</td>
+                <td>{{ project_done.description }}</td>
+                <td>{{ project_done.stacks }}</td>
+                <td>{{ project_done.role }}</td>
+                <td>{{ project_done.date_cmptd }}</td>
+                <td><a href="{{ url_for('main.projects_done.edit_project_done', project_done_id=project_done.project_done_id) }}", class="btn btn-sm btn-warning">Edit</a>
+                         |
+                  <form action={{ url_for('main.projects_done.delete_project_done', project_done_id=project_done.project_done_id) }} method='POST'>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <button type='submit' class="btn btn-sm btn-danger", onclick="return confirm('Are you sure you want to delete this project done?');">
+                       Delete
+                    </button>
+                  </form>
+                </td>
+             </tr>
+           {% endfor %}
+         </tbody>
+       </table>
+       <p class="text-center"><a href="{{ url_for('main.projects_done.create_project_done') }}">Add New Project Done</a>
+     </div>
+   </body>
+{% endblock %}
