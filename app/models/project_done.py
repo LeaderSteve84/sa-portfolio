@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+"""models"""
+
+from flask import current_app
+from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy import Integer, String, DateTime, Text
+from datetime import datetime
+from typing import Optional
+
+db = current_app.db
+
+class ProjectDone(db.Model):
+    """class of Projects done"""
+    __tablename__ = 'projects_done'
+    project_done_id: Mapped[int] = mapped_column(primary_key=True)
+    date_created: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow
+    )
+    date_updated: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
+    )
+    title: Mapped[str] = mapped_column(String(length=1024))
+    project_type: Mapped[str] = mapped_column(String(length=1024))
+    description: Mapped[str] = mapped_column(Text)
+    stacks: Mapped[str] = mapped_column(String(length=1024))
+    role: Mapped[str] = mapped_column(String(length=1024))
+    date_cmptd: Mapped[str] = mapped_column(String(length=1024))
+
+    def __repr__(self):
+        return f'<Project Done {self.title}>'
