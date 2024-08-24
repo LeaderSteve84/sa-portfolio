@@ -1,46 +1,50 @@
 <!doctype html>
 <html lang="en">
   <head>
-     <!-- Required meta tags -->
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>
 	{% block title %}
 
-        {% endblock %}
-     </title>
+	{% endblock %}
+    </title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <div class="container-fluid">
+        <img src="{{ url_for('static', filename='images/port_logo.jpg') }}" alt="Logo" class="img-fluid" style="width: 60px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="dropdown ms-auto bg-secondary">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+               Menu
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="dropdown-header">Featured Projects</li>
+            <li><a class="dropdown-item" href="{{ url_for('main.featured_projects.create_featured_project') }}">Add Featured Project</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('main.featured_projects.list_featured_projects') }}">List Featured Projects</a></li>
+            <li class="dropdown-header">Projects Done</li>
+            <li><a class="dropdown-item" href="{{ url_for('main.projects_done.create_project_done')}}">Add Projects Done</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('main.projects_done.list_projects_done')}}">List Projects Done</a></li>
+            <li class="dropdown-header">Technical Writings</li>
+            <li><a class="dropdown-item" href="{{ url_for('main.tech_writings.create_writing') }}">Create Technical Writing</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('main.tech_writings.list_writings') }}">List Technical Writings</a></li>
+            <li class="dropdown-header">References</li>
+            <li><a class="dropdown-item" href="{{ url_for('main.references.list_references') }}">List References</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('main.auth.logoutForm') }}">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section>
-      <div>
-              <h3>LOGO</h3>
-        <p>Building Bridging Between Technology and Innovation</p>
-      </div>
-      <div>
-              {% block page_heading %}
-
-              {% endblock %}
-      </div>
-      </div>
-        <h3><a href="{{ url_for('main.auth.logoutForm') }}">Logout</a></h3>
-      </div>
-    </section>
-    <section>
-      <nav>
-        <ul>
-                <li>Projects Done</li>
-                <ul>
-                   <li><a href="{{ url_for('main.projects.create_project') }}">Add Project Done</a></li>
-                   <li><a href="{{ url_for('main.projects.list_projects') }}">List Projects Done</a></li>
-                </ul>
-                <li>Technical Writings</li>
-                <ul>
-                   <li><a href="{{ url_for('main.tech_writings.create_writing') }}">Create Technical Writing</a></li>
-                   <li><a href="{{ url_for('main.tech_writings.list_writings') }}">List Technical Writings</a></li>
-                </ul>
-        </ul>
-      </nav>
-      <p>
+    <p>
        <!-- flash message -->
        {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
@@ -55,9 +59,13 @@
        {% endwith %}
        </p>
       {% block content %}
-   
+
       {% endblock %}
     </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   </body>
   <style>
       body {
@@ -65,21 +73,7 @@
       color: white
       }
    </style>
-  <footer>
-    <div>
-       <div>
-         <h3>LOGO<h3>
-       </div>
-       <div>
-         <p>Contacts</p>
-         <p>(c)2024 Stephen Adah | All Right Reserved<p>
-         <p>Version: 1.0.0</p>
-       </div>
-       <ul>
-          <li>linkedIn</li>
-          <li>Twitter</li>
-          <li>Github</li> 
-       </ul>
-    </div>
-  </footer>
-</html>
+   <footer>
+           <p class="text-center"><a href="{{url_for('main.admindashboard.admindashboard_page')}}">Back to Your Dashboard</a></p>
+   </footer>
+</html

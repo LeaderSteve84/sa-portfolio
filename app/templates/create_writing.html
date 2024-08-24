@@ -1,34 +1,44 @@
 {% extends "admin-base.html" %}
 
 {% block title %}
-     Add Technical Writing
+     Technical Writing
 {% endblock %}
 
 {% block content %}
    <body>
-     <h1>LOGO</h1>
-     <p>Add Technical Writing</p>
-     <div>
+     <div class="container mt-5">
+     <h5 class="h5 text-center fw-bold">Create Technical Writing</h5>
        <form method="POST" action="{{ url_for('main.tech_writings.create_writing') }}">
          {{ form.hidden_tag() }}
+
+         <div class="mb-3">
          <!-- writing title -->
-         {{ form.title.label() }}
-         {{ form.title(placeholder="Enter Title") }}
+         {{ form.title.label(class="form-label") }}
+         {{ form.title(placeholder="Enter Title", class="form-control") }}
+         </div>
         
+         <div class="mb-3">
 	 <!-- technical writing image link -->
-         {{ form.image_link.label() }}
-         {{ form.image_link(placeholder="Enter Image URL") }}
+         {{ form.image_link.label(class="form-label") }}
+         {{ form.image_link(placeholder="Enter Image URL", class="form-control") }}
+         </div>
  
+         <div class="mb-3">
          <!-- writing description -->
-         {{ form.description.label() }}
-         {{ form.description(placeholder="Type Technical Writing") }}
+         {{ form.description.label(class="form-label") }}
+         {{ form.description(placeholder="Type Technical Writing", class="form-control") }}
+         </div>
          
+         <div class="mb-3">
          <!-- technical writing published link -->
-         {{ form.published_link.label() }}
-         {{ form.published_link(placeholder="Enter Published URL") }}
+         {{ form.published_link.label(class="form-label") }}
+         {{ form.published_link(placeholder="Enter Published URL", class="form-control") }}
+         </div>
          
+         <div class="mb-3">
          <!-- submit -->
-         {{ form.submit() }}
+         {{ form.submit(class="btn btn-primary") }}
+         </div>
        </form>
      </div>
    </body>

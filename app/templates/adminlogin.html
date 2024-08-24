@@ -6,20 +6,28 @@
 
 {% block content %}
   <body>
-       <h1>LOGO</h1>
-       <p>Admin Login Only</p>
-    <div>
+    <div class="container mt-4">
+       <h5 class="h5 text-center text-primary">Admin Only</h5>
        <form method="POST" action="{{ url_for('main.auth.login') }}">
          <!-- CSRF token -->
          {{ form.hidden_tag() }}
+
+         <div class="mb-3">
          <!-- username -->
-         {{ form.username_email.label() }}
-         {{ form.username_email(placeholder="User Name/Email") }}
+         {{ form.username_email.label(class="form-label text-primary") }}
+         {{ form.username_email(placeholder="User Name/Email", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
          <!-- password -->
-         {{ form.password.label() }}
-         {{ form.password(placeholder="Password") }}
+         {{ form.password.label(class="form-label text-primary") }}
+         {{ form.password(placeholder="Password", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
          <!-- submit -->
-         {{ form.submit() }}
+         {{ form.submit(class="btn btn-primary") }}
+         </div>
        </form>
     </div>
   </body>

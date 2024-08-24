@@ -1,42 +1,54 @@
 <!doctype html>
 <html lang="en">
   <head>
-     <!-- Required meta tags -->
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <title>
 	{% block title %}
 
-        {% endblock %}
-     </title>
+	{% endblock %}
+    </title>
   </head>
   <body>
-    <section>
-      <div>
-              <h3><a href="{{ url_for('main.auth.login') }}">LOGO</a></h3>
-        <p>Building Bridging Between Technology and Innovation</p>
-      </div>
-      <div>
-        <p>Welcome to my portfolio</p>
-      </div>
-    </section>
-    <section>
-      <nav>
-        <ul>
-                <li><a href="{{ url_for('main.about.about_page') }}">About Me</a></li>
-                <li><a href="{{ url_for('main.projects.view_projects') }}">Projects Done</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Certifications</a></li>
-                  <ul>
-                    <li><a href="#">ALX_SE Powered by Holberton Inc</a></li>
-                  </ul>
-                <li><a href="#">Contacts</a></li>
-        </ul>
-        <div>
-                <p><a href="{{ url_for('main.tech_writings.view_writings') }}">Technical Writings</a></p>
-        </div>
-      </nav>
-      <p>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary"> 
+       <div class="container-fluid">
+               <a class="navbar-brand" href="{{ url_for('main.auth.login') }}"><img src="{{ url_for('static', filename='images/logo_port.png') }}" alt="Logo" class="img-fluid" style="width: 60px;"></a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="dropdown ms-auto bg-secondary">
+	       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+               </button>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="{{ url_for('main.home.home_page') }}">Home</a></li>
+                    <li class="dropdown-header">About</li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.about.about_page') }}">About</a></li>
+                    <li class="dropdown-header">Portfolio</li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.featured_projects.view_featured_projects') }}">Featured Project</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.projects_done.view_projects_done') }}">Project Done</a></li>
+                    <li class="dropdown-header">Technical Writing</li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.tech_writings.view_writings') }}">Technical Writings</a></li>
+                    <li class="dropdown-header">Resume</li>
+                    <li><a class="dropdown-item" href="#">Resume</a></li>
+                    <li class="dropdown-header">Contacts</li>
+                    <li><a class="dropdown-item" href="#">Contacts</a></li>
+                    <li class="dropdown-header">References</li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.references.view_references') }}">View References</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.references.create_reference') }}">Make Reference</a></li>
+                 </ul>
+            </div>
+          </div>
+       </div>
+    </nav>
+      <section>
+       <p>
        <!-- flash message -->
        {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
@@ -49,33 +61,51 @@
             </ul>
           {% endif %}
        {% endwith %}
-       </p>
-      {% block content %}
-   
-      {% endblock %}
+       </p> 
+       {% block content %}
+
+       {% endblock %}
     </section>
-  </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>  
   <style>
       body {
-      background-color: #212121;
-      color: white
+      background-color: white;
+      color: black;
       }
    </style>
-  <footer>
-    <div>
-       <div>
-         <h3>LOGO<h3>
-       </div>
-       <div>
-         <p>Contacts</p>
-         <p>(c)2024 Stephen Adah | All Right Reserved<p>
-         <p>Version: 1.0.0</p>
-       </div>
-       <ul>
-          <li>linkedIn</li>
-          <li>Twitter</li>
-          <li>Github</li> 
-       </ul>
+  <footer >
+   <p><a href="#", class="text-primary">Back to Top</a></p>
+   <div class="footer-container">
+    <div class="footer-section">
+        <img src="{{ url_for('static', filename='images/logo_port.png') }}" alt="Logo" class="img-fluid" style="width: 60px;">
+        <p class="footer-mantra">Crafting excellence, every line.</p>
     </div>
+    <div class="footer-section">
+      <ul>
+        <li>Terms of services</li>
+        <li>Privacy policy</li>
+        <li>Version: 1.0</li>
+        <li>(c)2024 Stephen Adah All Right Reserved</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <ul>
+        <li><a href="#">Email me</a></li>
+        <li><a href="{{ url_for('main.tech_writings.view_writings') }}", class="text-primary">Technical writings</a></li>
+        <li>FAQ</li>
+        <li>Disclaimer or Terms</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <ul>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">linkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="{{ url_for('main.references.view_references') }}", class="text-primary">References</a></li>
+      </ul>
+    </div>
+   </div>
   </footer>
 </html>
