@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}
+     Make Reference
+{% endblock %}
+
+{% block content %}
+   <body>
+     <div class="container mt-4">
+     <h5 class="h5 text-center fw-bold">Make Reference</h5>
+       <form method="POST" action="{{ url_for('main.references.create_reference') }}">
+         {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+         <!-- reference reference_type -->
+         {{ form.reference_type.label(class="form-label") }}
+         {{ form.reference_type(placeholder="Select Type", class="form-select") }}
+         </div>
+
+         <div class="mb-3">
+	 <!-- reference message -->
+         {{ form.message.label(class="form-label") }}
+         {{ form.message(placeholder="Enter message", class="form-control", rows="4") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- reference reference_link -->
+         {{ form.reference_link.label(class="form-label") }}
+         {{ form.reference_link(placeholder="Paste reference_link", class="form-control") }}
+         </div>
+         
+         <div class="mb-3">
+         <!-- reference contact -->
+         {{ form.contact.label(class="form-label") }}
+         {{ form.contact(placeholder="Email/Mobile", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- reference name -->
+         {{ form.name.label(class="form-label") }}
+         {{ form.name(placeholder="Your Name", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- reference designation -->
+         {{ form.designation.label(class="form-label") }}
+         {{ form.designation(placeholder="Select Your Designation", class="form-select") }}
+         </div>
+
+         <!-- submit -->
+         {{ form.submit(class="btn btn-primary") }}
+       </form>
+     </div>
+   </body>
+{% endblock %}

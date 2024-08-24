@@ -1,0 +1,55 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+     Edit Reference
+{% endblock %}
+
+{% block content %}
+   <body>
+     <div class="container mt-4">
+     <p class="h5 text-center fw-bold">Edit Reference</p>
+       <form method="POST" action="{{ url_for('main.references.edit_reference', reference_id=reference.reference_id) }}">
+         {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+         <!-- reference reference_type -->
+         {{ form.reference_type.label(class="form-label text-primary") }}
+         {{ form.reference_type(placeholder="Select Type", class="form-select") }}
+         </div>
+
+         <div class="mb-3">
+	 <!-- reference message -->
+         {{ form.message.label(class="form-label text-primary") }}
+         {{ form.message(placeholder="Type message", class="form-control", rows="4") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- reference reference_link -->
+         {{ form.reference_link.label(class="form-label text-primary") }}
+         {{ form.reference_link(placeholder="Paste reference_link", class="form-control") }}
+         </div>
+         
+         <div class="mb-3">
+         <!-- reference contact -->
+         {{ form.contact.label(class="form-label text-primary") }}
+         {{ form.contact(placeholder="Email/Mobile", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- reference name -->
+         {{ form.name.label(class="form-label text-primary") }}
+         {{ form.name(placeholder="Enter role", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- reference designation -->
+         {{ form.designation.label(class="form-label text-primary") }}
+         {{ form.designation(placeholder="Select Your Designation", class="form-select") }}
+         </div>
+
+         <!-- submit -->
+         {{ form.submit(class="btn btn-primary") }}
+       </form>
+     </div>
+   </body>
+{% endblock %}
