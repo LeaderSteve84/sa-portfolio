@@ -9,4 +9,4 @@ class AdminLoginForm(FlaskForm):
     submit = SubmitField("Login")
 
 class AdminLogoutForm(FlaskForm):
-    submit = SubmitField("Logout")
+    submit = SubmitField("Log Out")

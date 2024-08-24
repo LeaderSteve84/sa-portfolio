@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired, URL, Optional
 class TechWritingForm(FlaskForm):
     """Class to create form for technical writing"""
     title = StringField('Title', validators=[DataRequired()])
-    image_link = StringField('Technical Writing Image URL', validators=[Optional()])  #, URL()])
-    description = TextAreaField('Describe Project', validators=[DataRequired()])
-    published_link = StringField('Technical Writing Published URL', validators=[Optional()])  #, URL()])
-    submit = SubmitField('Add Technical Writing')
+    image_link = StringField('Image URL (Optional)', validators=[Optional()])  #, URL()])
+    description = TextAreaField('Technical Writing', validators=[DataRequired()])
+    published_link = StringField('Published URL (Optional)', validators=[Optional()])  #, URL()])
+    submit = SubmitField('Submit')
