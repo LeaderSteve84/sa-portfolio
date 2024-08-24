@@ -6,36 +6,55 @@
 
 {% block content %}
    <body>
-     <h1>All Technical Writings</h1>
      <div>
-       <table>
-         <thead>
+     <h1 class="h5 text-center fw-bold">Technical Writings</h1>
+     <div class="container mt-5">
+      <div class="row">
+       <div class="col-md-12">
+       <table class="table table-hover table-bordered table-striped">
+         <thead class="table-light text-primary">
            <tr>
-             <td>S/N</td>
-             <td>Date Created</td>
-             <td>Last Updated</td>
-             <td>Title</td>
-             <td>Image URL</td>
-             <td>Technical Writing</td>
-             <td>Published URL</td>
-             <td>Actions</td>
+             <th scope="col">#</th>
+             <th scope="col">Date Created</th>
+             <th scope="col">Last Updated</th>
+             <th scope="col">Title</th>
+             <th scope="col">Image URL</th>
+             <th scope="col">Technical Writing</th>
+             <th scope="col">Published URL</th>
+             <th scope="col">Actions</th>
            </tr>
          </thead>
-         <tbody>
+         <tbody class="table-light">
            {% for writing in writings[::-1] %}
              <tr>
-                <td>{{ loop.index }}</td>
+                <th scope="row">{{ loop.index }}</th>
                 <td>{{ writing.date_created }}</td>
                 <td>{{ writing.date_updated }}</td>
                 <td>{{ writing.title }}</td>
-                <td><a href="{{ writing.image_link }}" target="_blank">{{ writing.image_link }}</a></td>
+                <td>
+                        {% if writing.image_link %}
+                          <a href="{{ writing.image_link }}"
+                          target="_blank">{{ writing.image_link }}
+                          </a>
+                        {% else %}
+                          N/A
+                        {% endif %}
+                </td>
                 <td>{{ writing.description }}</td>
-                <td><a href="{{ writing.published_link }}" target="_blank">{{ writing.published_link }}</a></td>
-                <td><a href="{{ url_for('main.tech_writings.edit_writing', writing_id=writing.writing_id) }}">Edit</a>
+                <td>
+                        {% if writing.published_link %}
+                          <a href="{{ writing.published_link }}"
+                          target="_blank">{{ writing.published_link }}
+                          </a>
+                        {% else %}
+                          N/A
+                        {% endif %}
+                </td>
+                <td><a href="{{ url_for('main.tech_writings.edit_writing', writing_id=writing.writing_id) }}", class="btn btn-sm btn-warning">Edit</a>
                          |
                   <form action={{ url_for('main.tech_writings.delete_writing', writing_id=writing.writing_id) }} method='POST'>
                     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                    <button type='submit', onclick="return confirm('Are you sure you want to delete this Technical Writing?');">
+                    <button type='submit' class="btn btn-sm btn-danger", onclick="return confirm('Are you sure you want to delete this Technical Writing?');">
                        Delete
                     </button>
                   </form>
@@ -44,7 +63,9 @@
            {% endfor %}
          </tbody>
        </table>
-       <a href="{{ url_for('main.tech_writings.create_writing') }}">Add New Technical Writing</a>
+       <p class="text-center"><a href="{{ url_for('main.tech_writings.create_writing') }}">Add New Technical Writing</a></p>
      </div>
+     </div>
+    </div>
    </body>
 {% endblock %}

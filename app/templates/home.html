@@ -5,7 +5,115 @@
 {% endblock %}
 
 {% block content %}
-   <p>
-     welcome to my portfolio
-   </p>
+ <div class="container mt-4">
+  <div class="row align-items-center">
+   <div class="col-md-3 text-center">
+      <img src={{ url_for('static', filename='images/my_photo.jpg') }} alt="my_photo" class="rounded-circle img-fluid" style="width: 160px;">
+   </div>
+   <div class="col-md-9">
+     <p class="lead">
+     <span class="lead">Welcome to my corner of the code universe.</span><br>
+     I'm <strong>Stephen Adah</strong>, a seasoned <strong>Software Engineer and Developer</strong><br>
+     dedicated to <em>Crafting Excellence, Every Line.</em> With a passion<br>
+     for building scalable, efficient, and innovative solutions.<br>
+     I empower firms, companies, professionals, govermental and <br>
+     non-governmental organizations to achieve their goals.
+     </p>
+   </div>
+  </div>
+
+  <div class="mt-5">
+     <h5 class="fw-bold">My Expertise</h5>
+     <ul class="list-group list-group-flush">
+       <li class="list-group-item bg-secondary text-light">Web application development</li>
+       <li class="list-group-item bg-secondary text-light">API design and integration</li>
+       <li class="list-group-item bg-secondary text-light">Database integration and management</li>
+       <li class="list-group-item bg-secondary text-light">Website development and optimization</li>
+       <li class="list-group-item bg-secondary text-light">Collaboration and communication</li>
+     </ul>
+  </div>
+
+  <div class="mt-5">
+     <h5 class="fw-bold">Tech Stacks</h5>
+     <ul class="list-group list-group-flush">
+       <li class="list-group-item bg-secondary text-light">Python and Node.js for robust back-end development</li>
+       <li class="list-group-item bg-secondary text-light">Flask and Express.js for seamless API connectivity</li>
+       <li class="list-group-item bg-secondary text-light">React.js for dynamic front-end experiences</li>
+       <li class="list-group-item bg-secondary text-light">Bootstrap5, HTML, and CSS for responsive design</li>
+       <li class="list-group-item bg-secondary text-light">Relational and non-relational databases for flexible data management</li>
+       <li class="list-group-item bg-secondary text-light">Version Control - Git and Github</li>
+     </ul>
+  </div>
+     
+  <div class="mt-5">
+     <h5 class="fw-bold">Featured Projects</h5>
+     <div class="row">
+        {% for featured_project in featured_projects[-3:] %}
+        <div class="col.md-4 mb-4">
+           <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title text-dark">Title: {{ featured_project.title }}</h6>
+                <p class="card-text text-dark">Description: {{ featured_project.description }}</p>
+                <p class="card-text text-dark">Image: {{ featured_project.image_link }}</p>
+                <p class="card-text text-dark">Stacks: {{ featured_project.stacks}}</p>
+                <p class="card-text text-dark">My Role: {{ featured_project.role}}</p>
+                <p class="card-text text-dark">Challenges Overcome: {{ featured_project.challenges}}</p>
+                <p class="card-text text-dark">Project Duration: {{ featured_project.date_cmptd}}</p>
+                <a href="{{ featured_project.domain_link}}" class="card-link">Github</a>
+                <a href="{{ featured_project.github_link}}" class="card-link">Live Demo</a>
+              </div>
+           </div>
+        </div>
+        {% endfor %}
+     </div>
+  </div>
+
+  <div class="mt-5">
+     <h5 class="fw-bold">Explore My Portfolio</h5>
+     <p>
+     Curious about more of my featured projects and projects done? Take a look at some of my notable projects.
+     <br>
+     For more featured projects, Click <a href="{{ url_for('main.featured_projects.view_featured_projects') }}">Here</a>.
+     <br>
+     For projects done, Click <a href="{{ url_for('main.projects_done.view_projects_done') }}">Here</a><br>
+     </p>
+  </div>
+
+  <div class="mt-5">
+     <h5 class="fw-bold">My Technical Writings</h5>
+     <p>
+     To explore my Technical Writings skill, go to my menu or Click <a href="{{ url_for('main.tech_writings.view_writings') }}">Here</a>.
+     <br>
+     </p>
+  </div>
+
+  <div class="mt-5">
+     <h5 class="fw-bold">Let's Collaborate</h5>
+     <p>
+       Ready to bring your vision to life? let's collaborate and create something amazing together! Get in touch with me to:
+     </p>
+     <ul class="list-group list-group-flush">
+             <li class="list-group-item">Discuss your project and goals</li>
+             <li class="list-group-item">Explore how my expertise can help you succeed</li>
+             <li class="list-group-item">Take the first step towards building a scalable, efficient, and innovative solution.</li>
+     </ul>
+  </div>
+  
+  <div class="mt-5">
+     <h5 class="fw-bold">Contacts</h5>
+     <p>
+        Mobile: +2349084795554, +2348063486407<br>
+        Whatsapp: +2349084795554, +2348063486407<br>
+        Email: mailstephenreal@gmail.com
+     </p>
+   </div>
+
+     <div class="mt-5">
+     <h5 class="fw-bold">Socials</h5>
+     <p>
+        <a href="#">Github</a><br>
+        <a href="#">LinkedIn</a><br>
+        <a href="#">Twitter</a><br>
+     </p>
+   </div>
 {% endblock %}

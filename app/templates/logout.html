@@ -1,13 +1,28 @@
 <!doctype html>
 <html lang='en'>
   <head>
-    <title>Logout Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log Out Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
   </head>
   </body>
-  <p>Are you sure you want to Logout? <a href="{{ url_for('main.admindashboard.admindashboard_page') }}">No</a></p>
+  <div class="container mt-4">
+  <p>Are you sure you want to Log Out? <a href="{{ url_for('main.admindashboard.admindashboard_page') }}">Cancel</a></p>
     <form method='POST' action="{{ url_for('main.auth.logout') }}">
        {{ form.hidden_tag() }}
-       {{ form.submit() }}
+       {{ form.submit(class="btn btn-primary") }}
     </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
+  <style>
+    body {
+       background-color: #212121;
+       color: white;
+    }
+  </style>
 </html>

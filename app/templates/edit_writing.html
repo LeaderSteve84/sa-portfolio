@@ -6,31 +6,36 @@
 
 {% block content %}
    <body>
-     <h1>Edit Technical Writing</h1>
-     <div>
+    <div class="container mt-4">
+     <h5 class="h5 text-center fw-bold">Edit Technical Writing</h5>
        <form method="POST" action="{{ url_for('main.tech_writings.update_writing', writing_id=writing.writing_id) }}">
          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-         <div>
-            <label for="title">Writing Title</label>
-            <input type="text" id="title" name="title" value="{{ writing.title }}" required>
+
+         <div class="mt-3">
+            <label for="title", class="form-label text-primary">Title</label>
+            <input type="text" id="title" name="title" value="{{ writing.title }}" required, class="form-control">
          </div>
-	 <div>
-            <label for="image_link">Writing Image Link</label>
-            <input type="url" id="image_link" name="image_link" value="{{ writing.image_link }}">
+
+	 <div class="mt-3">
+            <label for="image_link", class="form-label text-primary">Image Link (Optional)</label>
+            <input type="url" id="image_link" name="image_link" value="{{ writing.image_link }}", class="form-control">
          </div>
-         <div>
-            <label for="description">Writing Description</label>
-            <textarea id="description" name="description" required>{{ writing.description }}</textarea>
+
+         <div class="mt-3">
+            <label for="description", class="form-label text-primary">Writing</label>
+            <textarea id="description" name="description" required, class="form-control">{{ writing.description }}</textarea>
          </div>
-	 <div>
-            <label for="published_link">Published Link</label>
-	    <input type="url" id="published_link" name="published_link" value="{{ writing.published_link }}">
+
+	 <div class="mt-3">
+            <label for="published_link", class="form-label text-primary">Published Link (Optional)</label>
+	    <input type="url" id="published_link" name="published_link" value="{{ writing.published_link }}", class="form-control">
          </div>
-	 <div>
-            <button type="submit">Update Technical writing</button>
+
+	 <div class="mt-3">
+            <button type="submit", class="btn btn-primary">Submit</button>
 	</div>
        </form>
-       <a href="{{ url_for('main.tech_writings.list_writings') }}">Back to Writing List</a>
+       <p class="text-center"><a href="{{ url_for('main.tech_writings.list_writings') }}">Back to Writing List</a></p>
      </div>
    </body>
 {% endblock %}
