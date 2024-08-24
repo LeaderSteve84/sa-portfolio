@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+     Technical Writings
+{% endblock %}
+
+{% block content %}
+   {% for writing in writings[::-1] %}
+     <div>
+        <div>No. {{ loop.index }}</div>
+        <div>Title: {{ writing.title }}</div>
+        <div><img src="{{ writing.image_link }}"></div>
+        <div>Description: {{ writing.description }}</div>
+        <div>Published link: {{ writing.published_link }}</div>
+     </div>
+   {% endfor %}
+{% endblock %}
