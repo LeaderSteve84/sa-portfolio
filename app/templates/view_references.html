@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+     References
+{% endblock %}
+
+{% block content %}
+   <nav>
+      <button>
+          <a href="{{ url_for('main.references.view_references') }}">References</a>
+      </button>
+      <h5>References</h5>
+      <button>
+          <a href="{{ url_for('main.references.create_reference') }}">Make Reference</a>
+      </button>
+   </nav> 
+   {% for reference in references[::-1] %}
+     <div>
+        <div>No. {{ loop.index }}</div>
+        <div>Type: {{ reference.reference_type }}</div>
+        <div>message: {{ reference.message }}</div>
+        <div>Link: {{ reference.reference_link }}</div>
+        <div>Contact: {{ reference.contact }}</div>
+        <div>Name: {{ reference.name }}</div>
+        <div>Designation: {{ reference.designation }}</div>
+     </div>
+   {% endfor %}
+{% endblock %}
