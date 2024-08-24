@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+     Projects Done
+{% endblock %}
+
+{% block content %}
+   <nav>
+      <button>
+          <a href="{{ url_for('main.featured_projects.view_featured_projects') }}">Featured Projects</a>
+      </button>
+      <h5>Projects Done</h5>
+      <button>
+          <a href="{{ url_for('main.projects_done.view_projects_done') }}">Project Done</a>
+      </button>
+   </nav> 
+   {% for project_done in projects_done[::-1] %}
+     <div>
+        <div>No. {{ loop.index }}</div>
+        <div>Title: {{ project_done.title }}</div>
+        <div>Type: {{ project_done.project_type }}</div>
+        <div>Description: {{ project_done.description }}</div>
+        <div>Technologies Used: {{ project_done.stacks }}</div>
+        <div>My Role: {{ project_done.role }}</div>
+        <div>Completion Date: {{ project_done.date_cmptd }}</div>
+     </div>
+   {% endfor %}
+{% endblock %}
