@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}
+     About
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+   <section class="mb-5 text-left">
+     <div class="row align-items-center">
+      <div class="col-md-3 text-center">
+              <img src={{ url_for('static', filename='images/my_photo.jpg') }} alt="my_photo" class="rounded-circle img-fluid " style="width: 160px;">
+      </div>
+      <div class="col-md-9">
+      <h1 class="text-center">About Me</h1>
+      <p class="lead">
+      As a <strong>self-taught</strong> enthusiast turned <strong>certified software engineer</strong>, i've always been driven by a passion for 
+      practical problem solving. My journey began with Python, and through dedicated and hard work, i earned a spot in the prestigious <strong>ALX Africa</strong> 
+      boot camp powered by <strong>Holberton Inc</strong>. This intensive training honed my skills as a full-stack software engineer, specializing in backend development.
+      </p>
+      </div>
+     </div>
+      <p>
+      <span class="fw-bold">With a strong passion foundation</span> in programming laguages like C, Python and Javascript/Node.js, i've also mastered various databases, frameworks and tools. My expertise includes:
+      <ul class="list-unstyled">
+         <li>Relational databases (MySQL), and non-relational databases (MongoDB and Redis).</li>
+         <li>ORM and ODM using SQLAlchemy and pymongo.</li>
+         <li>Frameworks like Flask and Express.js</li>
+         <li>Shell scripting, server configuration, deployment, and management.</li>
+         <li>Git and Github</li>
+      </ul>
+      </p>
+      <p>
+      <span class="fw-bold">Beyond my formal training</span>, i've self-learned React.js, Bootstrap5.0 and PostgreSQL database to enhance my frontend skills, enabling me to operate as a versatile full-stack developer. Notable projects include an API
+      recipe web application, real estate communication management system, my personal portfolio which is a
+      web application, and lot more where i applied my knowledge and gained valuable experiences. 
+      </p>
+      <p><span class="fw-bold">What drives me?</span> The thrill of creating solutions to real-world problems
+      and collaboration with like-minded individuals worldwide. In my free time, i enjoy motivational movies, 
+      hangouts, local news, and expanding my general knowledge.
+      </p>
+      <p><span class="fw-bold">My approach to work</span> is guided by the philosophy that 'Challenges are around for one to succeed.' I break down complex problems into manageable pieces, 
+      ensuring excellent coding style and effective solutions. When faced with unfamiliar tasks, i embrance the mindset that 'i can learn to do it' which enables me to tackle new challenges with confidence.
+      My unique strength lies in analyzing ideas and developing actionable plans to brings them to life.
+      </p>
+      <p>As i continue on this exciting journey, my goal is to become a seasoned entrepreneur and developer of high-scale application solutions globally. I'm committed to excellence,
+      collaboration, and continues learning.
+      </p>
+   </section>
+
+   <section class="mb-5">
+      <h2 class="mb-3">Professional Summary</h2>
+      <p>
+      Certified Software Engineer and Developer with  passion for building scalable, efficient, and innovative solutions. Skilled in full-stack development, databases, and API integrations.
+      Proficient in a range of programing languages, including Python, JavaScript/Node.js, and C. Proven ability to analyze complex problems, develop creative solutions, and collaborate with teams
+      to deliver high-quality applications. Committed to continuous learning, excellent coding style, and staying up-to-date with industry trends.
+      </p>
+   </section>
+
+   <section class="mb-5">
+      <h2 class="mb-3">Education and Certifications</h2>
+      <ul class="list-unstyled">
+         <li class="mb-4">
+            <span class="fw-bold">Software Engineering Certification,</span><br>
+            ALX Africa, Holberton Inc.(Graduated: July 12, 2024).<br>
+            - Specialization in Backend Development.
+         </li>
+         <li class="mb-4">
+            <span class="fw-bold">Diploma in Project Management Technology,</span><br>
+            Scholars International Institute of Technology (SIIT),<br>
+            Delaware, USA (Graduated: August 15, 2021).<br>
+            - Develop strong project planning, coordination, and leadership skills,<br>
+            enabling effective collaboration and timely delivery in software development projects.
+         </li>
+          <li>
+            <span class="fw-bold"> Higher National Diploma (HND) in Architectural Technology,</span><br>
+            Kaduna Polytechnic, Nigeria (Graduated: 2008).<br>
+            - Cultivated strong problem-solving, design, and analytical skills, which are valuable<br>
+            in software engineering for designing and developing efficient, scalable, and innovative solutions.
+          </li>
+      </ul>
+   </section>
+
+   <section>
+      <h2 class="mb-3">Certification and Awards</h2>
+      <div class="row">
+        <div class="col-md-4 text-center mb-4">
+          <p class="fw-bold">ALX Africa, Holberton Inc.</p>
+          <img src="{{ url_for('static', filename='images/17-short-specializations-certificate-stephen-babangida-adah.png') }}" alt="ALX_certificate" class="img-fluid shadow-sm rounded">
+        </div>
+
+        <div class="col-md-4 text-center mb-4">
+          <p class="fw-bold">Scholars International Institute of Technology (SIIT).</p>
+          <img src="{{ url_for('static', filename='images/ST26696-cert-lprojectmz.png') }}" alt="siit_certificate" class="img-fluid shadow-sm rounded">
+        </div>
+
+        <div "col-md-4 text-center mb-4">
+          <p class="fw-bold">Kaduna Polytechnic, Nigeria.</p>
+          <img src="{{ url_for('static', filename='images/') }}" alt="Kadpoly_certificate" class="img-fluid shadow-sm rounded">
+        </div>
+      </div>
+   </section>
+</div>
+{% endblock %}
