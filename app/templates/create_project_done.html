@@ -1,0 +1,57 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+     Add Project Done
+{% endblock %}
+
+{% block content %}
+   <body>
+    <div class="container mt-4">
+     <h1 class="h5 text-center fw-bold">Add Project Done</h1>
+       <form method="POST" action="{{ url_for('main.projects_done.create_project_done') }}">
+         {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+         <!-- project done title -->
+         {{ form.title.label(class="form-label text-primary") }}
+         {{ form.title(placeholder="Enter project Title", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+	 <!-- project done project_type -->
+         {{ form.project_type.label(class="form-label text-primary") }}
+         {{ form.project_type(placeholder="Enter project Type", class="form-control") }}
+         </div>
+         
+         <div class="mb-3">
+         <!-- project done description -->
+         {{ form.description.label(class="form-label text-primary") }}
+         {{ form.description(placeholder="Enter project description", class="form-control") }}
+         </div>
+         
+         <div class="mb-3">
+         <!-- project done stacks used -->
+         {{ form.stacks.label(class="form-label text-primary") }}
+         {{ form.stacks(placeholder="Enter Stacks - Technologies Used", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- featured project role -->
+         {{ form.role.label(class="form-label text-primary") }}
+         {{ form.role(placeholder="Enter role", class="form-control") }}
+         </div>
+ 
+         <div class="mb-3">
+         <!-- project date completed -->
+         {{ form.date_cmptd.label(class="form-label text-primary") }}
+         {{ form.date_cmptd(placeholder="Enter Project Duration", class="form-control") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- submit -->
+         {{ form.submit(class="btn btn-primary") }}
+         </div>
+       </form>
+     </div>
+   </body>
+{% endblock %}
