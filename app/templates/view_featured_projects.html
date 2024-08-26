@@ -6,27 +6,27 @@
 
 {% block content %}
 <div class="container py-5">
-   <nav class="nav justify-content-center mb-5">
-      <a href="{{ url_for('main.featured_projects.view_featured_projects') }}", class="nav-link text-primary text-decoration-underline fw-bold">Featured Projects</a>
-      <h1 class="nav-link text-dark h4 fw-bold">Featured Projects</h1>
-      <a href="{{ url_for('main.projects_done.view_projects_done') }}", class="nav-link text-primary text-decoration-underline fw-bold">Project Done</a>
+   <nav class="d-flex justify-content-between align-items-center mb-4">
+      <a href="{{ url_for('main.featured_projects.view_featured_projects') }}" class="btn btn-outline-primary">Featured Projects</a>
+      <h1 class="h4 fw-bold text-dark">Featured Projects</h1>
+      <a href="{{ url_for('main.projects_done.view_projects_done') }}" class="btn btn-outline-primary">Project Done</a>
    </nav>
    {% for featured_project in featured_projects[::-1] %}
      <div class="card mb-4 shadow-sm">
        <div class="card-body">
          <h5 class="card-title">No. {{ loop.index }}: {{ featured_project.title }}</h5>
           <div class="row g-3">
-            <div class="col-md-4">
+            <div class="col-md-4 shadow">
                 <img src="{{ featured_project.image_link }}">
             </div>
             <div class="col-md-8">
                <p class="card-text"><strong>Description:</strong> {{ featured_project.description }}</p>
                <p class="card-text"><strong>Technologies Used:</strong> {{ featured_project.stacks }}</p>
-               <p class="card-text">My role:</strong> {{ featured_project.role }}</p>
-               <p class="card-text">Challenges Overcome:</strong> {{ featured_project.challenges }}</p>
-               <p class="card-text">Completion Date:</strong> {{ featured_project.date_cmptd }}</p>
-               <p class="card-text">Domain URL:</strong> {{ featured_project.domain_link }}</p>
-               <p class="card-text">Repository URL:</strong> {{ featured_project.github_link }}</p>
+               <p class="card-text"><strong>My role:</strong> {{ featured_project.role }}</p>
+               <p class="card-text"><strong>Challenges Overcome:</strong> {{ featured_project.challenges }}</p>
+               <p class="card-text"><strong>Completion Date:</strong> {{ featured_project.date_cmptd }}</p>
+               <p class="card-text"><strong>Domain URL:</strong> {{ featured_project.domain_link }}</p>
+               <p class="card-text"><strong>Repository URL:</strong> {{ featured_project.github_link }}</p>
             </div>
           </div>
        </div>

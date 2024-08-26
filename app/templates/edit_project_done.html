@@ -12,37 +12,37 @@
          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
 
          <div class="mb-3">
-            <label for="title", class="form-label text-primary">Title</label>
-            <input type="text" id="title" name="title" value="{{ project_done.title }}" required, class="form-control">
+            <label for="title", class="form-label fw-bold">Title</label>
+            <input type="text" id="title" name="title" value="{{ project_done.title }}" required, class="form-control shadow">
          </div>
 
 	 <div class="mb-3">
-            <label for="project_type", class="form-label text-primary">Type e.g personal, school, open source, service</label>
-            <input type="text" id="project_type" name="project_type" value="{{ project_done.project_type }}" required, class="form-control">
+            <label for="project_type", class="form-label fw-bold">Type e.g personal, school, open source, service</label>
+            <input type="text" id="project_type" name="project_type" value="{{ project_done.project_type }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="description", class="form-label text-primary">Description</label>
-            <textarea id="description" name="description" required, class="form-control">{{ project_done.description }}</textarea>
+            <label for="description", class="form-label fw-bold">Description</label>
+            <textarea id="description" name="description" required, class="form-control shadow">{{ project_done.description }}</textarea>
          </div>
 
 	 <div class="mb-3">
-            <label for="stacks", class="form-label text-primary">Stacks - Technologies Used</label>
-            <input type="text" id="stacks" name="stacks" value="{{ project_done.stacks }}" required, class="form-control">
+            <label for="stacks", class="form-label fw-bold">Stacks - Technologies Used</label>
+            <input type="text" id="stacks" name="stacks" value="{{ project_done.stacks }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="role", class="form-label text-primary">Role</label>
-            <input type="text" id="role" name="role" value="{{ project_done.role }}" required, class="form-control">
+            <label for="role", class="form-label fw-bold">Role</label>
+            <input type="text" id="role" name="role" value="{{ project_done.role }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="date_cmptd", class="form-label text-primary">Date Completed</label>
-            <input type="text" id="date_cmptd" name="date_cmptd" value="{{ project_done.date_cmptd }}" required, class="form-control">
+            <label for="date_cmptd", class="form-label fw-bold">Date Completed</label>
+            <input type="text" id="date_cmptd" name="date_cmptd" value="{{ project_done.date_cmptd }}" required, class="form-control shadow">
          </div>
 
 	 <div class="mb-3">
-            <button type="submit", class="btn btn-primary">Submit</button>
+            <button type="submit", class="btn btn-primary", onclick="return confirm('Are you sure you want to update this Project Done?');">Update Project Done</button>
 	</div>
        </form>
        <p class="text-center text-primary"><a href="{{ url_for('main.projects_done.list_projects_done') }}">Back to Project Done List</a></p>

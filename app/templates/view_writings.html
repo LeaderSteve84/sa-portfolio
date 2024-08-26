@@ -5,13 +5,25 @@
 {% endblock %}
 
 {% block content %}
+<div class="container my-5">
+   <h1 class="h4 fw-bold text-center text-dark mb-4">Technical Writings</h1>
+   <div class="row row-cols-1 row-colsms-2 g-4">
    {% for writing in writings[::-1] %}
-     <div>
-        <div>No. {{ loop.index }}</div>
-        <div>Title: {{ writing.title }}</div>
-        <div><img src="{{ writing.image_link }}"></div>
-        <div>Description: {{ writing.description }}</div>
-        <div>Published link: {{ writing.published_link }}</div>
+     <div class="col">
+        <div class="card h-100 shadow">
+           <div class="card-body">
+              <h5 class="card-title">No. {{ loop.index }}: {{ writing.title}}</h5>
+              {% if writing.image_link %}
+              <img src="{{ writing.image_link }}" alt="{{ writing.title }}" class="img-fluid mb-3 rounded">
+              {% endif %}
+              <p class="card-text"><strong>Description:</strong> {{ writing.description }}</p>
+              {% if writing.published_link %}
+              <a href="{{ writing.published_link }}" class="btn btn-outline-primary" target="_blank">Read More</a>
+              {% endif %}
+           </div>
+        </div>
      </div>
    {% endfor %}
+   </div>
+</div>
 {% endblock %}

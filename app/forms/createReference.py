@@ -15,4 +15,4 @@ class ReferenceForm(FlaskForm):
     designation = SelectField('Select Your Designation', choices=[
         ('colleague', 'Colleague'), ('client', 'Client'), ('manager', 'Manager'), ('collaborator', 'Collaborator'), ('others', 'Others')
     ], validators=[DataRequired()])
-    submit = SubmitField('Submit')
+    submit = SubmitField('Submit Your Reference')

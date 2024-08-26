@@ -25,7 +25,7 @@ def create_writing():
             description = form.description.data,
             published_link = form.published_link.data
         )
-        logger.info(new_writing.image_link, new_writing.published_link)
+        # logger.info(new_writing.image_link, new_writing.published_link)
         db.session.add(new_writing)
         db.session.commit()
         flash('Tech writing added successfully', 'success')

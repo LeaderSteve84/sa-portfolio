@@ -9,4 +9,4 @@ class TechWritingForm(FlaskForm):
     image_link = StringField('Image URL (Optional)', validators=[Optional()])  #, URL()])
     description = TextAreaField('Technical Writing', validators=[DataRequired()])
     published_link = StringField('Published URL (Optional)', validators=[Optional()])  #, URL()])
-    submit = SubmitField('Submit')
+    submit = SubmitField('Submit Technical Writing')

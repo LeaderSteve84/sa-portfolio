@@ -5,24 +5,28 @@
 {% endblock %}
 
 {% block content %}
-   <nav>
-      <button>
-          <a href="{{ url_for('main.featured_projects.view_featured_projects') }}">Featured Projects</a>
-      </button>
-      <h5>Projects Done</h5>
-      <button>
-          <a href="{{ url_for('main.projects_done.view_projects_done') }}">Project Done</a>
-      </button>
-   </nav> 
+<div class="container my-5">
+   <nav class="d-flex justify-content-between align-items-center mb-4">
+      <a href="{{ url_for('main.featured_projects.view_featured_projects') }}" class="btn btn-outline-primary">Featured Projects</a>
+      <h1 class="h4 fw-bold text-dark">Projects Done</h1>
+      <a href="{{ url_for('main.projects_done.view_projects_done') }}" class="btn btn-outline-primary">Project Done</a>
+   </nav>
+
+   <div class="row row-cols-1 row-cols-md-2 g-4">
    {% for project_done in projects_done[::-1] %}
-     <div>
-        <div>No. {{ loop.index }}</div>
-        <div>Title: {{ project_done.title }}</div>
-        <div>Type: {{ project_done.project_type }}</div>
-        <div>Description: {{ project_done.description }}</div>
-        <div>Technologies Used: {{ project_done.stacks }}</div>
-        <div>My Role: {{ project_done.role }}</div>
-        <div>Completion Date: {{ project_done.date_cmptd }}</div>
+     <div class="col">
+       <div class="card h-100 shadow-sm">
+         <div class="card-body shadow">
+                 <h5 class="card-title">No. {{ loop.index }}: {{ project_done.title }}</h5>
+                <h6 class="card-substitute mb-2 text-muted">Type: {{ project_done.project_type }}</h6>
+                <p class="card-text"><strong>Description:</strong> {{ project_done.description }}</p>
+                <p class="card-text"><strong>>Technologies Used:</strong> {{ project_done.stacks }}</p>
+                <p class="card-text"><strong>>My Role:</strong> {{ project_done.role }}</p>
+                <p class="card-text"><strong>>Completion Date:</strong> {{ project_done.date_cmptd }}</p>
+         </div>
+       </div>
      </div>
    {% endfor %}
+   </div>
+</div>
 {% endblock %}

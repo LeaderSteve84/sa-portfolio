@@ -10,58 +10,59 @@
      <h1 class="h5 text-center fw-bold">Add Featured Project</h1>
        <form method="POST" action="{{ url_for('main.featured_projects.create_featured_project') }}">
          {{ form.hidden_tag() }}
+
          <div class="mt-3">
          <!-- featured project title -->
-         {{ form.title.label(class="form-label text-primary") }}
-         {{ form.title(placeholder="Enter featured project Title", class="form-control") }}
+         {{ form.title.label(class="form-label fw-bold") }}
+         {{ form.title(placeholder="Enter featured project Title", class="form-control shadow") }}
          </div>
 
          <div class="mt-3">
          <!-- featured project description -->
-         {{ form.description.label(class="form-label text-primary") }}
-         {{ form.description(placeholder="Type featured project description", class="form-control") }}
+         {{ form.description.label(class="form-label fw-bold") }}
+         {{ form.description(placeholder="Type featured project description", class="form-control shadow") }}
          </div>
 
          <div class="mt-3">
          <!-- featured project image link -->
-         {{ form.image_link.label(class="form-label text-primary") }}
-         {{ form.image_link(placeholder="Enter Image URL", class="form-control") }}
+         {{ form.image_link.label(class="form-label fw-bold") }}
+         {{ form.image_link(placeholder="Enter Image URL", class="form-control shadow") }}
          </div>
          
          <div class="mt-3">
          <!-- featured project stacks used -->
-         {{ form.stacks.label(class="form-label text-primary") }}
-         {{ form.stacks(placeholder="Enter Stacks Used", class="form-control") }}
+         {{ form.stacks.label(class="form-label fw-bold") }}
+         {{ form.stacks(placeholder="Enter Stacks Used", class="form-control shadow") }}
          </div>
 
          <div class="mt-3">
          <!-- featured project role -->
-         {{ form.role.label(class="form-label text-primary") }}
-         {{ form.role(placeholder="Enter role", class="form-control") }}
+         {{ form.role.label(class="form-label fw-bold") }}
+         {{ form.role(placeholder="Enter role", class="form-control shadow") }}
          </div>
  
          <div class="mt-3">
          <!-- featured project challenges overcome -->
-         {{ form.challenges.label(class="form-label text-primary") }}
-         {{ form.challenges(placeholder="Enter Challenges Overcome", class="form-control") }}
+         {{ form.challenges.label(class="form-label fw-bold") }}
+         {{ form.challenges(placeholder="Enter Challenges Overcome", class="form-control shadow") }}
          </div>
 
          <div class="mt-3">
          <!-- featured project date completion -->
-         {{ form.date_cmptd.label(class="form-label text-primary") }}
-         {{ form.date_cmptd(placeholder="Enter Project Duration", class="form-control") }}
+         {{ form.date_cmptd.label(class="form-label fw-bold") }}
+         {{ form.date_cmptd(placeholder="Enter Project Duration", class="form-control shadow") }}
          </div>
          
          <div class="mt-3">
          <!-- featured project domain link -->
-         {{ form.domain_link.label(class="form-label text-primary") }}
-         {{ form.domain_link(placeholder="Enter Domain URL", class="form-control") }}
+         {{ form.domain_link.label(class="form-label fw-bold") }}
+         {{ form.domain_link(placeholder="Enter Domain URL", class="form-control shadow") }}
          </div>
          
          <div class="mt-3">
          <!-- featured project github link -->
-         {{ form.github_link.label(class="form-label text-primary") }}
-         {{ form.github_link(placeholder="Enter Github URL", class="form-control") }}
+         {{ form.github_link.label(class="form-label fw-bold") }}
+         {{ form.github_link(placeholder="Enter Github URL", class="form-control shadow") }}
          </div>
          
          <div class="mt-3">

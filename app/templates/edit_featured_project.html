@@ -12,52 +12,52 @@
          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
 
          <div class="mb-3">
-            <label for="title", class="form-label text-primary">Title</label>
-            <input type="text" id="title" name="title" value="{{ featured_project.title }}" required, class="form-control">
+            <label for="title", class="form-label fw-bold">Title</label>
+            <input type="text" id="title" name="title" value="{{ featured_project.title }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="description", class="form-label text-primary">Description</label>
+            <label for="description", class="form-label fw-bold">Description</label>
             <textarea id="description" name="description" required, class="form-control">{{ featured_project.description }}</textarea>
          </div>
 
          <div class="mb-3">
-            <label for="image_link", class="form-label text-primary">Image Link (Optional)</label>
-            <input type="url" id="image_link" name="image_link" value="{{ featured_project.image_link }}", class="form-control">
+            <label for="image_link", class="form-label fw-bold">Image Link (Optional)</label>
+            <input type="url" id="image_link" name="image_link" value="{{ featured_project.image_link }}", class="form-control shadow">
          </div>
 
 	 <div class="mb-3">
-            <label for="stacks", class="form-label text-primary">Stacks - Technologies Used</label>
-            <input type="text" id="stacks" name="stacks" value="{{ featured_project.stacks }}" required, class="form-control">
+            <label for="stacks", class="form-label fw-bold">Stacks - Technologies Used</label>
+            <input type="text" id="stacks" name="stacks" value="{{ featured_project.stacks }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="role", class="form-label text-primary">Role</label>
-            <input type="text" id="role" name="role" value="{{ featured_project.role }}" required, class="form-control">
+            <label for="role", class="form-label fw-bold">Role</label>
+            <input type="text" id="role" name="role" value="{{ featured_project.role }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="challenges", class="form-label text-primary">Challenges Overcome</label>
-            <input type="text" id="challenges" name="challenges" value="{{ featured_project.challenges }}" required, class="form-control">
+            <label for="challenges", class="form-label fw-bold">Challenges Overcome</label>
+            <input type="text" id="challenges" name="challenges" value="{{ featured_project.challenges }}" required, class="form-control shadow">
          </div>
 
          <div class="mb-3">
-            <label for="date_cmptd", class="form-label text-primary">Date Completed</label>
-            <input type="text" id="date_cmptd" name="date_cmptd" value="{{ featured_project.date_cmptd }}" required, class="form-control">
+            <label for="date_cmptd", class="form-label fw-bold">Date Completed</label>
+            <input type="text" id="date_cmptd" name="date_cmptd" value="{{ featured_project.date_cmptd }}" required, class="form-control shadow">
          </div>
 
 	 <div class="mb-3">
-            <label for="domain_link", class="form-label text-primary">Domain Link (Optonal)</label>
-	    <input type="url" id="domain_link" name="domain_link" value="{{ featured_project.domain_link }}", class="form-control">
+            <label for="domain_link", class="form-label fw-bold">Domain Link (Optonal)</label>
+	    <input type="url" id="domain_link" name="domain_link" value="{{ featured_project.domain_link }}", class="form-control shadow">
          </div>
 
          <div class="mb-3">
-	    <label for="github_link", class="form-label text-primary">Github Link (Optional)</label>
-            <input type="url" id="github_link" name="github_link" value="{{ featured_project.github_link }}", class="form-control">
+	    <label for="github_link", class="form-label fw-bold">Github Link (Optional)</label>
+            <input type="url" id="github_link" name="github_link" value="{{ featured_project.github_link }}", class="form-control shadow">
          </div>
 
 	 <div class="mb-3">
-            <button type="submit", class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to update this Featured Project?');">Update Featured Project</button>
 	</div>
        </form>
        <p class="text-center"><a href="{{ url_for('main.featured_projects.list_featured_projects') }}">Back to Featured Project List</a></p>

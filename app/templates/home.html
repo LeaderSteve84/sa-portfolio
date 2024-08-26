@@ -8,7 +8,7 @@
  <div class="container mt-4">
   <div class="row align-items-center">
    <div class="col-md-3 text-center">
-      <img src={{ url_for('static', filename='images/my_photo.jpg') }} alt="my_photo" class="rounded-circle img-fluid" style="width: 160px;">
+      <img src={{ url_for('static', filename='images/my_photo.jpg') }} alt="my_photo" class="rounded-circle img-fluid border-dark shadow" style="width: 160px;">
    </div>
    <div class="col-md-9">
      <p class="lead">
@@ -16,14 +16,14 @@
      I'm <strong>Stephen Adah</strong>, a seasoned <strong>Software Engineer and Developer</strong><br>
      dedicated to <em>Crafting Excellence, Every Line.</em> With a passion<br>
      for building scalable, efficient, and innovative solutions.<br>
-     I empower firms, companies, professionals, govermental and <br>
+     I empower firms, companies, professionals, governmental and <br>
      non-governmental organizations to achieve their goals.
      </p>
    </div>
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold">My Expertise</h5>
+     <h5 class="fw-bold shadow-sm">My Expertise</h5>
      <ul class="list-group list-group-flush">
        <li class="list-group-item bg-secondary text-light">Web application development</li>
        <li class="list-group-item bg-secondary text-light">API design and integration</li>
@@ -34,7 +34,7 @@
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold">Tech Stacks</h5>
+     <h5 class="fw-bold shadow-sm">Tech Stacks</h5>
      <ul class="list-group list-group-flush">
        <li class="list-group-item bg-secondary text-light">Python and Node.js for robust back-end development</li>
        <li class="list-group-item bg-secondary text-light">Flask and Express.js for seamless API connectivity</li>
@@ -46,12 +46,12 @@
   </div>
      
   <div class="mt-5">
-     <h5 class="fw-bold">Featured Projects</h5>
+     <h5 class="fw-bold shadow-sm">Featured Projects</h5>
      <div class="row">
         {% for featured_project in featured_projects[-3:] %}
         <div class="col.md-4 mb-4">
            <div class="card h-100">
-              <div class="card-body">
+              <div class="card-body shadow">
                 <h6 class="card-title text-dark">Title: {{ featured_project.title }}</h6>
                 <p class="card-text text-dark">Description: {{ featured_project.description }}</p>
                 <p class="card-text text-dark">Image: {{ featured_project.image_link }}</p>
@@ -69,7 +69,7 @@
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold">Explore My Portfolio</h5>
+     <h5 class="fw-bold shadow-sm">Explore My Portfolio</h5>
      <p>
      Curious about more of my featured projects and projects done? Take a look at some of my notable projects.
      <br>
@@ -80,7 +80,7 @@
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold">My Technical Writings</h5>
+     <h5 class="fw-bold shadow-sm">My Technical Writings</h5>
      <p>
      To explore my Technical Writings skill, go to my menu or Click <a href="{{ url_for('main.tech_writings.view_writings') }}">Here</a>.
      <br>
@@ -88,7 +88,7 @@
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold">Let's Collaborate</h5>
+     <h5 class="fw-bold shadow-sm">Let's Collaborate</h5>
      <p>
        Ready to bring your vision to life? let's collaborate and create something amazing together! Get in touch with me to:
      </p>
@@ -100,7 +100,7 @@
   </div>
   
   <div class="mt-5">
-     <h5 class="fw-bold">Contacts</h5>
+     <h5 class="fw-bold shadow-sm">Contacts</h5>
      <p>
         Mobile: +2349084795554, +2348063486407<br>
         Whatsapp: +2349084795554, +2348063486407<br>
@@ -109,7 +109,7 @@
    </div>
 
      <div class="mt-5">
-     <h5 class="fw-bold">Socials</h5>
+     <h5 class="fw-bold shadow-sm">Socials</h5>
      <p>
         <a href="#">Github</a><br>
         <a href="#">LinkedIn</a><br>

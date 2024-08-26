@@ -17,7 +17,7 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
       <div class="container-fluid">
-        <img src="{{ url_for('static', filename='images/port_logo.jpg') }}" alt="Logo" class="img-fluid" style="width: 60px;">
+        <img src="{{ url_for('static', filename='images/logo_port.png') }}" alt="Logo" class="img-fluid rounded" style="width: 60px;">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,7 +26,8 @@
           <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                Menu
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="{{ url_for('main.admindashboard.admindashboard_page') }}">Admin Dashboard</a></li>
             <li class="dropdown-header">Featured Projects</li>
             <li><a class="dropdown-item" href="{{ url_for('main.featured_projects.create_featured_project') }}">Add Featured Project</a></li>
             <li><a class="dropdown-item" href="{{ url_for('main.featured_projects.list_featured_projects') }}">List Featured Projects</a></li>
@@ -69,8 +70,8 @@
   </body>
   <style>
       body {
-      background-color: #212121;
-      color: white
+      background-color: white;
+      color: black;
       }
    </style>
    <footer>

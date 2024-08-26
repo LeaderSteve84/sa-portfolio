@@ -12,7 +12,7 @@
       <div class="row">
        <div class="col-md-12">
        <table class="table table-hover table-bordered table-striped">
-         <thead class="table-light text-primary">
+         <thead class="table-light shadow">
            <tr>
              <th scope="col">#</th>
              <th scope="col">Date Created</th>
@@ -24,7 +24,7 @@
              <th scope="col">Actions</th>
            </tr>
          </thead>
-         <tbody class="table-light">
+         <tbody class="table-light shadow">
            {% for writing in writings[::-1] %}
              <tr>
                 <th scope="row">{{ loop.index }}</th>

@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
   </head>
   </body>
-  <div class="container mt-4">
-  <p>Are you sure you want to Log Out? <a href="{{ url_for('main.admindashboard.admindashboard_page') }}">Cancel</a></p>
-    <form method='POST' action="{{ url_for('main.auth.logout') }}">
+  <div class="container mt-5 border rounded p-4 shadow-lg">
+    <p class="text-center h5">Are you sure you want to Log Out?</p>
+    <div class="d-flex justify-content-center gab-3 mt-4">
+      <form method='POST' action="{{ url_for('main.auth.logout') }}">
        {{ form.hidden_tag() }}
-       {{ form.submit(class="btn btn-primary") }}
-    </form>
+       {{ form.submit(class="btn btn-danger me-3") }}
+      </form>
+      <a href="{{ url_for('main.admindashboard.admindashboard_page') }}" class="btn btn-secondary ms-3">Cancel</a>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
   <style>
     body {
-       background-color: #212121;
-       color: white;
+       background-color: white ;
+       color: #212121;
     }
   </style>
 </html>
