@@ -9,7 +9,78 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-        <img src="{{ url_for('static', filename='images/studio_2.jpg') }}", class="img-fluid rounded mt-3 mb-3 shadow-sm", style="max-width: 100%; height: auto;">
-</div>
+   <div class="container my-5">
+        <h1 class="h2 text-center mb-4">Admin Dashboard</h1>
+
+      <div class="row mb-4">
+        <div class="col-md-3 text-center">
+          <img src="{{ url_for('static', filename='images/studio_2.jpg') }}", class="rounded-circle img-fluid border-dark shadow", style="width: 250px; height: 250px;">
+        </div>
+        <div class="col-md-9">
+          <h5 class="d-flex align-items-center mb-3">
+              <img src="{{ url_for('static', filename="images/mantra.png") }}" alt="mantra icon" class="img-fluid rounded me-2" style="width: 25px; height: 25px;"> 
+              Your Mantra and Philosophies!
+          </h5>
+          <ul class="list-unstyled">
+             <li><i class="bi bi-check-circle text-success lead">Your Mantra: </i>Crafting excellence, every line.</li>
+             <li><i class="bi bi-check-circle text-success lead">Your Philosophies: </i>Challenges are good for success; I can learn to do it.</li>
+             <li><i class="bi bi-check-circle text-success lead">Remember ALX Mantra: </i>Doing hard things; Doing good things.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-header">
+             <h4 class="mb-0">Most recent contact message</h4>
+            </div>
+            <div class="card-body">
+            {% if contact_messages %}
+             {% for most_recent_message in contact_messages[-1:]%}
+               <div>
+                       <p><strong>Name:</strong> {{ most_recent_message.name }}</p>
+                       <p><small>Date Submitted: {{ most_recent_message.date_submitted }}</small></p>
+                       <p><strong>Email:</strong> {{ most_recent_message.email }}</p>
+                       <p><strong>Subject:</strong> {{ most_recent_message.subject }}</p>
+                       <p><strong>Message:</strong> {{ most_recent_message.message }}</p>
+                       <p><strong class="text-success">Status:</strong> {{ most_recent_message.status }}</p>
+               </div>
+               <a href="{{ url_for('main.contacts.view_contact_messages') }}" class="btn btn-primary mt-3">More contact messages</a>
+             {% endfor %}
+            {% else %}
+              <div>
+                 <p class="text-center">No Contact Message</p>
+              </div>
+            {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+           <div class="card">
+              <div class="card-header">
+                  <h4 class="mb-0 text-center">Data Analytics</h4>
+              </div>
+              <div>
+               <p class="card-body">
+                 Total number of contact messages submitted: <strong>{{ contact_messages | length }}</strong>
+                 <br>
+                 <br>
+                 Total number of references made:  <strong>{{ references | length }}</strong>
+                 <br>
+                 <br>
+                 Total number of featured projects:  <strong>{{ featured_projects | length }}</strong>
+                 <br>
+                 <br>
+                 Total number of project done:  <strong>{{ projects_done | length }}</strong>
+                 <br>
+                 <br>
+                 Total number of Technical writings:  <strong>{{ writings | length }}</strong>
+               </p>
+              </div>
+           </div>
+        </div>
+      </div>
+   </div>
 {% endblock %}

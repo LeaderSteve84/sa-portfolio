@@ -36,9 +36,9 @@
                     <li class="dropdown-header">Technical Writing</li>
                     <li><a class="dropdown-item" href="{{ url_for('main.tech_writings.view_writings') }}">Technical Writings</a></li>
                     <li class="dropdown-header">Resume</li>
-                    <li><a class="dropdown-item" href="#">Resume</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.resume.view_resume') }}">Resume</a></li>
                     <li class="dropdown-header">Contacts</li>
-                    <li><a class="dropdown-item" href="#">Contacts</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('main.contacts.create_contact_message') }}">Contacts</a></li>
                     <li class="dropdown-header">References</li>
                     <li><a class="dropdown-item" href="{{ url_for('main.references.view_references') }}">View References</a></li>
                     <li><a class="dropdown-item" href="{{ url_for('main.references.create_reference') }}">Make Reference</a></li>
@@ -54,7 +54,7 @@
           {% if messages %}
             <ul class="">
               {% for category, message in messages %}
-                <li class="{{ category }}">
+                <li class="{{ category }} text-success">
                    {{ message }}
                 </li>
               {% endfor %}
@@ -76,7 +76,7 @@
       }
    </style>
   <footer >
-          <p><a href="{{ url_for('main.home.home_page') }}", class="text-primary">Back to Home Page</a></p>
+   <p><a href="{{ url_for('main.home.home_page') }}", class="text-primary">Back to Home Page</a></p>
    <p><a href="#", class="text-primary">Back to Top</a></p>
    <div class="footer-container">
     <div class="footer-section">
@@ -85,26 +85,29 @@
     </div>
     <div class="footer-section">
       <ul>
-        <li>Terms of services</li>
-        <li>Privacy policy</li>
-        <li>Version: 1.0</li>
-        <li>(c)2024 Stephen Adah All Right Reserved</li>
+        <li><a href="{{ url_for('main.privacy_policy.privacy_policy_page') }}">Privacy Policy</a></li>
+        <li class="text-primary">Version: 1.0</li>
+        <li><img src="{{ url_for('static', filename='images/copy_right.png') }}" alt="copy right icon" class="img-fluid rounded" style="width: 20px; height: 20px;">2024 Stephen Adah All Right Reserved</li>
       </ul>
     </div>
     <div class="footer-section">
       <ul>
-        <li><a href="#">Email me</a></li>
+        <li><a href="{{ url_for('main.contacts.create_contact_message') }}">Contact me</a></li>
         <li><a href="{{ url_for('main.tech_writings.view_writings') }}", class="text-primary">Technical writings</a></li>
-        <li>FAQ</li>
-        <li>Disclaimer or Terms</li>
+        <li><a href="{{ url_for('main.disclaimer_or_terms.disclaimer_or_terms_page') }}">Disclaimer or Terms</a></li>
       </ul>
     </div>
     <div class="footer-section">
       <ul>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">linkedIn</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="{{ url_for('main.references.view_references') }}", class="text-primary">References</a></li>
+         <li><a href="https://www.linkedin.com/in/stephen-adah-se-74614b145" target="_blank"><img src="{{ url_for('static', filename="images/icons8-linkedin-50.png") }}" alt="linkedin icon" class="img-fluid rounded me-2" style="width: 20px; height: 20px;">LinkedIn</a></li>
+         <li><a href="https://www.twitter.com/Elbest2018" target="_blank"><img src="{{ url_for('static', filename="images/icons8-twitter-48.png") }}" alt="twitter icon" class="img-fluid rounded me-2" style="width: 20px; height: 20px;">Twitter</a></li>
+         <li><a href="{{ url_for('main.references.view_references') }}", class="text-primary"><img src="{{ url_for('static', filename="images/icons8-reference-64.png") }}" alt="ref icon" class="img-fluid rounded me-2" style="width: 20px; height: 20px;">References</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <ul>
+        <li><a href="https://github.com/LeaderSteve84" target="_blank", class="text-primary"><img src="{{ url_for('static', filename="images/icons8-github-50.png") }}" alt="github icon" class="img-fluid rounded me-2" style="width: 50px; height: 50px;">Github</a></li>
+        <li><a href="{{ url_for('main.about.about_page') }}">About me</a></li>
       </ul>
     </div>
    </div>

@@ -48,7 +48,7 @@
          </div>
 
          <!-- submit -->
-         {{ form.submit(class="btn btn-primary") }}
+         {{ form.submit(class="btn btn-primary", onclick="return confirm('By submitting this reference, your contact (if entered, which is optional) will be use for reference purpose only?');") }}
        </form>
      </div>
    </body>

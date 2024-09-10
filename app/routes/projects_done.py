@@ -26,6 +26,7 @@ def create_project_done():
             stacks = form.stacks.data,
             role = form.role.data,
             date_cmptd = form.date_cmptd.data,
+            video_link = form.video_link.data
         )
         db.session.add(new_project)
         db.session.commit()
@@ -65,6 +66,7 @@ def update_project_done(project_done_id):
     project_done.stacks = request.form['stacks']
     project_done.role = request.form['role']
     project_done.date_cmptd = request.form['date_cmptd']
+    project_done.video_link = request.form.get('video_link', project_done.video_link)
 
     db.session.commit()
     flash('Project Done updated successfully', 'success')

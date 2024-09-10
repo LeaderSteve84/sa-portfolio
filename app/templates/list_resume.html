@@ -1,0 +1,96 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+   Resume
+{% endblock %}
+
+{% block content %}
+   <body>
+     <h1 class= "h5 text-center fw-bold">Resume</h1>
+     <div class="container mt-5">
+      <div class="row">
+      <div class="col-md-12">
+       <table class="table table-hover table-bordered table-striped">
+         <thead class="table-light shadow">
+           <tr>
+             <th scope="col">#</th>
+             <th scope="col">Date Created</th>
+             <th scope="col">Last Updated</th>
+             <th scope="col">Img 1 Link</th>
+             <th scope="col">Img 2 Link</th>
+             <th scope="col">Img 3 Link</th>
+             <th scope="col">Img 4 Link</th>
+             <th scope="col">Download Link</th>
+             <th scope="col">Actions</th>
+           </tr>
+         </thead>
+         <tbody class="table-light shadow">
+           {% for resume in resume %}
+             <tr>
+                <th scope="row text-dark">{{ loop.index }}</th>
+                <td>{{ resume.date_created }}</td>
+                <td>{{ resume.date_updated }}</td>
+                <td>
+                        {% if resume.resume_image1_link %}
+                        <a href="{{ resume.resume_image1_link }}"
+                           target="_blank">{{ resume.resume_image1_link }}
+                        </a>
+                        {% else %}
+                           N/A
+                        {% endif %}
+                </td>
+		<td>
+                        {% if resume.resume_image2_link %}
+                        <a href="{{ resume.resume_image2_link }}"
+                           target="_blank">{{ resume.resume_image2_link }}
+                        </a>
+                        {% else %}
+                           N/A
+                        {% endif %}
+                </td>
+		<td>
+                        {% if resume.resume_image3_link %}
+                        <a href="{{ resume.resume_image3_link }}"
+                           target="_blank">{{ resume.resume_image3_link }}
+                        </a>
+                        {% else %}
+                           N/A
+                        {% endif %}
+                </td>
+		<td>
+                        {% if resume.resume_image4_link %}
+                        <a href="{{ resume.resume_image4_link }}"
+                           target="_blank">{{ resume.resume_image4_link }}
+                        </a>
+                        {% else %}
+                           N/A
+                        {% endif %}
+                </td>
+		<td>
+                        {% if resume.resume_download_link %}
+                        <a href="{{ resume.resume_download_link }}"
+                           target="_blank">{{ resume.resume_download_link }}
+                        </a>
+                        {% else %}
+                           N/A
+                        {% endif %}
+                </td>
+		<td>
+                  <a href="{{ url_for('main.resume.edit_resume', resume_id=resume.resume_id) }}", class="btn btn-sm btn-warning">Edit</a>
+                         |
+                  <form action="{{ url_for('main.resume.delete_resume', resume_id=resume.resume_id) }}" method='POST'">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <button type='submit' class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this resume?');">
+                       Delete
+                    </button>
+                  </form>
+                </td>
+             </tr>
+           {% endfor %}
+         </tbody>
+       </table>
+      </div>
+      </div>
+     </div>
+   </body>
+{% endblock %}

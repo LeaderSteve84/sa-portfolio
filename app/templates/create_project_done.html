@@ -47,6 +47,12 @@
          {{ form.date_cmptd(placeholder="Enter Project Duration", class="form-control shadow") }}
          </div>
 
+	 <div class="mb-3">
+         <!-- project video link -->
+         {{ form.video_link.label(class="form-label fw-bold") }}
+         {{ form.video_link(placeholder="Enter Video link", class="form-control shadow") }}
+         </div>
+
          <div class="mb-3">
          <!-- submit -->
          {{ form.submit(class="btn btn-primary") }}

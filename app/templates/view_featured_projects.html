@@ -11,13 +11,14 @@
       <h1 class="h4 fw-bold text-dark">Featured Projects</h1>
       <a href="{{ url_for('main.projects_done.view_projects_done') }}" class="btn btn-outline-primary">Project Done</a>
    </nav>
-   {% for featured_project in featured_projects[::-1] %}
+   {% if featured_projects %}
+    {% for featured_project in featured_projects[::-1] %}
      <div class="card mb-4 shadow-sm">
        <div class="card-body">
          <h5 class="card-title">No. {{ loop.index }}: {{ featured_project.title }}</h5>
           <div class="row g-3">
             <div class="col-md-4 shadow">
-                <img src="{{ featured_project.image_link }}">
+                <img src="{{ featured_project.image_link }}" alt="Featured Project Image" class="img-fluid">
             </div>
             <div class="col-md-8">
                <p class="card-text"><strong>Description:</strong> {{ featured_project.description }}</p>
@@ -25,12 +26,24 @@
                <p class="card-text"><strong>My role:</strong> {{ featured_project.role }}</p>
                <p class="card-text"><strong>Challenges Overcome:</strong> {{ featured_project.challenges }}</p>
                <p class="card-text"><strong>Completion Date:</strong> {{ featured_project.date_cmptd }}</p>
-               <p class="card-text"><strong>Domain URL:</strong> {{ featured_project.domain_link }}</p>
-               <p class="card-text"><strong>Repository URL:</strong> {{ featured_project.github_link }}</p>
+               {% if featured_project.domain_link %}
+	       <a href="{{ featured_project.github_link }}" class="card-link">Live Demo</a>
+               {% endif %}
+               {% if featured_project.github_link %}
+	       <a href="{{ featured_project.domain_link }}" class="card-link">Github</a>
+               {% endif %}
+               {% if featured_project.video_link %}
+	       <a href="{{ featured_project.video_link }}" class="card-link">Video Demo</a>
+               {% endif %}
             </div>
           </div>
        </div>
      </div>
-   {% endfor %}
+    {% endfor %}
+   {% else %}
+     <div class="container">
+       <p class="text-center">Featured Projects not available at the moment</p>
+     </div>
+   {% endif %}
 </div>
 {% endblock %}

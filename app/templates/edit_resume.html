@@ -1,0 +1,49 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+     Edit Resume
+{% endblock %}
+
+{% block content %}
+   <body>
+     <div class="container mt-4">
+     <p class="h5 text-center fw-bold">Edit Resume</p>
+       <form method="POST" action="{{ url_for('main.resume.edit_resume', resume_id=resume.resume_id) }}">
+         {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+         <!-- reference resume_image1_link -->
+         {{ form.resume_image1_link.label(class="form-label fw-bold") }}
+         {{ form.resume_image1_link(placeholder="Paste Resume Image 1 link", class="form-control shadow") }}
+         </div>
+
+	 <div class="mb-3">
+         <!-- reference resume_image2_link -->
+         {{ form.resume_image2_link.label(class="form-label fw-bold") }}
+         {{ form.resume_image2_link(placeholder="Paste Resume Image 2 link", class="form-control shadow") }}
+         </div>
+	
+	 <div class="mb-3">
+         <!-- reference resume_image3_link -->
+         {{ form.resume_image3_link.label(class="form-label fw-bold") }}
+         {{ form.resume_image3_link(placeholder="Paste Resume Image 3 link", class="form-control shadow") }}
+         </div>
+
+	 <div class="mb-3">
+         <!-- reference resume_image4_link -->
+         {{ form.resume_image4_link.label(class="form-label fw-bold") }}
+         {{ form.resume_image4_link(placeholder="Paste Resume Image 4 link", class="form-control shadow") }}
+         </div>	 
+
+	 <div class="mb-3">
+         <!-- reference resume_download_link -->
+         {{ form.resume_download_link.label(class="form-label fw-bold") }}
+         {{ form.resume_download_link(placeholder="Paste Resume Download Link", class="form-control shadow") }}
+         </div>
+         
+         <!-- submit -->
+         {{ form.submit(class="btn btn-primary") }}
+       </form>
+     </div>
+   </body>
+{% endblock %}

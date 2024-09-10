@@ -1,0 +1,49 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+     Edit Contact Message
+{% endblock %}
+
+{% block content %}
+   <body>
+     <div class="container mt-4">
+     <p class="h5 text-center fw-bold">Edit Contact Message</p>
+       <form method="POST" action="{{ url_for('main.contacts.update_contact_message', message_id=contact_message.message_id) }}">
+         {{ form.hidden_tag() }}
+
+         <div class="mb-3">
+         <!-- contact message_name -->
+         {{ form.name.label(class="form-label fw-bold") }}
+         {{ form.name(placeholder="Your Fullname", class="form-select shadow") }}
+         </div>
+
+         <div class="mb-3">
+	 <!-- contact message email -->
+         {{ form.email.label(class="form-label fw-bold") }}
+         {{ form.email(placeholder="Your Email", class="form-control shadow", rows="4") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- contact message subject -->
+         {{ form.subject.label(class="form-label fw-bold") }}
+         {{ form.subject(placeholder="Subject", class="form-control shadow") }}
+         </div>
+         
+         <div class="mb-3">
+         <!-- contact message message -->
+         {{ form.message.label(class="form-label fw-bold") }}
+         {{ form.message(placeholder="Enter Message", class="form-control shadow") }}
+         </div>
+
+         <div class="mb-3">
+         <!-- contact message status -->
+         {{ form.status.label(class="form-label fw-bold") }}
+         {{ form.status(placeholder="Status", class="form-control shadow") }}
+         </div>
+
+         <!-- submit -->
+         {{ form.submit(class="btn btn-primary") }}
+       </form>
+     </div>
+   </body>
+{% endblock %}

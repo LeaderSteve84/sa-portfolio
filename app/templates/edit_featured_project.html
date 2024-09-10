@@ -57,6 +57,11 @@
          </div>
 
 	 <div class="mb-3">
+            <label for="video_link", class="form-label fw-bold">Video Link (Optional)</label>
+            <input type="url" id="video_link" name="video_link" value="{{ featured_project.video_link }}", class="form-control shadow">
+         </div>
+
+	 <div class="mb-3">
             <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to update this Featured Project?');">Update Featured Project</button>
 	</div>
        </form>

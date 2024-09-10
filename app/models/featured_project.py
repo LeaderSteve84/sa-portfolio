@@ -40,6 +40,9 @@ class FeaturedProject(db.Model):
     github_link: Mapped[Optional[str]] = mapped_column(
         String(length=2083), unique=False
     )
+    video_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
 
     def __repr__(self):
         return f'<Project {self.title}>'

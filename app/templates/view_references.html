@@ -13,7 +13,8 @@
    </nav> 
 
    <div class="row row-cols-1 row-cols-md-2 g-4">
-   {% for reference in references[::-1] %}
+   {% if references %}
+    {% for reference in references[::-1] %}
      <div class="col">
         <div class="card h-100 shadow">
            <div class="card-body">
@@ -30,7 +31,12 @@
            </div>
         </div>
      </div>
-   {% endfor %}
+    {% endfor %}
+   {% else %}
+     <div class="container justify-content-center">
+        <p class="text-center"> No references at the moment </p>
+     </div>
+   {% endif %}
    </div>
 </div>
 {% endblock %}

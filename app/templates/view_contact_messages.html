@@ -1,0 +1,42 @@
+{% extends "admin-base.html" %}
+
+{% block title %}
+     Contact Messages
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+      <h1 class="h4 fw-bold text-dark text-center mb-4">Contact Messages</h1>
+
+   <div class="row row-cols-1 row-cols-md-2 g-4">
+   {% if contact_messages %}
+    {% for contact_message in contact_messages[::-1] %}
+     <div class="col">
+       <div class="card h-100 shadow-sm">
+         <div class="card-body shadow">
+                <h5 class="card-title">No. {{ loop.index }}: {{ contact_message.name }}</h5>
+                <p class="card-text"><small>Date Submitted: {{ contact_message.date_submitted }} - Submission Serial No: {{ contact_message.message_id }}</small></p>
+                <p class="card-text"><strong>Email:</strong> <a href="mailto: {{ contact_message.email }}" target"_blank">{{ contact_message.email }}</a></p>
+                <p class="card-text"><strong>Subject:</strong> {{ contact_message.subject }}</p>
+                <p class="card-text"><strong>Message:</strong> {{ contact_message.message }}</p>
+                <p class="card-text"><span class="text-success fw-bold">Status:</span><small> {{ contact_message.status }}</small></p>
+                <a href="{{ url_for('main.contacts.update_contact_message', message_id=contact_message.message_id) }}", class="btn btn-sm btn-warning mb-1">Edit</a>
+                   |
+                <form action="{{ url_for('main.contacts.delete_contact_message', message_id=contact_message.message_id) }}" method='POST'>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type='submit' class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this contact message?');">
+                  Delete
+                </button>
+                </form>
+         </div>
+       </div>
+     </div>
+    {% endfor %}
+   {% else %}
+     <div class="container">
+        <p class="text-center">No contact messages at the Moment</p>
+     </div>
+   {% endif %}
+   </div>
+</div>
+{% endblock %}

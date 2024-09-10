@@ -23,7 +23,9 @@
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">My Expertise</h5>
+      <div class="d-flex">
+        <img src="{{ url_for('static', filename="images/icons8-skill-50.png") }}" alt="expertise icon" class="img-fluid rounded me-3 mb-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">My Expertise</h5>
+      </div>
      <ul class="list-group list-group-flush">
        <li class="list-group-item bg-secondary text-light">Web application development</li>
        <li class="list-group-item bg-secondary text-light">API design and integration</li>
@@ -34,7 +36,9 @@
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">Tech Stacks</h5>
+      <div class="d-flex">
+        <img src="{{ url_for('static', filename="images/icons8-stack-48.png") }}" alt="stacks icon" class="img-fluid rounded me-3 mb-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">Tech Stacks</h5>
+      </div>
      <ul class="list-group list-group-flush">
        <li class="list-group-item bg-secondary text-light">Python and Node.js for robust back-end development</li>
        <li class="list-group-item bg-secondary text-light">Flask and Express.js for seamless API connectivity</li>
@@ -44,53 +48,82 @@
        <li class="list-group-item bg-secondary text-light">Version Control - Git and Github</li>
      </ul>
   </div>
-     
+
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">Featured Projects</h5>
+          <p>
+            <span class="lead">To explore more</span> about me, Click <a href="{{ url_for('main.about.about_page') }}">Here</a>.
+          </p>
+  </div>
+
+  <div class="mt-5">
+          <div class="d-flex">
+          <img src="{{ url_for('static', filename="images/icons8-project-50.png") }}" alt="featured_projects icon" class="img-fluid rounded me-3 mb-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">Featured Projects</h5>
+          </div>
      <div class="row">
+       {% if featured_projects %}
         {% for featured_project in featured_projects[-3:] %}
         <div class="col.md-4 mb-4">
            <div class="card h-100">
               <div class="card-body shadow">
-                <h6 class="card-title text-dark">Title: {{ featured_project.title }}</h6>
-                <p class="card-text text-dark">Description: {{ featured_project.description }}</p>
-                <p class="card-text text-dark">Image: {{ featured_project.image_link }}</p>
-                <p class="card-text text-dark">Stacks: {{ featured_project.stacks}}</p>
-                <p class="card-text text-dark">My Role: {{ featured_project.role}}</p>
-                <p class="card-text text-dark">Challenges Overcome: {{ featured_project.challenges}}</p>
-                <p class="card-text text-dark">Project Duration: {{ featured_project.date_cmptd}}</p>
-                <a href="{{ featured_project.domain_link}}" class="card-link">Github</a>
-                <a href="{{ featured_project.github_link}}" class="card-link">Live Demo</a>
+                <h5 class="card-title text-dark">Title: {{ featured_project.title }}</h5>
+                <p class="card-text text-dark"><strong>Description:</strong> {{ featured_project.description }}</p>
+                {% if featured_project.image_link %}
+                <img src="{{ featured_project.image_link }}" alt="Featured Project Image" class="img-fluid">
+                {% endif %}
+                <p class="card-text text-dark"><strong>Stacks:</strong> {{ featured_project.stacks}}</p>
+                <p class="card-text text-dark"><strong>My Role:</strong> {{ featured_project.role}}</p>
+                <p class="card-text text-dark"><strong>Challenges Overcome:</strong> {{ featured_project.challenges}}</p>
+                <p class="card-text text-dark"><strong>Project Duration:</strong> {{ featured_project.date_cmptd}}</p>
+                {% if featured_project.domain_link %}
+                <a href="{{ featured_project.domain_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-github-50.png") }}" alt="github icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Github</a>
+                {% endif %}
+                {% if featured_project.github_link %}
+                <a href="{{ featured_project.github_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-url-website-50.png") }}" alt="url icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Website</a>
+                {% endif %}
+                {% if featured_project.video_link %}
+                <a href="{{ featured_project.video_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-video-24.png") }}" alt="video icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Video Demo</a>
+                {% endif %}
               </div>
            </div>
         </div>
         {% endfor %}
+       {% else %}
+         <div class="container">
+           <p>Featured Projects will be available soon.</p>
+         </div>
+       {% endif %}
      </div>
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">Explore My Portfolio</h5>
+     <div class="d-flex">
+       <img src="{{ url_for('static', filename="images/icons8-portfolio-50.png") }}" alt="portfolio. icon" class="img-fluid rounded mb-3 me-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">Explore My Portfolio</h5>
+     </div>
      <p>
-     Curious about more of my featured projects and projects done? Take a look at some of my notable projects.
+        Curious about more of my featured projects and projects done? Take a look at some of my notable projects.
      <br>
-     For more featured projects, Click <a href="{{ url_for('main.featured_projects.view_featured_projects') }}">Here</a>.
+        For more <span class="fw-bold">featured projects</span>, Click <a href="{{ url_for('main.featured_projects.view_featured_projects') }}">Here</a>.
      <br>
-     For projects done, Click <a href="{{ url_for('main.projects_done.view_projects_done') }}">Here</a><br>
+        For <span class="fw-bold">projects done</span>, Click <a href="{{ url_for('main.projects_done.view_projects_done') }}">Here</a><br>
      </p>
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">My Technical Writings</h5>
+     <div class="d-flex">
+       <img src="{{ url_for('static', filename="images/icons8-technical-writing-50.png") }}" alt="tech_writng. icon" class="img-fluid rounded mb-3 me-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">My Technical Writings</h5>
+     </div>
      <p>
-     To explore my Technical Writings skill, go to my menu or Click <a href="{{ url_for('main.tech_writings.view_writings') }}">Here</a>.
+        To explore my Technical Writings skill, go to menu or Click <a href="{{ url_for('main.tech_writings.view_writings') }}">Here</a>.
      <br>
      </p>
   </div>
 
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">Let's Collaborate</h5>
+     <div class="d-flex">
+        <img src="{{ url_for('static', filename="images/collaborate.jpg") }}" alt="colab. icon" class="img-fluid rounded mb-3 me-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">Let's Collaborate</h5>
+     </div>
      <p>
-       Ready to bring your vision to life? let's collaborate and create something amazing together! Get in touch with me to:
+        Ready to bring your vision to life? let's collaborate and create something amazing together! Get in touch with me to:
      </p>
      <ul class="list-group list-group-flush">
              <li class="list-group-item">Discuss your project and goals</li>
@@ -100,20 +133,32 @@
   </div>
   
   <div class="mt-5">
-     <h5 class="fw-bold shadow-sm">Contacts</h5>
+     <div class="d-flex">
+        <img src="{{ url_for('static', filename="images/icons8-contact-48.png") }}" alt="contact icon" class="img-fluid rounded mb-3 me-2" style="width: 50px; height: 50px;"><h5 class="fw-bold shadow-sm">Contacts</h5>
+     </div>
      <p>
-        Mobile: +2349084795554, +2348063486407<br>
-        Whatsapp: +2349084795554, +2348063486407<br>
-        Email: mailstephenreal@gmail.com
+        <img src="{{ url_for('static', filename="images/icons8-touchscreen-50.png") }}" alt="mobile icon" class="img-fluid rounded" style="width: 25px; height: 25px;"> +2349084795554 | +2348063486407<br>
+        <img src="{{ url_for('static', filename="images/icons8-whatsapp-48.png") }}" alt="whatsapp icon" class="img-fluid rounded" style="width: 25px; height: 25px;"> +2349084795554 | +2348063486407<br>
+        <img src="{{ url_for('static', filename="images/icons8-email-50.png") }}" alt="email icon" class="img-fluid rounded" style="width: 25px; height: 25px;"> <a href="mailto: steveadahson@gmail.com" target="_blank">Sent email</a>
+         <br> 
+        <img src="{{ url_for('static', filename="images/message.png") }}" alt="message icon" class="img-fluid rounded" style="width: 25px; height: 25px;"> <a href="{{ url_for('main.contacts.create_contact_message') }}">Drop Message</a>
      </p>
    </div>
 
-     <div class="mt-5">
+   <div class="mt-5">
      <h5 class="fw-bold shadow-sm">Socials</h5>
      <p>
-        <a href="#">Github</a><br>
-        <a href="#">LinkedIn</a><br>
-        <a href="#">Twitter</a><br>
+     <a href="https://www.linkedin.com/in/stephen-adah-se-74614b145" target="_blank"><img src="{{ url_for('static', filename="images/icons8-linkedin-50.png") }}" alt="LinkedIn icon" class="img-fluid rounded" style="width: 25px; height: 25px;">LinkedIn</a>
+        <br>
+        <a href="https://www.twitter.com/Elbest2018" target="_blank"><img src="{{ url_for('static', filename="images/icons8-twitter-48.png") }}" alt="Twitter icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Twitter</a>
      </p>
    </div>
+
+   <div class="mt-5">
+     <p>
+     <a href="https://github.com/LeaderSteve84" target="_blank"><img src="{{ url_for('static', filename="images/icons8-github-50.png") }}" alt="github icon" class="img-fluid rounded" style="width: 50px; height: 50px;">Github</a>
+     </p>
+   </div> 
+
+ </div>
 {% endblock %}

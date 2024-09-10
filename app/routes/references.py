@@ -68,9 +68,9 @@ def edit_reference(reference_id):
 @references_bp.route("/reference/<int:reference_id>/delete", methods=['POST'], strict_slashes=False)
 def delete_reference(reference_id):
     """delete a reference"""
-    reference = Reference.query.get_or_404(featured_project_id)
+    reference = Reference.query.get_or_404(reference_id)
     if reference:
-        db.session.delete(references)
+        db.session.delete(reference)
         db.session.commit()
         flash('Reference deleted successfully!', 'success')
     else:

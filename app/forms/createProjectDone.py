@@ -11,4 +11,5 @@ class ProjectDoneForm(FlaskForm):
     stacks = StringField('Stacks - Technologies Used', validators=[DataRequired()])
     role = TextAreaField('Project Role', validators=[DataRequired()])
     date_cmptd = StringField('Completion Date', validators=[DataRequired()])
+    video_link = StringField('Video URL (Optional)', validators=[Optional()])
     submit = SubmitField('Add Project Done')

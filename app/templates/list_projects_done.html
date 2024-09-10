@@ -22,6 +22,7 @@
              <th scope="col">Stacks Used</th>
              <th scope="col">Role</th>
              <th scope="col">Date Completed</th>
+             <th scope="col">Video Link</th>
              <th scope="col">Actions</th>
            </tr>
          </thead>
@@ -37,6 +38,15 @@
                 <td>{{ project_done.stacks }}</td>
                 <td>{{ project_done.role }}</td>
                 <td>{{ project_done.date_cmptd }}</td>
+                <td>
+                        {% if project_done.video_link %}
+                                <a href="{{ project_done.video_link }}"
+                                   target="_blank">{{ project_done.video_link }}
+                                </a>
+                        {% else %}
+                           N/A
+                        {% endif %}
+                </td>
                 <td><a href="{{ url_for('main.projects_done.edit_project_done', project_done_id=project_done.project_done_id) }}", class="btn btn-sm btn-warning">Edit</a>
                          |
                   <form action={{ url_for('main.projects_done.delete_project_done', project_done_id=project_done.project_done_id) }} method='POST'>

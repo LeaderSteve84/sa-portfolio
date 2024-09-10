@@ -28,7 +28,8 @@ def create_featured_project():
             challenges = form.challenges.data,
             date_cmptd = form.date_cmptd.data,
             domain_link = form.domain_link.data,
-            github_link = form.github_link.data
+            github_link = form.github_link.data,
+            video_link = form.video_link.data
         )
         db.session.add(new_project)
         db.session.commit()
@@ -71,6 +72,7 @@ def update_featured_project(featured_project_id):
     featured_project.date_cmptd = request.form['date_cmptd']
     featured_project.domain_link = request.form.get('domain_link', featured_project.domain_link)
     featured_project.github_link = request.form.get('github_link', featured_project.github_link)
+    featured_project.video_link = request.form.get('video_link', featured_project.video_link)
 
     db.session.commit()
     flash('Featured project updated successfully', 'success')

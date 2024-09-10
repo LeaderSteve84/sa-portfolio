@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+     Resume
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+   <nav class="d-flex justify-content-center align-items-center mb-4">
+      <h1 class="h4 fw-bold text-center text-dark" >Resume</h1>
+   </nav> 
+
+   <div class="row">
+   {% if resume %}
+    {% for resume in resume %}
+     <div class="col.md-4 mb-4">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+
+             {% if resume.resume_image1_link %}
+                <img src="{{ resume.resume_image1_link }}" alt="Resume image 1" class="img-fluid mb-3">
+             {% endif %}
+	     
+	     {% if resume.resume_image2_link %}
+                <img src="{{ resume.resume_image2_link }}" alt="Resume image 2" class="img-fluid mb-3">
+             {% endif %}
+
+	     {% if resume.resume_image3_link %}
+                <img src="{{ resume.resume_image3_link }}" alt="Resume image 3" class="img-fluid mb-3">
+             {% endif %}
+
+	     {% if resume.resume_image4_link %}
+                <img src="{{ resume.resume_image4_link }}" alt="Resume image 4" class="img-fluid mb-3">
+             {% endif %}
+
+             {% if resume.resume_download_link %}
+                <a href="{{ resume.resume_download_link }}" target="_blank" class="btn btn-primary d-block mt-3">Download Resume</a>
+             {% endif %}
+
+           </div>
+        </div>
+     </div>
+    {% endfor %}
+   {% else %}
+    <div class="container">
+       <p class="text-center">Resume is not available at the moment</p>
+    </div>
+   {% endif %}
+   </div>
+</div>
+{% endblock %}

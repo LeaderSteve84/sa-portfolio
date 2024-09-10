@@ -93,7 +93,8 @@ def create_app():
 
     with app.app_context():
         # import all the models from app/models/__init__.py
-        from app.models import Admin, FeaturedProject, ProjectDone, Writing, Reference
+        from app.models import Admin, FeaturedProject, ProjectDone, \
+        Writing, Reference, Resume, ContactMessage
         db.create_all()
         app.logger.info("DB Tables created successfully")
 

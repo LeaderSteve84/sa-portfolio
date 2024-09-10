@@ -25,6 +25,9 @@ class ProjectDone(db.Model):
     stacks: Mapped[str] = mapped_column(String(length=1024))
     role: Mapped[str] = mapped_column(String(length=1024))
     date_cmptd: Mapped[str] = mapped_column(String(length=1024))
+    video_link: Mapped[Optional[str]] = mapped_column(
+        String(length=2083), unique=False
+    )
 
     def __repr__(self):
         return f'<Project Done {self.title}>'

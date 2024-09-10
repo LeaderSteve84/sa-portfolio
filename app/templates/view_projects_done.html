@@ -13,20 +13,29 @@
    </nav>
 
    <div class="row row-cols-1 row-cols-md-2 g-4">
-   {% for project_done in projects_done[::-1] %}
+   {% if projects_done %}
+    {% for project_done in projects_done[::-1] %}
      <div class="col">
        <div class="card h-100 shadow-sm">
          <div class="card-body shadow">
                  <h5 class="card-title">No. {{ loop.index }}: {{ project_done.title }}</h5>
                 <h6 class="card-substitute mb-2 text-muted">Type: {{ project_done.project_type }}</h6>
                 <p class="card-text"><strong>Description:</strong> {{ project_done.description }}</p>
-                <p class="card-text"><strong>>Technologies Used:</strong> {{ project_done.stacks }}</p>
-                <p class="card-text"><strong>>My Role:</strong> {{ project_done.role }}</p>
-                <p class="card-text"><strong>>Completion Date:</strong> {{ project_done.date_cmptd }}</p>
+                <p class="card-text"><strong>Technologies Used:</strong> {{ project_done.stacks }}</p>
+                <p class="card-text"><strong>My Role:</strong> {{ project_done.role }}</p>
+                <p class="card-text"><strong>Completion Date:</strong> {{ project_done.date_cmptd }}</p>
+                {% if project_done.video_link %}
+                  <a href="{{ project_done.video_link }}" class="card-link">Video Demo</a>
+                {% endif %}
          </div>
        </div>
      </div>
-   {% endfor %}
+    {% endfor %}
+   {% else %}
+    <div class="container">
+      <p class="text-center">Projects Done not available at the moment.</p>
+    </div>
+   {% endif %}
    </div>
 </div>
 {% endblock %}

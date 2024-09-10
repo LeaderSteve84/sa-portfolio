@@ -14,4 +14,5 @@ class FeaturedProjectForm(FlaskForm):
     date_cmptd = StringField('Completion Date', validators=[DataRequired()])
     domain_link = StringField('Domain URL (Optional)', validators=[Optional()])  #, URL()])
     github_link = StringField('Github URL (Optional)', validators=[Optional()])  #,, URL()])
+    video_link = StringField('Video URL (Optional)', validators=[Optional()])
     submit = SubmitField('Add Featured Project')

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}
+     Contact
+{% endblock %}
+
+{% block content %}
+   <body>
+    <div class="container my-5">
+     <!-- Header Section -->
+     <h1 class="text-center fw-bold mb-4">Get in Touch</h1>
+     <p class="">I'd love to hear from you! Feel free to reach out using the form below or via email at <a href="mailto:steveadahson@gmail.com">steveadahson@gmail.com</a>.</p>
+     
+     <div class="row">
+       <!-- Contact Form -->
+       <div class="col-md-6">
+        <form method="POST" action="{{ url_for('main.contacts.create_contact_message') }}">
+           {{ form.hidden_tag() }}
+
+           <div class="mb-3 border-primary shadow-sm">
+           <!-- contact message name -->
+           {{ form.name.label(class="form-label fw-bold") }}
+           {{ form.name(placeholder="Your Full Name", class="form-control shadow") }}
+           </div>
+
+           <div class="mb-3 shadow-sm">
+	   <!-- contact message email -->
+           {{ form.email.label(class="form-label fw-bold") }}
+           {{ form.email(placeholder="Your Email", class="form-control shadow") }}
+           </div>
+
+           <div class="mb-3 shadow-sm">
+           <!-- contact message subject -->
+           {{ form.subject.label(class="form-label fw-bold") }}
+           {{ form.subject(placeholder="Type Message Subject", class="form-control shadow") }}
+           </div>
+         
+           <div class="mb-3 shadow-sm">
+           <!-- contact message message -->
+           {{ form.message.label(class="form-label fw-bold") }}
+           {{ form.message(placeholder="Type Message", class="form-control shadow", rows="5") }}
+           </div>
+
+           <!-- submit -->
+           {{ form.submit(class="btn btn-primary") }}
+        </form>
+       </div>
+
+       <!-- Contact Information -->
+       <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+          <h5 class="card-title">Contact Information</h5>
+          <ul class="list-unstyled">
+                  <li><i class="bi bi-envelope-fill"><img src="{{ url_for('static', filename="images/icons8-email-50.png") }}" alt="email icon" class="img-fluid rounded" style="width: 25px; height: 25px;"></i> <a href="mailto:steveadahson@gmail.com">steveadahson@gmail.com</a></li>
+            <li><i class="bi bi-telephone-fill"><img src="{{ url_for('static', filename="images/icons8-touchscreen-50.png") }}" alt="mobile icon" class="img-fluid rounded" style="width: 25px; height: 25px;"></i> +2348063486407  |  +2349084795554</li>
+            <li><i class="bi bi-telephone-fill"><img src="{{ url_for('static', filename="images/icons8-whatsapp-48.png") }}" alt="whatsapp icon" class="img-fluid rounded" style="width: 25px; height: 25px;"></i> +2348063486407  |  +2349084795554</li>
+            <li><i class="bi bi-geo-alt-fill"><img src="{{ url_for('static', filename="images/icons8-location-48.png") }}" alt="whatsapp icon" class="img-fluid rounded" style="width: 25px; height: 25px;"</i> Kaduna State, Nigeria.</li>
+          </ul>
+          <!-- Social Media Links -->
+          <h6 class="mt-4">Follow Me</h6>
+          <div class="d-flex">
+             <a href="https://www.linkedin.com/in/stephen-adah-se-74614b145" target="_blank"><img src="{{ url_for('static', filename="images/icons8-linkedin-50.png") }}" alt="LinkedIn icon" class="img-fluid rounded" style="width: 25px; height: 25px;">LinkedIn</a>
+             <a href="https://www.twitter.com/Elbest2018" target="_blank"><img src="{{ url_for('static', filename="images/icons8-twitter-48.png") }}" alt="Twitter icon" class="img-fluid rounded ms-4" style="width: 25px; height: 25px;">Twitter</a>     
+             <a href="https://github.com/LeaderSteve84" target="_blank"><img src="{{ url_for('static', filename="images/icons8-github-50.png") }}" alt="github icon" class="img-fluid rounded ms-4" style="width: 25px; height: 25px;">Github</a>             
+          </div>
+        </div>
+       </div>
+     </div>
+    </div>
+   </body>
+{% endblock %}

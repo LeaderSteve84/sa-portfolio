@@ -42,6 +42,11 @@
          </div>
 
 	 <div class="mb-3">
+            <label for="video_link", class="form-label fw-bold">Video Link</label>
+            <input type="url" id="video_link" name="video_link" value="{{ project_done.video_link }}" required, class="form-control shadow">
+         </div>
+
+	 <div class="mb-3">
             <button type="submit", class="btn btn-primary", onclick="return confirm('Are you sure you want to update this Project Done?');">Update Project Done</button>
 	</div>
        </form>
