@@ -76,8 +76,8 @@
       }
    </style>
   <footer >
-   <p><a href="{{ url_for('main.home.home_page') }}", class="text-primary">Back to Home Page</a></p>
-   <p><a href="#", class="text-primary">Back to Top</a></p>
+          <p><a href="{{ url_for('main.home.home_page') }}", class="text-primary" title="Return to Home Page"><img src="{{ url_for('static', filename='images/home.png') }}" alt="home page icon" class="img-fluid rounded" style="width: 35px; height: 35px;"></a></p>
+   <p><a href="#" class="btn btn-primary btn-sm back-to-top" role="button"><i class="bi bi-arrow-up"></i>Back to Top</a></p>
    <div class="footer-container">
     <div class="footer-section">
         <img src="{{ url_for('static', filename='images/logo_port.png') }}" alt="Logo" class="img-fluid rounded" style="width: 60px;">
