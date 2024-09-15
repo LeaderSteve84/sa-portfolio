@@ -29,6 +29,7 @@
          {{ form.submit(class="btn btn-primary") }}
          </div>
        </form>
+       <p class="text-center">If you can't remember your password. <a href="{{ url_for('main.auth.forgot_password') }}">Forgot Password?</a></p>
     </div>
   </body>
 {% endblock %}
