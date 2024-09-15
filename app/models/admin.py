@@ -4,6 +4,7 @@
 from flask import current_app
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String
+from werkzeug.security import generate_password_hash
 
 db = current_app.db
 
@@ -15,3 +16,13 @@ class Admin(db.Model):
     email: Mapped[str] = mapped_column(db.String(length=30), unique=True)
     password_hash: Mapped[str] = mapped_column(db.String(length=128))
     phone: Mapped[str] = mapped_column(db.String(length=30), unique=True)
+    
+    
+    def __repr__(self):
+        return f"<admin {self.id}>"
+   
+
+    def set_password(self, password):
+        """method to set or change admin password"""
+        hash_password = generate_password_hash(password)
+        self.password_hash = hash_password
