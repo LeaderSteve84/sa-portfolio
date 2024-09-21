@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import Email, DataRequired
+from wtforms.validators import DataRequired, Email
 
 class ForgotPasswordForm(FlaskForm):
-    """class to create instance of forgot password form"""
+    """class for forgot passform form"""
     email = StringField('Email', validators=[DataRequired(), Email()])
     submit = SubmitField('Send Reset Link')

@@ -7,6 +7,8 @@
 {% block content %}
    <body>
     <div class="container mt-4">
+     <div class="row justify-content-center">
+     <div class="col-md-8">
      <h1 class="h5 text-center fw-bold">Add Project Done</h1>
        <form method="POST" action="{{ url_for('main.projects_done.create_project_done') }}">
          {{ form.hidden_tag() }}
@@ -53,11 +55,13 @@
          {{ form.video_link(placeholder="Enter Video link", class="form-control shadow") }}
          </div>
 
-         <div class="mb-3">
+         <div class="d-grid mt-3 mtb-5">
          <!-- submit -->
          {{ form.submit(class="btn btn-primary") }}
          </div>
        </form>
+       </div>
+       </div>
      </div>
    </body>
 {% endblock %}

@@ -7,6 +7,8 @@
 {% block content %}
    <body>
      <div class="container mt-4 mb-4">
+     <div class="row justify-content-center">
+     <div class="col-md-8">
      <h5 class="h5 text-center fw-bold">Make Reference</h5>
        <form method="POST" action="{{ url_for('main.references.create_reference') }}">
          {{ form.hidden_tag() }}
@@ -46,10 +48,14 @@
          {{ form.designation.label(class="form-label fw-bold") }}
          {{ form.designation(placeholder="Select Your Designation", class="form-select shadow") }}
          </div>
-
+         
+         <div class="d-grid mt-3 mb-3">
          <!-- submit -->
          {{ form.submit(class="btn btn-primary", onclick="return confirm('By submitting this reference, your contact (if entered, which is optional) will be use for reference purpose only?');") }}
+         </div>
        </form>
+       </div>
+     </div>
      </div>
    </body>
 {% endblock %}

@@ -7,6 +7,8 @@
 {% block content %}
    <body>
      <div class="container mt-4">
+     <div class="row justify-content-center">
+     <div class="col-md-8">
      <p class="h5 text-center fw-bold">Edit Reference</p>
        <form method="POST" action="{{ url_for('main.references.edit_reference', reference_id=reference.reference_id) }}">
          {{ form.hidden_tag() }}
@@ -47,9 +49,13 @@
          {{ form.designation(placeholder="Select Your Designation", class="form-select shadow") }}
          </div>
 
+         <div class="d-grid mt-3 mb-3">
          <!-- submit -->
          {{ form.submit(class="btn btn-primary") }}
+         </div>
        </form>
+     </div>
+     </div>
      </div>
    </body>
 {% endblock %}

@@ -7,6 +7,8 @@
 {% block content %}
    <body>
     <div class="container mt-4">
+     <div class="row justify-content-center">
+     <div class="col-md-8"> 
      <h1 class="h5 text-center fw-bold">Add Featured Project</h1>
        <form method="POST" action="{{ url_for('main.featured_projects.create_featured_project') }}">
          {{ form.hidden_tag() }}
@@ -71,11 +73,13 @@
          {{ form.video_link(placeholder="Enter video URL", class="form-control shadow") }}
          </div>
          
-         <div class="mt-3">
+         <div class="d-grid mt-3">
          <!-- submit -->
-         {{ form.submit(class="btn btn-primary") }}
+         {{ form.submit(class="btn btn-primary mb-3") }}
          </div>
        </form>
+      </div>
+      </div>
      </div>
    </body>
 {% endblock %}

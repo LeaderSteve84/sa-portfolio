@@ -7,6 +7,8 @@
 {% block content %}
    <body>
      <div class="container mt-4">
+     <div class="row justify-content-center">
+     <div class="col-md-8">
      <p class="h5 text-center fw-bold">Edit Contact Message</p>
        <form method="POST" action="{{ url_for('main.contacts.update_contact_message', message_id=contact_message.message_id) }}">
          {{ form.hidden_tag() }}
@@ -41,9 +43,13 @@
          {{ form.status(placeholder="Status", class="form-control shadow") }}
          </div>
 
+         <div class="d-grid mb-3">
          <!-- submit -->
          {{ form.submit(class="btn btn-primary") }}
+         </div>
        </form>
+     </div>
+     </div>
      </div>
    </body>
 {% endblock %}

@@ -44,7 +44,7 @@
 	    <li class="dropdown-header">Resume</li>
             <li><a class="dropdown-item" href="{{ url_for('main.resume.create_resume') }}">Create Resume</a></li>
             <li><a class="dropdown-item" href="{{ url_for('main.resume.list_resume') }}">List Resume</a></li>
-            <li><a class="dropdown-item mt-3 text-warning" href="#">Change Password</a></li>
+            <li><a class="dropdown-item mt-3 text-warning" href="{{ url_for('main.auth.change_password') }}">Change Password</a></li>
             <br>
             <li><a class="dropdown-item text-danger fw-bold text-center btn bg-primary" href="{{ url_for('main.auth.logoutForm') }}">Log Out</a></li>
           </ul>

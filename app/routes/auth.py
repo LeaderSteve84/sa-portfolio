@@ -2,10 +2,12 @@
 """home module"""
 from flask import Blueprint, request, render_template, redirect, url_for, \
 flash, request, jsonify, make_response, current_app
-from flask_jwt_extended import create_access_token, set_access_cookies, unset_jwt_cookies
+from flask_jwt_extended import create_access_token, set_access_cookies, \
+unset_jwt_cookies, jwt_required, get_jwt_identity
 from app.forms.adminLogin import AdminLoginForm, AdminLogoutForm
 from app.forms.forgotPassword import ForgotPasswordForm
-from app.forms.resetPassword import ResetPasswordForm 
+from app.forms.resetPassword import ResetPasswordForm
+from app.forms.changePassword import ChangePasswordForm
 from app.models import Admin
 from werkzeug.security import check_password_hash
 from datetime import timedelta
@@ -71,8 +73,7 @@ def verify_reset_token(token, expiration=3600):
 def send_reset_email(admin_email, token):
     """send reset email"""
     msg = Message(
-        'Password Reset Request',
-        sender=current_app.config['MAIL_DEFAULT_SENDER'],  # 'phedysbizconcept@gmail.com',
+        subject='Password Reset Request',
         recipients=[admin_email]
     )
     reset_url = url_for('main.auth.reset_password', token=token, _external=True)
@@ -80,8 +81,7 @@ def send_reset_email(admin_email, token):
     {reset_url}
     If you did not make this request, simply ignore this email.
     '''
-    mail = current_app.mail
-    mail.send(msg)
+    current_app.mail.send(msg)
 
 
 @auth_bp.route("/forgot_password", methods=['GET', 'POST'])
@@ -92,10 +92,12 @@ def forgot_password():
         admin = Admin.query.filter_by(email=form.email.data).first()
         if admin:
             token = generate_reset_token(admin.email)
+            print(admin.email)
+            print(token)
             send_reset_email(admin.email, token)
             flash('password reset email has been sent', 'info')
         else:
-            flash('No accout found with that email.', 'warning')
+            flash('No account found with that email.', 'warning')
     return render_template('forgot_password.html', form=form)
 
 
@@ -115,3 +117,30 @@ def reset_password(token):
             flash('Your password has been reset!', 'success')
             return redirect(url_for('main.auth.login'))
     return render_template('reset_password.html', form=form)
+
+
+@auth_bp.route("/change_password", methods=['GET', 'POST'])
+@jwt_required()
+def change_password():
+    admin_id = get_jwt_identity()
+    print(admin_id)
+    admin = Admin.query.filter_by(id=admin_id).first()
+    print(admin)
+    if not admin:
+        flash('You are not an admin', 'warning')
+        return redirect(url_for('main.admindashboard.admindashboard_page')) 
+    form = ChangePasswordForm()
+    if form.validate_on_submit():
+        old_password = form.old_password.data
+        new_password = form.new_password.data
+        # check if old password is correct
+        if not check_password_hash(admin.password_hash, old_password):
+            flash('Incorrect current password', 'warning')
+            return render_template('change_password.html', form=form)
+        # update the password_hash with new_password
+        hash_password = generate_password_hash(new_password)
+        admin.set_password(hash_password)
+        db.session.commit()
+        flash('Admin password updated successfully', 'success')
+        return redirect(url_for('main.admindashboard.admindashboard_page'))
+    return render_template('change_password.html', form=form)
