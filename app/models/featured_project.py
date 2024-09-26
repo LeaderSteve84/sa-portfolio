@@ -10,6 +10,7 @@ from uuid import uuid4
 
 db = current_app.db
 
+
 class FeaturedProject(db.Model):
     """class of Projects done"""
     __tablename__ = 'featured_projects'
@@ -30,7 +31,7 @@ class FeaturedProject(db.Model):
     stacks: Mapped[str] = mapped_column(String(length=1024))
     role: Mapped[Optional[str]] = mapped_column(
         Text, unique=False
-    ) 
+    )
     challenges: Mapped[Optional[str]] = mapped_column(
         Text, unique=False
     )
