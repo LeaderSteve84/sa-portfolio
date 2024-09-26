@@ -10,6 +10,7 @@ from uuid import uuid4
 
 db = current_app.db
 
+
 class Writing(db.Model):
     """class of Technical writings done"""
     __tablename__ = 'writings'
