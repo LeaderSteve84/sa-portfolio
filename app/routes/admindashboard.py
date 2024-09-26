@@ -12,11 +12,13 @@ from app.models import Admin
 admindashboard_bp = Blueprint('admindashboard', __name__)
 
 
-@admindashboard_bp.route("/admindashboard", methods=['GET'], strict_slashes=False)
+@admindashboard_bp.route(
+    "/admindashboard", methods=['GET'], strict_slashes=False
+)
 @jwt_required()
 def admindashboard_page():
     """Admin dashboard page route"""
-    admin_id = get_jwt_identity() # Fetch and display data using the admin_id
+    admin_id = get_jwt_identity()  # Fetch and display data using the admin_id
     admin = Admin.query.filter_by(id=admin_id).first()
     if not admin:
         flash('You are not an admin', 'warning')
@@ -28,5 +30,9 @@ def admindashboard_page():
     references = Reference.query.all()
 
     return render_template(
-        'admindashboard.html', contact_messages=contact_messages, references=references, featured_projects=featured_projects, projects_done=projects_done, writings=writings
+        'admindashboard.html',
+        contact_messages=contact_messages,
+        references=references,
+        featured_projects=featured_projects,
+        projects_done=projects_done, writings=writings
     )
