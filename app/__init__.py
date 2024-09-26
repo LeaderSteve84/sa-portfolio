@@ -98,6 +98,7 @@ def create_app():
         from app.models import Admin, FeaturedProject, ProjectDone, \
             Writing, Reference, Resume, ContactMessage
 
+        # db.drop_all() 
         # create all tables in database
         db.create_all()
         app.logger.info("DB Tables created successfully")

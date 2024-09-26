@@ -13,9 +13,9 @@ db = current_app.db
 
 class FeaturedProject(db.Model):
     """class of Projects done"""
-    __tablename__ = 'featured_projects'
+    __tablename__ = 'featuredProjects'
     featured_project_id: Mapped[str] = mapped_column(
-        String(length=36), primary_key=True, default=str(uuid4())
+            String(length=36), primary_key=True, default=lambda: str(uuid4())
     )
     date_created: Mapped[datetime] = mapped_column(
         DateTime, default=datetime.utcnow

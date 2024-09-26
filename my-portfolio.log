@@ -24914,3 +24914,789 @@ ERROR [flask_migrate] Error: Target database is not up to date.
 [2024-09-26 08:58:35,004] None requested None     INFO in __init__: Default Admin created successfully
 [2024-09-26 08:58:35,149] None requested None     WARNING in _internal:  * Debugger is active!
 [2024-09-26 08:58:35,153] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 13:39:53,302] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 13:39:54,258] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 13:39:54,259] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 13:39:57,962] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-09-26 13:39:57,963] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-09-26 13:39:58,061] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 13:40:15,111] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 13:40:15,170] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 13:40:15,178] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 13:40:15,320] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 13:40:16,504] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 13:40:21,796] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:21] "GET / HTTP/1.1" 200 -
+[2024-09-26 13:40:23,566] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:23] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:23,576] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:23] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:23,598] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:23,636] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:23] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:23,704] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:23] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,056] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,127] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,545] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,554] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,574] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,592] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,618] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:24,649] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:24] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,011] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,053] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,282] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,319] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,353] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,425] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:40:25,448] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:40:25] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:45,115] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:45] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 13:41:45,346] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:45,616] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:45] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:45,689] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:45] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:45,925] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:45] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,001] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:45] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,020] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,039] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,062] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,083] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,102] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,185] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:41:46,226] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:41:46] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,132] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+[2024-09-26 13:42:38,168] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 13:42:38,407] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,424] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,535] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,803] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,808] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,841] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:38,872] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:38] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:39,006] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:39] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:39,052] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:39] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:39,104] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:39] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:39,244] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:39] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:39,258] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:39] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:46,224] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:46] "GET /login HTTP/1.1" 200 -
+[2024-09-26 13:42:46,468] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:46,852] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:46] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:46,895] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:46] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:46,935] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:46] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:47,118] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:47] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:47,483] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:47] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:47,601] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:47] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:47,649] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:47] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:51,231] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-09-26 13:42:51,588] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:51] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 13:42:52,255] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:52] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:52,316] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:52] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:42:52,365] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:42:52] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:15,096] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:15] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 13:43:15,278] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:15] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:26,534] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:26] "GET /contact/970f9c44-a98d-4443-ae95-8c70965bd342/edit HTTP/1.1" 200 -
+[2024-09-26 13:43:27,324] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:27] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:34,847] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:34] "[32mPOST /contact/970f9c44-a98d-4443-ae95-8c70965bd342/edit HTTP/1.1[0m" 302 -
+[2024-09-26 13:43:34,909] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:34] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 13:43:35,552] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:35] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:41,996] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:41] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 13:43:42,320] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:42] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:42,732] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:42] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:42,784] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:42] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:43:54,863] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:54] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 13:43:55,133] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:43:55] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:16,613] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:16] "GET /logout-form HTTP/1.1" 200 -
+[2024-09-26 13:44:16,881] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:18,655] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:18] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-09-26 13:44:18,895] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:18] "GET / HTTP/1.1" 200 -
+[2024-09-26 13:44:19,067] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,150] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,211] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,413] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,540] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,780] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,846] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,893] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:19,941] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:19] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,059] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,109] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,259] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,398] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,460] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,492] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,649] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,698] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:20,847] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:20] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:21,229] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:21] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:21,269] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:21] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:31,333] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:31] "GET /about HTTP/1.1" 200 -
+[2024-09-26 13:44:31,649] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:31,674] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:31] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:31,957] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:31] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,248] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/ST26696-cert-lprojectmz.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,295] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/17-short-specializations-certificate-stephen-babangida-adah.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,404] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,406] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,426] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+[2024-09-26 13:44:32,445] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,653] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,729] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:44:32,761] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:44:32] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:10,616] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:10] "GET /featured_projects/view HTTP/1.1" 200 -
+[2024-09-26 13:46:10,903] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,288] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,335] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,462] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,505] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,550] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,634] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:11,711] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:11] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:22,328] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:22] "GET /project_done/view HTTP/1.1" 200 -
+[2024-09-26 13:46:22,473] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:22,617] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:22] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:22,999] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:22] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:23,134] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:23] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:23,202] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:23] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:23,324] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:23] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:23,446] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:23] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:23,435] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:23] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:27,527] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:27] "GET /writings/view HTTP/1.1" 200 -
+[2024-09-26 13:46:27,868] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,024] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,079] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,143] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,206] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,224] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,258] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:28,708] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:28] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:32,723] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:32] "GET /resume/view HTTP/1.1" 200 -
+[2024-09-26 13:46:32,863] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,295] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,343] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,345] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,392] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,417] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,534] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:33,537] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:33] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:44,394] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:44] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 13:46:44,643] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,255] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,320] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,334] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,385] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,402] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,416] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,447] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,878] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,899] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,920] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:46:45,907] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:46:45] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:10,297] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:10] "GET /reference/new HTTP/1.1" 200 -
+[2024-09-26 13:47:10,483] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:10,586] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:10] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:10,895] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:10] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:11,125] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:11] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:11,177] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:11] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:11,211] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:11] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:11,216] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:11] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:47:11,276] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:47:11] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:07,348] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:07] "[32mPOST /reference/new HTTP/1.1[0m" 302 -
+[2024-09-26 13:48:07,453] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:07] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 13:48:07,984] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:07] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,056] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,080] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,168] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,184] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,200] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,219] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:08,356] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:08] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:23,495] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 13:48:23,718] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:23,792] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:23,819] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:23,898] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:23,996] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:23,999] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:23] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:24,026] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:24] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:24,577] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:24] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:39,082] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "GET /reference/new HTTP/1.1" 200 -
+[2024-09-26 13:48:39,421] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:39,436] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:39,508] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:39,571] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:39,925] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:39,971] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:39] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:40,043] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:40] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:48:40,057] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:48:40] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 13:49:47,656] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:49:47] "[35m[1mPOST /reference/new HTTP/1.1[0m" 500 -
+[2024-09-26 13:49:47,911] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:49:47] "GET /reference/new?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2024-09-26 13:49:47,987] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:49:47] "GET /reference/new?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2024-09-26 13:49:48,511] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:49:48] "GET /reference/new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2024-09-26 13:49:48,734] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 13:49:48] "[36mGET /reference/new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:25,813] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:25,821] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:25] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:27,108] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:27] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:28,193] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:28] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:28,316] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:28] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:28,537] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:28] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:28,571] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:28] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:28,635] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:28] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:45,824] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:45] "[35m[1mPOST /reference/new HTTP/1.1[0m" 500 -
+[2024-09-26 14:11:46,084] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:46] "[36mGET /reference/new?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:46,116] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:46] "[36mGET /reference/new?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2024-09-26 14:11:47,682] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:11:47] "[36mGET /reference/new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:13:02,052] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:13:02] "[33mGET /reference HTTP/1.1[0m" 404 -
+[2024-09-26 14:18:46,672] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/reference.py', reloading
+[2024-09-26 14:19:06,270] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:19:49,027] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:19:49,027] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:19:49,181] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:19:49,182] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:19:49,232] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:19:49,234] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:19:49,822] None requested None     WARNING in _internal:  * Debugger is active!
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+[2024-09-26 14:19:50,421] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+ERROR [flask_migrate] Error: Target database is not up to date.
+ERROR [flask_migrate] Error: Target database is not up to date.
+[2024-09-26 14:21:17,186] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:17] "[32mPOST /reference/new HTTP/1.1[0m" 302 -
+[2024-09-26 14:21:17,775] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:17] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 14:21:19,563] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:19] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:19,571] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:19] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:19,577] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:19] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:19,586] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:19] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:19,616] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:19] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:19,620] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:20,074] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:20] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:20,104] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:20] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:47,747] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:47] "GET /reference/new HTTP/1.1" 200 -
+[2024-09-26 14:21:47,983] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:48,539] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:48] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:48,907] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:48] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:52,385] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:52] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:52,395] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:52] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:52,457] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:52] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:52,605] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:52] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:21:52,617] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:21:52] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:50,425] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:50] "[32mPOST /reference/new HTTP/1.1[0m" 302 -
+[2024-09-26 14:22:50,523] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:50] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 14:22:51,142] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,145] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,186] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,713] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,717] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,738] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,896] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:22:51,900] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:22:51] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:23:16,029] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:23:16,087] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:23:16,089] None requested None     INFO in __init__: Default Admin created successfully
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 677dd48a7ee7, FEAT: change String to Text
+INFO  [alembic.runtime.migration] Running upgrade  -> 677dd48a7ee7, FEAT: change String to Text
+[2024-09-26 14:24:58,597] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:58] "GET /reference/new HTTP/1.1" 200 -
+[2024-09-26 14:24:58,907] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:24:59,327] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:59] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:24:59,428] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:59] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:24:59,532] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:59] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:24:59,643] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:59] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:24:59,836] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:59] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:24:59,838] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:24:59] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:00,009] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:00] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:35,846] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:35] "[32mPOST /reference/new HTTP/1.1[0m" 302 -
+[2024-09-26 14:25:35,930] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:35] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 14:25:36,125] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:36,145] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:36] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:36,571] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:36] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:36,844] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:36] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:36,898] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:36] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:36,851] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:36] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:37,047] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:37] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:25:37,165] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:25:37] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:11,074] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:11] "GET /login HTTP/1.1" 200 -
+[2024-09-26 14:26:11,209] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:11,809] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:11] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:11,904] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:11] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:11,936] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:11] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:12,502] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:12] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:12,783] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:12] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:12,818] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:12] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:12,831] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:12] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:14,828] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-09-26 14:26:15,823] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:15] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 14:26:16,468] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:16] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:16,487] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:16] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:16,621] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:16] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:22,831] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:22] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:26:23,347] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:23] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:31,400] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:31] "GET /reference/91a69a1c-762c-4619-879e-fefc58a03fda/edit HTTP/1.1" 200 -
+[2024-09-26 14:26:31,647] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:31] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:42,553] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:42] "[32mPOST /reference/91a69a1c-762c-4619-879e-fefc58a03fda/edit HTTP/1.1[0m" 302 -
+[2024-09-26 14:26:42,629] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:42] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:26:43,193] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:43] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:26:49,909] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:49] "[32mPOST /reference/91a69a1c-762c-4619-879e-fefc58a03fda/delete HTTP/1.1[0m" 302 -
+[2024-09-26 14:26:50,049] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:50] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:26:50,322] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:26:50] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:03,778] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:03] "GET /logout-form HTTP/1.1" 200 -
+[2024-09-26 14:27:04,028] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:07,426] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:07] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-09-26 14:27:07,789] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:07] "GET / HTTP/1.1" 200 -
+[2024-09-26 14:27:08,379] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:08,405] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:08,632] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:08,653] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:08,649] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:08,828] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:08,941] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:08] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,205] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,251] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,395] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,475] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,515] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,833] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,782] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,892] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:09,978] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:09] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:10,259] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:10] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:10,394] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:10] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:10,512] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:10] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:27:10,544] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:27:10] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:38:50,081] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/contact.py', reloading
+[2024-09-26 14:38:50,806] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:38:53,668] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:38:53,719] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:38:53,720] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:38:53,849] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 14:38:53,853] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 14:39:30,252] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/featured_project.py', reloading
+[2024-09-26 14:39:30,882] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:39:33,696] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:39:33,741] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:39:33,742] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:39:33,866] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 14:39:33,896] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 14:40:07,188] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/project_done.py', reloading
+[2024-09-26 14:40:08,089] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:40:10,703] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:40:10,752] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:40:10,753] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:40:10,878] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 14:40:10,881] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 14:40:42,151] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/resume.py', reloading
+[2024-09-26 14:40:42,774] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:40:45,473] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:40:45,520] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:40:45,521] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:40:45,648] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 14:40:45,651] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 14:41:04,460] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/models/writing.py', reloading
+[2024-09-26 14:41:05,123] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:41:09,845] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:41:09,940] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:41:09,941] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:41:10,331] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 14:41:10,344] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 14:46:21,896] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:46:21,952] None requested None     INFO in config: admin i.e instance of Admin created successfully
+[2024-09-26 14:46:22,202] None requested None     INFO in config: Default admin user created: LeaderSteve
+[2024-09-26 14:46:22,203] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:46:22,204] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:46:22,439] None requested None     INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-09-26 14:46:22,440] None requested None     INFO in _internal: [33mPress CTRL+C to quit[0m
+[2024-09-26 14:46:22,443] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 14:46:28,567] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 14:46:28,675] None requested None     INFO in config: admin i.e instance of Admin created successfully
+[2024-09-26 14:46:29,035] None requested None     INFO in config: Default admin user created: LeaderSteve
+[2024-09-26 14:46:29,036] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 14:46:29,037] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 14:46:29,291] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 14:46:29,295] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 14:46:41,428] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:41] "GET / HTTP/1.1" 200 -
+[2024-09-26 14:46:41,718] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:41,882] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:41] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:41,915] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:41] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:41,980] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:41] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,163] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,191] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,431] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,274] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,625] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,683] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,696] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,765] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:42,773] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:42] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,114] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,527] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,548] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,681] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,698] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,729] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:43,746] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:43] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:49,789] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:49] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 14:46:49,934] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,506] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,508] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,576] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,606] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,629] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,747] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:50,849] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:50] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:56,322] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:56] "GET /login HTTP/1.1" 200 -
+[2024-09-26 14:46:56,488] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,168] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,599] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,631] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,634] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,691] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,698] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:46:57,742] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:46:57] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:47:05,524] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:47:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-09-26 14:47:05,748] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:47:05] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 14:47:06,281] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:47:06] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:47:06,436] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:47:06] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:47:06,450] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:47:06] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:23,453] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:23] "GET /logout-form HTTP/1.1" 200 -
+[2024-09-26 14:49:23,737] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:25,227] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:25] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-09-26 14:49:25,407] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:25] "GET / HTTP/1.1" 200 -
+[2024-09-26 14:49:25,707] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:25] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:25,736] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,236] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,307] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,353] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,484] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,564] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,682] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,840] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:26,963] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:26] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,038] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,084] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,099] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,131] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,449] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,478] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,483] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,615] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,633] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:27,679] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:27] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:29,636] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:29] "GET /reference/new HTTP/1.1" 200 -
+[2024-09-26 14:49:30,385] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:30,792] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:30] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:30,875] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:30] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:30,956] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:30] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:31,020] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:31] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:31,055] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:31] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:31,071] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:31] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:49:31,197] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:49:31] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:50:59,799] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:50:59] "[32mPOST /reference/new HTTP/1.1[0m" 302 -
+[2024-09-26 14:50:59,852] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:50:59] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 14:51:00,360] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:00,552] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:00,626] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:00,676] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:00,723] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:00,946] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:00,957] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:00] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:01,074] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:01] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:06,657] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:06] "GET /reference/new HTTP/1.1" 200 -
+[2024-09-26 14:51:07,240] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,663] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,696] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,697] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,759] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,793] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,839] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:07,886] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:07] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:58,667] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:58] "[32mPOST /reference/new HTTP/1.1[0m" 302 -
+[2024-09-26 14:51:58,798] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:58] "GET /references/view HTTP/1.1" 200 -
+[2024-09-26 14:51:59,493] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:59,549] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:59] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:59,580] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:59] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:59,611] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:59] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:59,644] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:59] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:51:59,672] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:51:59] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:52:01,625] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:52:01] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:52:01,696] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:52:01] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:18,486] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:18] "GET /login HTTP/1.1" 200 -
+[2024-09-26 14:53:18,732] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,182] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,265] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,509] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,799] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,825] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,970] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:19,978] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:19] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:21,392] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-09-26 14:53:21,465] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:21] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 14:53:21,947] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:21] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:21,989] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:21] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:22,029] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:22] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:34,661] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:34] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:53:34,959] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:34] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:45,243] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:45] "GET /reference/6bb9ea0e-930d-4ed5-9d5a-0a36d579dc08/edit HTTP/1.1" 200 -
+[2024-09-26 14:53:45,754] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:45] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:53:57,859] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:57] "[32mPOST /reference/6bb9ea0e-930d-4ed5-9d5a-0a36d579dc08/edit HTTP/1.1[0m" 302 -
+[2024-09-26 14:53:57,954] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:57] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:53:58,537] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:53:58] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:00,510] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:00] "GET /reference/58aae633-cc3a-4f70-8a05-d1e55104098e/edit HTTP/1.1" 200 -
+[2024-09-26 14:54:00,716] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:00] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:05,711] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:05] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 14:54:06,179] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:06] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:06,398] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:06] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:06,457] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:06] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:09,750] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:09] "GET /resume HTTP/1.1" 200 -
+[2024-09-26 14:54:10,477] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:10] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:12,942] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:12] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:54:13,361] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:13] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:16,174] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:16] "[32mPOST /reference/58aae633-cc3a-4f70-8a05-d1e55104098e/delete HTTP/1.1[0m" 302 -
+[2024-09-26 14:54:16,305] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:16] "GET /references HTTP/1.1" 200 -
+[2024-09-26 14:54:16,761] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:16] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:23,142] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:23] "GET /logout-form HTTP/1.1" 200 -
+[2024-09-26 14:54:23,416] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:24,987] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:24] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-09-26 14:54:25,090] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "GET / HTTP/1.1" 200 -
+[2024-09-26 14:54:25,692] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:25,754] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:25,808] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:25,908] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:25,938] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:25,948] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:25] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,248] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,276] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,470] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,493] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,518] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,621] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,796] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:26,931] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:26] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:27,278] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:27] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:27,279] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:27] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:27,318] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:27] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:27,334] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:27] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:27,335] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:27] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:27,369] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:27] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:30,432] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:30] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 14:54:30,852] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,178] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,243] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,291] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,322] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,354] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,618] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:31,801] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:31] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:32,010] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:32] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:32,011] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:32] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:32,036] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:32] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:32,120] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:32] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:58,854] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:58] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+[2024-09-26 14:54:58,950] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:58] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 14:54:59,305] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,307] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,403] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,406] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,451] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,467] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,929] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:54:59,947] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:54:59] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:55:00,054] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:55:00] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:55:00,122] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:55:00] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:55:00,153] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:55:00] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:55:00,306] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:55:00] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:20,546] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:20] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+[2024-09-26 14:57:20,640] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:20] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 14:57:20,847] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:20,898] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:20] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,107] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,111] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,179] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,359] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,409] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,436] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,509] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,715] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,766] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:57:21,781] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:57:21] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:50,513] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:50] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+[2024-09-26 14:58:50,593] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:50] "GET /contacts HTTP/1.1" 200 -
+[2024-09-26 14:58:50,818] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:50,830] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:50] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:50,883] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:50] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,176] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,208] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-location-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,264] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,466] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,590] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,638] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,669] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,735] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:51,802] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:51] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:54,771] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:54] "GET /login HTTP/1.1" 200 -
+[2024-09-26 14:58:55,215] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,058] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,109] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,203] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,611] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,659] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,809] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:56,812] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:56] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:58,655] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-09-26 14:58:58,823] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:58] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 14:58:59,434] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:59] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:59,504] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:59] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:58:59,608] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:58:59] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:07,098] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:07] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 14:59:07,372] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:07] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:09,875] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:09] "GET /contact/ae5adaf3-eece-4869-bf85-7313f8bf6066/edit HTTP/1.1" 200 -
+[2024-09-26 14:59:10,576] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:10] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:15,930] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:15] "[32mPOST /contact/ae5adaf3-eece-4869-bf85-7313f8bf6066/edit HTTP/1.1[0m" 302 -
+[2024-09-26 14:59:15,992] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:15] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 14:59:16,261] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:16] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:17,953] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:17] "GET /contact/fe308656-9119-4960-93a1-42c551ec8d6c/edit HTTP/1.1" 200 -
+[2024-09-26 14:59:18,578] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:18] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:23,354] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:23] "[32mPOST /contact/fe308656-9119-4960-93a1-42c551ec8d6c/edit HTTP/1.1[0m" 302 -
+[2024-09-26 14:59:23,524] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:23] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 14:59:24,512] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:24] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:26,314] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:26] "GET /contact/5ae95470-6249-437c-9221-306c47931062/edit HTTP/1.1" 200 -
+[2024-09-26 14:59:26,765] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:26] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:31,383] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:31] "[32mPOST /contact/5ae95470-6249-437c-9221-306c47931062/edit HTTP/1.1[0m" 302 -
+[2024-09-26 14:59:31,439] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:31] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 14:59:31,969] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:31] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:35,513] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:35] "[32mPOST /contact/ae5adaf3-eece-4869-bf85-7313f8bf6066/delete HTTP/1.1[0m" 302 -
+[2024-09-26 14:59:35,570] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:35] "GET /contacts/view HTTP/1.1" 200 -
+[2024-09-26 14:59:35,915] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:35] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:39,309] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:39] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 14:59:39,522] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:39] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:39,836] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:39] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:39,867] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:39] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 14:59:51,282] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:51] "GET /change_password HTTP/1.1" 200 -
+[2024-09-26 14:59:51,802] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 14:59:51] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:03,096] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:03] "[32mPOST /change_password/ed3bb864-546a-4884-a444-b2af3b55618b/update HTTP/1.1[0m" 302 -
+[2024-09-26 15:02:03,247] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:03] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 15:02:03,511] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:03] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:04,130] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:04] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:04,334] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:04] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:12,005] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:12] "GET /logout-form HTTP/1.1" 200 -
+[2024-09-26 15:02:12,153] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:13,721] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:13] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-09-26 15:02:13,791] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:13] "GET / HTTP/1.1" 200 -
+[2024-09-26 15:02:14,022] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,394] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,454] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,624] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,694] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,889] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,933] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:14,985] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:14] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,064] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,082] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,337] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,637] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,799] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,804] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,835] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:15,911] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:15] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:16,018] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:16] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:16,049] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:16] "GET /login HTTP/1.1" 200 -
+[2024-09-26 15:02:16,052] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:16] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:16,333] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:16] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:16,336] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:16] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:16,678] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,030] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,038] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,246] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,312] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,402] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,417] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:17,551] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:17] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:21,062] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2024-09-26 15:02:21,124] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:21] "GET /admindashboard HTTP/1.1" 200 -
+[2024-09-26 15:02:21,530] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:21] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:21,562] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:21] "[36mGET /static/images/studio_2.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:21,594] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:21] "[36mGET /static/images/mantra.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:25,865] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:25] "GET /featured_projects/new HTTP/1.1" 200 -
+[2024-09-26 15:02:26,403] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:26] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:48,983] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:48] "[32mPOST /featured_projects/new HTTP/1.1[0m" 302 -
+[2024-09-26 15:02:49,130] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:49] "GET /featured_projects HTTP/1.1" 200 -
+[2024-09-26 15:02:49,420] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:49] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:02:52,924] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:52] "GET /featured_projects/new HTTP/1.1" 200 -
+[2024-09-26 15:02:53,506] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:02:53] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:03:41,044] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:41] "[32mPOST /featured_projects/new HTTP/1.1[0m" 302 -
+[2024-09-26 15:03:41,131] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:41] "GET /featured_projects HTTP/1.1" 200 -
+[2024-09-26 15:03:41,528] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:41] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:03:48,252] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:48] "GET /featured_projects/4b36111a-e89b-487d-a765-cf5c7efce0a5/edit HTTP/1.1" 200 -
+[2024-09-26 15:03:48,627] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:48] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:03:59,721] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:59] "[32mPOST /featured_projects/4b36111a-e89b-487d-a765-cf5c7efce0a5/update HTTP/1.1[0m" 302 -
+[2024-09-26 15:03:59,797] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:03:59] "GET /featured_projects HTTP/1.1" 200 -
+[2024-09-26 15:04:00,333] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:04:00] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:04:06,262] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:04:06] "[32mPOST /featured_projects/5e3e9bd3-4e1f-4564-b773-d352b429351b/delete HTTP/1.1[0m" 302 -
+[2024-09-26 15:04:06,315] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:04:06] "GET /featured_projects HTTP/1.1" 200 -
+[2024-09-26 15:04:06,616] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:04:06] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:18,873] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/__init__.py', reloading
+[2024-09-26 15:07:19,684] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:07:24,344] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:07:24,403] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:07:24,405] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:07:24,564] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:07:24,575] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 15:07:48,694] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:48] "GET /logout-form HTTP/1.1" 200 -
+[2024-09-26 15:07:49,019] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:50,762] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:50] "[32mPOST /logout HTTP/1.1[0m" 302 -
+[2024-09-26 15:07:51,360] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:51] "GET / HTTP/1.1" 200 -
+[2024-09-26 15:07:51,636] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:51,753] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:51] "[36mGET /static/images/logo_port.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:51,826] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:51] "[36mGET /static/images/my_photo.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:52,238] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:52] "[36mGET /static/images/icons8-skill-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:52,296] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:52] "[36mGET /static/images/icons8-stack-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:52,326] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:52] "[36mGET /static/images/icons8-project-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:52,416] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:52] "[36mGET /static/images/icons8-portfolio-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:52,945] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:52] "[36mGET /static/images/icons8-contact-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,082] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/collaborate.jpg HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,189] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-technical-writing-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,195] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-touchscreen-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,382] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-whatsapp-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,416] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-email-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,436] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/message.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,692] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-linkedin-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,805] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-github-50.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,826] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/home.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,919] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-reference-64.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:53,992] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:53] "[36mGET /static/images/icons8-twitter-48.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:07:54,082] None requested None     INFO in _internal: 127.0.0.1 - - [26/Sep/2024 15:07:54] "[36mGET /static/images/copy_right.png HTTP/1.1[0m" 304 -
+[2024-09-26 15:13:52,316] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/references.py', reloading
+[2024-09-26 15:13:53,429] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:13:56,304] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:13:56,361] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:13:56,362] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:13:56,501] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:13:56,504] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 15:21:36,757] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/references.py', reloading
+[2024-09-26 15:21:37,375] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:21:39,932] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:21:39,987] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:21:39,988] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:21:40,135] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:21:40,139] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 15:22:45,070] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/references.py', reloading
+[2024-09-26 15:22:45,767] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:22:48,259] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:22:48,313] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:22:48,315] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:22:48,453] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:22:48,455] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 15:24:41,168] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/references.py', reloading
+[2024-09-26 15:24:41,842] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:24:44,406] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:24:44,455] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:24:44,458] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:24:44,597] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:24:44,599] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 15:25:36,812] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/references.py', reloading
+[2024-09-26 15:25:37,715] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:25:40,197] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:25:40,249] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:25:40,250] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:25:40,392] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:25:40,396] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972

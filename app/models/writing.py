@@ -15,7 +15,7 @@ class Writing(db.Model):
     """class of Technical writings done"""
     __tablename__ = 'writings'
     writing_id: Mapped[str] = mapped_column(
-        String(length=36), primary_key=True, default=str(uuid4())
+            String(length=36), primary_key=True, default=lambda: str(uuid4())
     )
     date_created: Mapped[datetime] = mapped_column(
         DateTime, default=datetime.utcnow
