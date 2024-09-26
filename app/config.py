@@ -22,7 +22,9 @@ class Config:
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER')
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
-    SQLALCHEMY_TRACK_MODIFICATIONS = os.environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')
+    SQLALCHEMY_TRACK_MODIFICATIONS = os.environ.get(
+        'SQLALCHEMY_TRACK_MODIFICATIONS'
+    )
     JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
     JWT_ACCESS_TOKEN_EXPIRES = int(os.environ.get('JWT_ACCESS_TOKEN_EXPIRES'))
     JWT_TOKEN_LOCATION = os.environ.get('JWT_TOKEN_LOCATION')  # .split(',')
@@ -62,9 +64,15 @@ def create_default_admin():
             password_hash=default_admin_password,
             phone=default_admin_phone
         )
-        current_app.logger.info('admin i.e instance of Admin created successfully')
+        current_app.logger.info(
+            'admin i.e instance of Admin created successfully'
+        )
         db = current_app.db
         db.session.add(admin)
         db.session.commit()
-        current_app.logger.info(f"Default admin user created: {default_admin_username}")
-    current_app.logger.info(f"Default admin {default_admin_username} already exist")
+        current_app.logger.info(
+            f"Default admin user created: {default_admin_username}"
+        )
+    current_app.logger.info(
+        f"Default admin {default_admin_username} already exist"
+    )
