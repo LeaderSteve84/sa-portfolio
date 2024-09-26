@@ -25735,3 +25735,24 @@ INFO  [alembic.runtime.migration] Running upgrade  -> 677dd48a7ee7, FEAT: change
 [2024-09-26 15:58:00,027] None requested None     INFO in __init__: Default Admin created successfully
 [2024-09-26 15:58:00,183] None requested None     WARNING in _internal:  * Debugger is active!
 [2024-09-26 15:58:00,186] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 16:01:54,384] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/featured_projects.py', reloading
+[2024-09-26 16:01:55,282] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 16:01:59,142] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 16:01:59,224] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 16:01:59,225] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 16:01:59,398] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 16:01:59,403] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 16:06:19,466] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/featured_projects.py', reloading
+[2024-09-26 16:06:20,116] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 16:06:23,237] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 16:06:23,294] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 16:06:23,296] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 16:06:23,437] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 16:06:23,441] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 16:08:46,956] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/featured_projects.py', reloading
+[2024-09-26 16:08:47,628] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 16:08:50,175] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 16:08:50,241] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 16:08:50,242] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 16:08:50,406] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 16:08:50,451] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972

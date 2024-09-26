@@ -32,12 +32,19 @@ def create_featured_project():
             github_link=form.github_link.data,
             video_link=form.video_link.data
         )
-        db.session.add(new_project)
-        db.session.commit()
-        flash('Featured project added successfully', 'success')
-        return redirect(
-            url_for('main.featured_projects.list_featured_projects')
-        )
+        try:
+            db.session.add(new_project)
+            db.session.commit()
+            flash('Featured project added successfully', 'success')
+            return redirect(
+                url_for('main.featured_projects.list_featured_projects')
+            )
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(
+                url_for('main.featured_projects.create_featured_project')
+            )
     else:
         if form.errors != {}:
             for error_message in form.errors.values():
@@ -45,7 +52,7 @@ def create_featured_project():
                     f"Error creating featured project: {error_message}",
                     "error"
                 )
-    return render_template('create_featured_project.html', form=form)
+        return render_template('create_featured_project.html', form=form)
 
 
 @featured_projects_bp.route(
@@ -124,11 +131,20 @@ def update_featured_project(featured_project_id):
     featured_project.video_link = request.form.get(
         'video_link', featured_project.video_link
     )
-
-    db.session.commit()
-    flash('Featured project updated successfully', 'success')
-
-    return redirect(url_for("main.featured_projects.list_featured_projects"))
+    try:
+        db.session.commit()
+        flash('Featured project updated successfully', 'success')
+        return redirect(
+            url_for(
+                "main.featured_projects.list_featured_projects"
+            )
+        )
+    except Exception as e:
+        db.session.rollback()
+        flash("Error: " + str(e), "danger")
+        return redirect(
+            url_for("main.featured_projects.list_featured_projects")
+        )
 
 
 @featured_projects_bp.route(
@@ -139,9 +155,21 @@ def delete_featured_project(featured_project_id):
     """delete a featured projects"""
     featured_project = FeaturedProject.query.get_or_404(featured_project_id)
     if featured_project:
-        db.session.delete(featured_project)
-        db.session.commit()
-        flash('Featured project deleted successfully!', 'success')
+        try:
+            db.session.delete(featured_project)
+            db.session.commit()
+            flash('Featured project deleted successfully!', 'success')
+            return redirect(
+                url_for('main.featured_projects.list_featured_projects')
+            )
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(
+                url_for('main.featured_projects.list_featured_projects')
+            )
     else:
         flash('Featured project not found', 'error')
-    return redirect(url_for('main.featured_projects.list_featured_projects'))
+        return redirect(
+            url_for('main.featured_projects.list_featured_projects')
+        )
