@@ -10,6 +10,7 @@ from uuid import uuid4
 
 db = current_app.db
 
+
 class Reference(db.Model):
     """class of Reference"""
     __tablename__ = 'reference'
@@ -31,7 +32,7 @@ class Reference(db.Model):
     )
     contact: Mapped[Optional[str]] = mapped_column(
         String(length=100), unique=False
-    ) 
+    )
     name: Mapped[str] = mapped_column(
         String(length=100), unique=False
     )
