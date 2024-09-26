@@ -10,6 +10,7 @@ from uuid import uuid4
 
 db = current_app.db
 
+
 class Resume(db.Model):
     """class of Reference"""
     __tablename__ = 'resume'
@@ -24,7 +25,7 @@ class Resume(db.Model):
     )
     resume_image1_link: Mapped[Optional[str]] = mapped_column(
         String(length=255), unique=False
-    ) 
+    )
     resume_image2_link: Mapped[Optional[str]] = mapped_column(
         String(length=255), unique=False
     )
@@ -36,7 +37,7 @@ class Resume(db.Model):
     )
     resume_download_link: Mapped[Optional[str]] = mapped_column(
         String(length=255), unique=False
-    ) 
+    )
 
     def __repr__(self):
         return f'<Resume {self.resume_id}>'
