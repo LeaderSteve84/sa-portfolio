@@ -25728,3 +25728,10 @@ INFO  [alembic.runtime.migration] Running upgrade  -> 677dd48a7ee7, FEAT: change
 [2024-09-26 15:48:37,824] None requested None     INFO in __init__: Default Admin created successfully
 [2024-09-26 15:48:37,995] None requested None     WARNING in _internal:  * Debugger is active!
 [2024-09-26 15:48:38,000] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972
+[2024-09-26 15:57:56,435] None requested None     INFO in _internal:  * Detected change in '/home/stephen_adah/sa-portfolio/app/routes/projects_done.py', reloading
+[2024-09-26 15:57:57,031] None requested None     INFO in _internal:  * Restarting with stat
+[2024-09-26 15:57:59,961] None requested None     INFO in __init__: DB Tables created successfully
+[2024-09-26 15:58:00,025] None requested None     INFO in config: Default admin LeaderSteve already exist
+[2024-09-26 15:58:00,027] None requested None     INFO in __init__: Default Admin created successfully
+[2024-09-26 15:58:00,183] None requested None     WARNING in _internal:  * Debugger is active!
+[2024-09-26 15:58:00,186] None requested None     INFO in _internal:  * Debugger PIN: 789-266-972

@@ -27,10 +27,15 @@ def create_project_done():
             date_cmptd=form.date_cmptd.data,
             video_link=form.video_link.data
         )
-        db.session.add(new_project)
-        db.session.commit()
-        flash('Project done added successfully', 'success')
-        return redirect(url_for('main.projects_done.list_projects_done'))
+        try:
+            db.session.add(new_project)
+            db.session.commit()
+            flash('Project done added successfully', 'success')
+            return redirect(url_for('main.projects_done.list_projects_done'))
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.projects_done.create_project_done'))
     else:
         if form.errors != {}:
             for error_message in form.errors.values():
@@ -80,7 +85,10 @@ def edit_project_done(project_done_id):
         flash('You are not an admin', 'warning')
         return redirect(url_for('main.home.home_page'))
     project_done = ProjectDone.query.get_or_404(project_done_id)
-    return render_template('edit_project_done.html', project_done=project_done)
+    return render_template(
+        'edit_project_done.html',
+        project_done=project_done
+    )
 
 
 @projects_done_bp.route(
@@ -104,11 +112,14 @@ def update_project_done(project_done_id):
         'video_link',
         project_done.video_link
     )
-
-    db.session.commit()
-    flash('Project Done updated successfully', 'success')
-
-    return redirect(url_for("main.projects_done.list_projects_done"))
+    try:
+        db.session.commit()
+        flash('Project Done updated successfully', 'success')
+        return redirect(url_for("main.projects_done.list_projects_done"))
+    except Exception as e:
+        db.session.rollback()
+        flash("Error: " + str(e), "danger")
+        return redirect(url_for("main.projects_done.list_projects_done"))
 
 
 @projects_done_bp.route(
@@ -120,9 +131,15 @@ def delete_project_done(project_done_id):
     """delete a Project Done"""
     project_done = ProjectDone.query.get_or_404(project_done_id)
     if project_done:
-        db.session.delete(project_done)
-        db.session.commit()
-        flash('Project done deleted successfully!', 'success')
+        try:
+            db.session.delete(project_done)
+            db.session.commit()
+            flash('Project done deleted successfully!', 'success')
+            return redirect(url_for('main.projects_done.list_projects_done'))
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.projects_done.list_projects_done'))
     else:
         flash('Project done not found', 'error')
-    return redirect(url_for('main.projects_done.list_projects_done'))
+        return redirect(url_for('main.projects_done.list_projects_done'))
