@@ -5,9 +5,19 @@ from wtforms.validators import DataRequired, URL, Optional
 
 class ResumeForm(FlaskForm):
     """Class to create form for creating resume"""
-    resume_image1_link = URLField('Resume Image 1 Link (Optional)', validators=[Optional()])  #, URL()])
-    resume_image2_link = URLField('Resume Image 2 Link (Optional)', validators=[Optional()])  #, URL()])
-    resume_image3_link = URLField('Resume Image 3 Link (Optional)', validators=[Optional()])  #, URL()])
-    resume_image4_link = URLField('Resume Image 4 Link (Optional)', validators=[Optional()])  #, URL()])
-    resume_download_link = URLField('Resume Download Link (Optional)', validators=[Optional()])
+    resume_image1_link = URLField(
+        'Resume Image 1 Link (Optional)', validators=[Optional(), URL()]
+    )
+    resume_image2_link = URLField(
+        'Resume Image 2 Link (Optional)', validators=[Optional(), URL()]
+    )
+    resume_image3_link = URLField(
+        'Resume Image 3 Link (Optional)', validators=[Optional(), URL()]
+    )
+    resume_image4_link = URLField(
+        'Resume Image 4 Link (Optional)', validators=[Optional(), URL()]
+    )
+    resume_download_link = URLField(
+        'Resume Download Link (Optional)', validators=[Optional(), URL()]
+    )
     submit = SubmitField('Submit Your Resume')
