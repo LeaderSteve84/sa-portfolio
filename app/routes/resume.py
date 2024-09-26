@@ -25,10 +25,15 @@ def create_resume():
             resume_image4_link=form.resume_image4_link.data,
             resume_download_link=form.resume_download_link.data
         )
-        db.session.add(resume)
-        db.session.commit()
-        flash('Resume added successfully', 'success')
-        return redirect(url_for('main.resume.list_resume'))
+        try:
+            db.session.add(resume)
+            db.session.commit()
+            flash('Resume added successfully', 'success')
+            return redirect(url_for('main.resume.list_resume'))
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.resume.create_resume'))
     else:
         if form.errors != {}:
             for error_message in form.errors.values():
@@ -74,9 +79,14 @@ def edit_resume(resume_id):
         resume.resume_image3_link = form.resume_image3_link.data
         resume.resume_image4_link = form.resume_image4_link.data
         resume.resume_download_link = form.resume_download_link.data
-        db.session.commit()
-        flash('Resume updated successfully', 'success')
-        return redirect(url_for('main.resume.list_resume'))
+        try:
+            db.session.commit()
+            flash('Resume updated successfully', 'success')
+            return redirect(url_for('main.resume.list_resume'))
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.resume.list_resume'))
     else:
         if form.errors != {}:
             for error_message in form.errors.values():
@@ -93,9 +103,14 @@ def delete_resume(resume_id):
     """delete a resume"""
     resume = Resume.query.get_or_404(resume_id)
     if resume:
-        db.session.delete(resume)
-        db.session.commit()
-        flash('Resume deleted successfully!', 'success')
+        try:
+            db.session.delete(resume)
+            db.session.commit()
+            flash('Resume deleted successfully!', 'success')
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.resume.list_resume'))
     else:
         flash('Resume not found', 'error')
     return redirect(url_for('main.resume.list_resume'))
