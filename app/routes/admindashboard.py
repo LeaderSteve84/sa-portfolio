@@ -7,6 +7,7 @@ from app.models.featured_project import FeaturedProject
 from app.models.project_done import ProjectDone
 from app.models.writing import Writing
 from app.models.reference import Reference
+from app.models import Admin
 
 admindashboard_bp = Blueprint('admindashboard', __name__)
 
@@ -16,6 +17,10 @@ admindashboard_bp = Blueprint('admindashboard', __name__)
 def admindashboard_page():
     """Admin dashboard page route"""
     admin_id = get_jwt_identity() # Fetch and display data using the admin_id
+    admin = Admin.query.filter_by(id=admin_id).first()
+    if not admin:
+        flash('You are not an admin', 'warning')
+        return redirect(url_for('main.home.home_page'))
     contact_messages = ContactMessage.query.all()
     featured_projects = FeaturedProject.query.all()
     projects_done = ProjectDone.query.all()

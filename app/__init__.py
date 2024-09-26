@@ -13,9 +13,6 @@ from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
 from flask_wtf.csrf import CSRFProtect
 
-# Initialize mail instance globally
-mail = Mail()
-
 # configuration logging before app creation,
 # for stream, file and mail handlers.
 logger = logging.getLogger()
@@ -40,9 +37,11 @@ fileHandler.setLevel(logging.DEBUG)
 fileHandler.setFormatter(formatter)
 logger.addHandler(fileHandler)
 
+
 # create the base class
 class Base(DeclarativeBase):
     pass
+
 
 # create the db instance
 db = SQLAlchemy(model_class=Base)
@@ -51,19 +50,22 @@ migrate = Migrate()
 # Create the jwt instance
 jwt = JWTManager()
 
+
 # create instance of CSRFProtect
 csrf = CSRFProtect()
+
 
 def create_app():
     """function to create flask app"""
     app = Flask(__name__)
 
-    mail.init_app(app)
-    app.mail = mail  # set mail into app context
-
     # set configuration into app
     app.config.from_object('app.config.Config')
-    
+
+    # Initialize mail instance
+    mail = Mail(app)
+    app.mail = mail  # set mail into app context
+
     # create db instance
     db.init_app(app)
     app.db = db  # set db into app context
@@ -94,7 +96,9 @@ def create_app():
     with app.app_context():
         # import all the models from app/models/__init__.py
         from app.models import Admin, FeaturedProject, ProjectDone, \
-        Writing, Reference, Resume, ContactMessage
+            Writing, Reference, Resume, ContactMessage
+
+        # create all tables in database
         db.create_all()
         app.logger.info("DB Tables created successfully")
 
@@ -107,5 +111,11 @@ def create_app():
 
         # register main blueprint to app
         app.register_blueprint(bp)
+
+        # import after request
+        from app.routes.afterRequest import refresh_expiring_jwts
+
+        # register after_request
+        app.after_request(refresh_expiring_jwts)
 
     return app

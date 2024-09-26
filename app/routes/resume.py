@@ -3,20 +3,15 @@
 from flask import Blueprint, render_template, flash, url_for, current_app, redirect, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.forms.createResume import ResumeForm
-from app.models.resume import Resume
-from flask_wtf.csrf import generate_csrf
+from app.models import Resume, Admin
 
 resume_bp = Blueprint('resume', __name__)
 db = current_app.db
 logger = current_app.logger
 
 @resume_bp.route("/resume/new", methods=['GET', 'POST'], strict_slashes=False)
-# @jwt_required()
 def create_resume():
     """create resume"""
-    # admin_id = get_jwt_identity()
-    token = generate_csrf()
-    print(f"generated csrf token: {token}")
     form = ResumeForm()
     if form.validate_on_submit():
         resume = Resume(
@@ -30,12 +25,22 @@ def create_resume():
         db.session.commit()
         flash('Resume added successfully', 'success')
         return redirect(url_for('main.resume.list_resume'))
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"Error creating your resume: {error_message}", "error")
     return render_template('create_resume.html', form=form)
 
 
 @resume_bp.route("/resume", methods=['GET'], strict_slashes=False)
+@jwt_required()
 def list_resume():
         """list the resume"""
+        admin_id = get_jwt_identity()
+        admin = Admin.query.filter_by(id=admin_id).first()
+        if not admin:
+            flash('You are not an admin', 'warning')
+            return redirect(url_for('main.home.home_page'))
         resume = Resume.query.all()
         return render_template('list_resume.html', resume=resume)
 
@@ -46,7 +51,7 @@ def view_resume():
         resume = Resume.query.all()
         return render_template('view_resume.html', resume=resume)
 
-@resume_bp.route("/resume/<int:resume_id>/edit", methods=['GET', 'POST'], strict_slashes=False)
+@resume_bp.route("/resume/<string:resume_id>/edit", methods=['GET', 'POST'], strict_slashes=False)
 def edit_resume(resume_id):
         """edit and update a created resume"""
         resume = Resume.query.get_or_404(resume_id)
@@ -60,10 +65,14 @@ def edit_resume(resume_id):
             db.session.commit()
             flash('Resume updated successfully', 'success')
             return redirect(url_for('main.resume.list_resume'))
+        else:
+            if form.errors != {}:
+                for error_message in form.errors.values():
+                    flash(f"Error updating your resume: {error_message}", "error")
         return render_template('edit_resume.html', form=form, resume=resume)
 
 
-@resume_bp.route("/resume/<int:resume_id>/delete", methods=['POST'], strict_slashes=False)
+@resume_bp.route("/resume/<string:resume_id>/delete", methods=['POST'], strict_slashes=False)
 def delete_resume(resume_id):
     """delete a resume"""
     resume = Resume.query.get_or_404(resume_id)

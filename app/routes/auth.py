@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """home module"""
 from flask import Blueprint, request, render_template, redirect, url_for, \
-flash, request, jsonify, make_response, current_app
+flash, jsonify, make_response, current_app
 from flask_jwt_extended import create_access_token, set_access_cookies, \
 unset_jwt_cookies, jwt_required, get_jwt_identity
 from app.forms.adminLogin import AdminLoginForm, AdminLogoutForm
@@ -13,8 +13,12 @@ from werkzeug.security import check_password_hash
 from datetime import timedelta
 from itsdangerous import URLSafeTimedSerializer
 from flask_mail import Message
+# from flask_wtf.csrf import CSRFProtect, csrf_exempt
 
 auth_bp = Blueprint('auth', __name__)
+mail = current_app.mail
+db = current_app.db
+csrf = current_app.csrf
 
 
 @auth_bp.route("/login", methods=['GET', 'POST'], strict_slashes=False)
@@ -32,7 +36,10 @@ def login():
             return response
         else:
             flash('Invalid username/email or password', 'error')
-            return render_template('adminlogin.html', form=form)
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"login not successful: {error_message}", "error")
     return render_template('adminlogin.html', form=form)
 
 
@@ -46,12 +53,18 @@ def logoutForm():
 @auth_bp.route("/logout", methods=['POST'], strict_slashes=False)
 def logout():
     """route to handle admin logout"""
-    # if form.validate_on_submit:
-    response = jsonify({"msg": "Logout successfully"})
-    # unset the JWT cookies to log out
-    unset_jwt_cookies(response)
-    flash("log out successfully", "success")
-    return redirect(url_for('main.home.home_page'))
+    form = AdminLogoutForm()
+    if form.validate_on_submit:
+        response = make_response(redirect(url_for('main.home.home_page')))
+        # unset the JWT cookies to log out
+        unset_jwt_cookies(response)
+        flash("log out successfully", "success")
+        return response
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"logout not successful: {error_message}", "error")
+                return redirect(url_for("main.auth.logoutForm"))
 
 
 def generate_reset_token(email):
@@ -81,7 +94,7 @@ def send_reset_email(admin_email, token):
     {reset_url}
     If you did not make this request, simply ignore this email.
     '''
-    current_app.mail.send(msg)
+    mail.send(msg)
 
 
 @auth_bp.route("/forgot_password", methods=['GET', 'POST'])
@@ -92,19 +105,22 @@ def forgot_password():
         admin = Admin.query.filter_by(email=form.email.data).first()
         if admin:
             token = generate_reset_token(admin.email)
-            print(admin.email)
-            print(token)
             send_reset_email(admin.email, token)
             flash('password reset email has been sent', 'info')
         else:
             flash('No account found with that email.', 'warning')
+            return render_template('forgot_password.html', form=form)
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"Error validating your email: {error_message}", "error")
     return render_template('forgot_password.html', form=form)
 
 
 @auth_bp.route("/reset_password/<token>", methods=['GET', 'POST'])
 def reset_password(token):
     """reset the password"""
-    email = verify_reset_password(token)
+    email = verify_reset_token(token)
     if email is None:
         flash('The token is either invalid or expired', 'danger')
         return redirect(url_for('main.auth.forgot_password'))
@@ -116,31 +132,42 @@ def reset_password(token):
             db.session.commit()
             flash('Your password has been reset!', 'success')
             return redirect(url_for('main.auth.login'))
-    return render_template('reset_password.html', form=form)
+    return render_template('reset_password.html', form=form, token=token)
 
 
-@auth_bp.route("/change_password", methods=['GET', 'POST'])
+@auth_bp.route("/change_password", methods=['GET'])
 @jwt_required()
-def change_password():
+def change_password_page():
+    """return admin change password form"""
     admin_id = get_jwt_identity()
-    print(admin_id)
     admin = Admin.query.filter_by(id=admin_id).first()
-    print(admin)
+    print(admin.id)
     if not admin:
         flash('You are not an admin', 'warning')
-        return redirect(url_for('main.admindashboard.admindashboard_page')) 
+        return redirect(url_for('main.home.home_page'))
+    form = ChangePasswordForm()
+    return render_template('change_password.html', form=form, admin=admin)
+
+
+@auth_bp.route("/change_password/<string:admin_id>/update", methods=['POST'])
+def change_password(admin_id):
+    """to change admin password"""
     form = ChangePasswordForm()
     if form.validate_on_submit():
-        old_password = form.old_password.data
-        new_password = form.new_password.data
-        # check if old password is correct
-        if not check_password_hash(admin.password_hash, old_password):
-            flash('Incorrect current password', 'warning')
-            return render_template('change_password.html', form=form)
-        # update the password_hash with new_password
-        hash_password = generate_password_hash(new_password)
-        admin.set_password(hash_password)
-        db.session.commit()
-        flash('Admin password updated successfully', 'success')
-        return redirect(url_for('main.admindashboard.admindashboard_page'))
-    return render_template('change_password.html', form=form)
+        admin = Admin.query.filter_by(id=admin_id).first()
+        if admin:
+            old_password = form.old_password.data
+            new_password = form.new_password.data
+            # check if old password is correct
+            if not check_password_hash(admin.password_hash, old_password):
+                flash('Incorrect current password', 'warning')
+                return render_template('change_password.html', form=form, admin=admin)
+            admin.set_password(new_password)
+            db.session.commit()
+            flash('Admin password updated successfully', 'success')
+            return redirect(url_for('main.admindashboard.admindashboard_page'))
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"Error changing your password: {error_message}", "error")
+                return redirect(url_for('main.auth.change_password_page'))

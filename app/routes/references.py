@@ -3,20 +3,15 @@
 from flask import Blueprint, render_template, flash, url_for, current_app, redirect, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.forms.createReference import ReferenceForm
-from app.models.reference import Reference
-from flask_wtf.csrf import generate_csrf
+from app.models import Reference, Admin
 
 references_bp = Blueprint('references', __name__)
 db = current_app.db
 logger = current_app.logger
 
 @references_bp.route("/reference/new", methods=['GET', 'POST'], strict_slashes=False)
-# @jwt_required()
 def create_reference():
     """create reference"""
-    # admin_id = get_jwt_identity()
-    token = generate_csrf()
-    print(f"generated csrf token: {token}")
     form = ReferenceForm()
     if form.validate_on_submit():
         reference = Reference(
@@ -31,12 +26,22 @@ def create_reference():
         db.session.commit()
         flash('Reference added successfully', 'success')
         return redirect(url_for('main.references.view_references'))
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"Error creating your reference: {error_message}", "error")
     return render_template('create_reference.html', form=form)
 
 
 @references_bp.route("/references", methods=['GET'], strict_slashes=False)
+@jwt_required()
 def list_references():
         """get list of all references"""
+        admin_id = get_jwt_identity()
+        admin = Admin.query.filter_by(id=admin_id).first()
+        if not admin:
+            flash('You are not an admin', 'warning')
+            return redirect(url_for('main.home.home_page'))
         references = Reference.query.all()
         return render_template('list_references.html', references=references)
 
@@ -47,7 +52,7 @@ def view_references():
         references = Reference.query.all()
         return render_template('view_references.html', references=references)
 
-@references_bp.route("/reference/<int:reference_id>/edit", methods=['GET', 'POST'], strict_slashes=False)
+@references_bp.route("/reference/<string:reference_id>/edit", methods=['GET', 'POST'], strict_slashes=False)
 def edit_reference(reference_id):
         """edit and update a created reference"""
         reference = Reference.query.get_or_404(reference_id)
@@ -62,10 +67,14 @@ def edit_reference(reference_id):
             db.session.commit()
             flash('Reference updated successfully', 'success')
             return redirect(url_for('main.references.list_references'))
+        else:
+            if form.errors != {}:
+                for error_message in form.errors.values():
+                    flash(f"Error updating the contact message status: {error_message}", "error")
         return render_template('edit_reference.html', form=form, reference=reference)
 
 
-@references_bp.route("/reference/<int:reference_id>/delete", methods=['POST'], strict_slashes=False)
+@references_bp.route("/reference/<string:reference_id>/delete", methods=['POST'], strict_slashes=False)
 def delete_reference(reference_id):
     """delete a reference"""
     reference = Reference.query.get_or_404(reference_id)

@@ -6,13 +6,16 @@ from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String, DateTime
 from datetime import datetime
 from typing import Optional
+from uuid import uuid4
 
 db = current_app.db
 
 class Resume(db.Model):
     """class of Reference"""
     __tablename__ = 'resume'
-    resume_id: Mapped[int] = mapped_column(primary_key=True)
+    resume_id: Mapped[str] = mapped_column(
+        String(length=36), primary_key=True, default=str(uuid4())
+    )
     date_created: Mapped[datetime] = mapped_column(
         DateTime, default=datetime.utcnow
     )

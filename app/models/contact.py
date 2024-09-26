@@ -5,6 +5,7 @@ from flask import current_app
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String, DateTime, Text
 from datetime import datetime
+from uuid import uuid4
 
 
 db = current_app.db
@@ -12,7 +13,9 @@ db = current_app.db
 class ContactMessage(db.Model):
     """class of contact messages"""
     __tablename__ = 'contactMessage'
-    message_id: Mapped[int] = mapped_column(primary_key=True)
+    message_id: Mapped[str] = mapped_column(
+            String(length=36), primary_key=True, default=str(uuid4())
+    )
     date_submitted: Mapped[datetime] = mapped_column(
         DateTime, default=datetime.utcnow
     )

@@ -3,20 +3,15 @@
 from flask import Blueprint, render_template, flash, url_for, current_app, redirect, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.forms.createProjectDone import ProjectDoneForm
-from app.models.project_done import ProjectDone
-from flask_wtf.csrf import generate_csrf
+from app.models import ProjectDone, Admin
 
 projects_done_bp = Blueprint('projects_done', __name__)
 db = current_app.db
 logger = current_app.logger
 
 @projects_done_bp.route("/project_done/new", methods=['GET', 'POST'], strict_slashes=False)
-# @jwt_required()
 def create_project_done():
     """create projects done"""
-    # admin_id = get_jwt_identity()
-    token = generate_csrf()
-    print(f"generated csrf token: {token}")
     form = ProjectDoneForm()
     if form.validate_on_submit():
         new_project = ProjectDone(
@@ -32,12 +27,22 @@ def create_project_done():
         db.session.commit()
         flash('Project done added successfully', 'success')
         return redirect(url_for('main.projects_done.list_projects_done'))
+    else:
+        if form.errors != {}:
+            for error_message in form.errors.values():
+                flash(f"Error creating project done: {error_message}", "error")
     return render_template('create_project_done.html', form=form)
 
 
 @projects_done_bp.route("/project_done", methods=['GET'], strict_slashes=False)
+@jwt_required()
 def list_projects_done():
         """get list of all projects done"""
+        admin_id = get_jwt_identity()
+        admin = Admin.query.filter_by(id=admin_id).first()
+        if not admin:
+            flash('You are not an admin', 'warning')
+            return redirect(url_for('main.home.home_page'))
         projects_done = ProjectDone.query.all()
         return render_template('list_projects_done.html', projects_done=projects_done)
 
@@ -48,14 +53,20 @@ def view_projects_done():
         projects_done = ProjectDone.query.all()
         return render_template('view_projects_done.html', projects_done=projects_done)
 
-@projects_done_bp.route("/projects_done/<int:project_done_id>/edit", methods=['GET'], strict_slashes=False)
+@projects_done_bp.route("/projects_done/<string:project_done_id>/edit", methods=['GET'], strict_slashes=False)
+@jwt_required()
 def edit_project_done(project_done_id):
         """edit a created project done"""
+        admin_id = get_jwt_identity()
+        admin = Admin.query.filter_by(id=admin_id).first()
+        if not admin:
+            flash('You are not an admin', 'warning')
+            return redirect(url_for('main.home.home_page'))
         project_done = ProjectDone.query.get_or_404(project_done_id)
         return render_template('edit_project_done.html', project_done=project_done)
 
 
-@projects_done_bp.route("/project_done/<int:project_done_id>/update", methods=['POST'], strict_slashes=False)
+@projects_done_bp.route("/project_done/<string:project_done_id>/update", methods=['POST'], strict_slashes=False)
 def update_project_done(project_done_id):
     """update a projects done"""
     project_done = ProjectDone.query.get_or_404(project_done_id)
@@ -74,7 +85,7 @@ def update_project_done(project_done_id):
     return redirect(url_for("main.projects_done.list_projects_done"))
 
 
-@projects_done_bp.route("/project_done/<int:project_done_id>/delete", methods=['POST'], strict_slashes=False)
+@projects_done_bp.route("/project_done/<string:project_done_id>/delete", methods=['POST'], strict_slashes=False)
 def delete_project_done(project_done_id):
     """delete a Project Done"""
     project_done = ProjectDone.query.get_or_404(project_done_id)

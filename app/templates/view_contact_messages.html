@@ -15,7 +15,7 @@
        <div class="card h-100 shadow-sm">
          <div class="card-body shadow">
                 <h5 class="card-title">No. {{ loop.index }}: {{ contact_message.name }}</h5>
-                <p class="card-text"><small>Date Submitted: {{ contact_message.date_submitted }} - Submission Serial No: {{ contact_message.message_id }}</small></p>
+                <p class="card-text"><small>Date Submitted: {{ contact_message.date_submitted }}</small></p>
                 <p class="card-text"><strong>Email:</strong> <a href="mailto: {{ contact_message.email }}" target"_blank">{{ contact_message.email }}</a></p>
                 <p class="card-text"><strong>Subject:</strong> {{ contact_message.subject }}</p>
                 <p class="card-text"><strong>Message:</strong> {{ contact_message.message }}</p>
