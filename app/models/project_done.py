@@ -10,6 +10,7 @@ from uuid import uuid4
 
 db = current_app.db
 
+
 class ProjectDone(db.Model):
     """class of Projects done"""
     __tablename__ = 'projects_done'
