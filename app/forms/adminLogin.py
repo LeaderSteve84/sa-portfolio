@@ -4,9 +4,12 @@ from wtforms.validators import DataRequired
 
 
 class AdminLoginForm(FlaskForm):
-    username_email = StringField('Username or Email Address', validators=[DataRequired()])
+    username_email = StringField(
+        'Username or Email Address', validators=[DataRequired()]
+    )
     password = PasswordField("Password", validators=[DataRequired()])
     submit = SubmitField("Login")
+
 
 class AdminLogoutForm(FlaskForm):
     submit = SubmitField("Log Out")
