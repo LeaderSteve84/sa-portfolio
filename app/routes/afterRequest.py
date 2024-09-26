@@ -3,7 +3,7 @@
 
 from datetime import datetime, timedelta, timezone
 from flask_jwt_extended import create_access_token, get_jwt, \
-get_jwt_identity, set_access_cookies
+    get_jwt_identity, set_access_cookies
 
 
 def refresh_expiring_jwts(response):
@@ -17,5 +17,6 @@ def refresh_expiring_jwts(response):
             set_access_cookies(response, access_token)
         return response
     except (RuntimeError, KeyError):
-        # Case where there is not a valid JWT. Just return the original response
+        # Case where there is not a valid JWT.
+        # Just return the original response
         return response
