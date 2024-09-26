@@ -10,6 +10,7 @@ from uuid import uuid4
 
 db = current_app.db
 
+
 class ContactMessage(db.Model):
     """class of contact messages"""
     __tablename__ = 'contactMessage'
