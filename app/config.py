@@ -30,6 +30,14 @@ class Config:
     JWT_TOKEN_LOCATION = os.environ.get('JWT_TOKEN_LOCATION')  # .split(',')
     JWT_COOKIE_SECURE = os.environ.get('JWT_COOKIE_SECURE')
     JWT_COOKIE_CSRF_PROTECT = os.environ.get('JWT_COOKIE_CSRF_PROTECT')
+    PROPAGATE_EXCEPTIONS = os.environ.get('PROPAGATE_EXCEPTIONS')
+
+# config for flask caching
+cache_config = {
+    "DEBUG": True,
+    "CACHE_TYPE": "SimpleCache",
+    "CACHE_DEFAULT_TIMEOUT": 300
+}
 
 
 class RequestFormatter(logging.Formatter):

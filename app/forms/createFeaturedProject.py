@@ -8,10 +8,12 @@ class FeaturedProjectForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     description = TextAreaField('Description', validators=[DataRequired()])
     image_link = StringField(
-        'Image URL (Optional)', validators=[Optional(), URL()]
+        'Image URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     stacks = StringField(
-        'Stacks - Technologies Used', validators=[DataRequired()]
+        'Stacks - Technologies Used',
+        validators=[DataRequired()]
     )
     role = TextAreaField('Your Role', validators=[DataRequired()])
     challenges = TextAreaField(
@@ -21,12 +23,15 @@ class FeaturedProjectForm(FlaskForm):
         'Completion Date', validators=[DataRequired()]
     )
     domain_link = StringField(
-        'Domain URL (Optional)', validators=[Optional(), URL()]
+        'Domain URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     github_link = StringField(
-        'Github URL (Optional)', validators=[Optional(), URL()]
+        'Github URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     video_link = StringField(
-        'Video URL (Optional)', validators=[Optional(), URL()]
+        'Video URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     submit = SubmitField('Add Featured Project')

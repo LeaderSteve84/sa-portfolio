@@ -8,6 +8,7 @@ from app.models import FeaturedProject, Admin
 
 featured_projects_bp = Blueprint('featured_projects', __name__)
 db = current_app.db
+cache = current_app.cache
 logger = current_app.logger
 
 
@@ -76,6 +77,7 @@ def list_featured_projects():
 @featured_projects_bp.route(
     "/featured_projects/view", methods=['GET'], strict_slashes=False
 )
+@cache.cached(timeout=3600)
 def view_featured_projects():
     """get list of all featured projects"""
     featured_projects = FeaturedProject.query.all()

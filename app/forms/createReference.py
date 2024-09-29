@@ -18,7 +18,8 @@ class ReferenceForm(FlaskForm):
         validators=[DataRequired(), Length(min=10)]
     )
     reference_link = URLField(
-        'URL_Link (Optional)', validators=[Optional(), URL()]
+        'URL_Link (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     contact = StringField(
         'Email | Mobile Contact (Optional)',

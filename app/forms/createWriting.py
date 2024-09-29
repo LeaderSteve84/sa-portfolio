@@ -7,12 +7,14 @@ class TechWritingForm(FlaskForm):
     """Class to create form for technical writing"""
     title = StringField('Title', validators=[DataRequired()])
     image_link = StringField(
-        'Image URL (Optional)', validators=[Optional(), URL()]
+        'Image URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     description = TextAreaField(
         'Technical Writing', validators=[DataRequired()]
     )
     published_link = StringField(
-        'Published URL (Optional)', validators=[Optional(), URL()]
+        'Published URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
     )
     submit = SubmitField('Submit Technical Writing')

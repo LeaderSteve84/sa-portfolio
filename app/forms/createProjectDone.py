@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
-from wtforms.validators import DataRequired, Optional
+from wtforms.validators import DataRequired, Optional, URL
 
 
 class ProjectDoneForm(FlaskForm):
@@ -17,5 +17,8 @@ class ProjectDoneForm(FlaskForm):
     )
     role = TextAreaField('Project Role', validators=[DataRequired()])
     date_cmptd = StringField('Completion Date', validators=[DataRequired()])
-    video_link = StringField('Video URL (Optional)', validators=[Optional()])
+    video_link = StringField(
+        'Video URL (Optional)',
+        validators=[Optional(), URL(message='url not valid')]
+    )
     submit = SubmitField('Add Project Done')

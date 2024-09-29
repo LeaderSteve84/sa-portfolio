@@ -8,6 +8,7 @@ from app.models import Writing, Admin
 
 tech_writings_bp = Blueprint('tech_writings', __name__)
 db = current_app.db
+cache = current_app.cache
 logger = current_app.logger
 
 
@@ -62,6 +63,7 @@ def list_writings():
 @tech_writings_bp.route(
     "/writings/view", methods=['GET'], strict_slashes=False
 )
+@cache.cached(timeout=3600)
 def view_writings():
     """get list of all technical writings"""
     writings = Writing.query.all()

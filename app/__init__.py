@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """app package init"""
 
-from flask import Flask
+from flask import Flask, render_template
 from flask_mail import Mail, Message
 from app.config import RequestFormatter
 import logging
@@ -12,6 +12,8 @@ from sqlalchemy.orm import DeclarativeBase
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
 from flask_wtf.csrf import CSRFProtect
+from flask_caching import Cache
+from .config import cache_config
 
 # configuration logging before app creation,
 # for stream, file and mail handlers.
@@ -61,6 +63,7 @@ def create_app():
 
     # set configuration into app
     app.config.from_object('app.config.Config')
+    app.config.from_mapping(cache_config)
 
     # Initialize mail instance
     mail = Mail(app)
@@ -79,24 +82,42 @@ def create_app():
     csrf.init_app(app)
     app.csrf = csrf
 
+    # Initialize the Cache instance
+    cache = Cache(app)
+    app.cache = cache
+
     # create SMTP handler and added to the root logger
-    mail_handler = SMTPHandler(
-        mailhost=(
-            app.config['MAIL_SERVER'],
-            app.config['MAIL_PORT']
-        ),
-        fromaddr=app.config['MAIL_DEFAULT_SENDER'],
-        toaddrs=['steveadahson@gmail.com'],
-        subject='System error - log'
-    )
-    mail_handler.setLevel(logging.ERROR)
-    mail_handler.setFormatter(formatter)
-    app.logger.addHandler(mail_handler)
+    if not app.debug:
+        try:
+            mail_handler = SMTPHandler(
+                mailhost=(
+                    app.config['MAIL_SERVER'],
+                    app.config['MAIL_PORT']
+                ),
+                fromaddr=app.config['MAIL_DEFAULT_SENDER'],
+                toaddrs=['steveadahson@gmail.com'],
+                subject='System error - log',
+                credentials=(app.config['MAIL_USERNAME'], app.config['MAIL_PASSWORD']),
+                timeout=30
+            )
+            mail_handler.setLevel(logging.ERROR)
+            mail_handler.setFormatter(formatter)
+            app.logger.addHandler(mail_handler)
+        except Exception as e:
+            app.logger.error(f"Failed to set up email logging: {e}")
 
     with app.app_context():
         # import all the models from app/models/__init__.py
         from app.models import Admin, FeaturedProject, ProjectDone, \
             Writing, Reference, Resume, ContactMessage
+
+        @app.errorhandler(404)
+        def page_not_found(e):
+            return render_template('page_not_found.html'), 404
+
+        @app.errorhandler(500)
+        def internal_server_error(e):
+            return render_template('int_serv_error.html'), 500
 
         # db.drop_all() 
         # create all tables in database

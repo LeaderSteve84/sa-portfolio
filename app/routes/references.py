@@ -8,6 +8,7 @@ from app.models import Reference, Admin
 
 references_bp = Blueprint('references', __name__)
 db = current_app.db
+cache = current_app.cache
 logger = current_app.logger
 
 
@@ -61,6 +62,7 @@ def list_references():
 
 
 @references_bp.route("/references/view", methods=['GET'], strict_slashes=False)
+@cache.cached(timeout=30)
 def view_references():
     """get list of all reference"""
     references = Reference.query.all()

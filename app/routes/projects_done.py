@@ -8,6 +8,7 @@ from app.models import ProjectDone, Admin
 
 projects_done_bp = Blueprint('projects_done', __name__)
 db = current_app.db
+cache = current_app.cache
 logger = current_app.logger
 
 
@@ -63,6 +64,7 @@ def list_projects_done():
 @projects_done_bp.route(
     "/project_done/view", methods=['GET'], strict_slashes=False
 )
+@cache.cached(timeout=3600)
 def view_projects_done():
     """get list of all projects done"""
     projects_done = ProjectDone.query.all()

@@ -8,6 +8,7 @@ from app.models import Resume, Admin
 
 resume_bp = Blueprint('resume', __name__)
 db = current_app.db
+cache = current_app.cache
 logger = current_app.logger
 
 
@@ -58,6 +59,7 @@ def list_resume():
 
 
 @resume_bp.route("/resume/view", methods=['GET'], strict_slashes=False)
+@cache.cached(timeout=3600)
 def view_resume():
     """view resume"""
     resume = Resume.query.all()

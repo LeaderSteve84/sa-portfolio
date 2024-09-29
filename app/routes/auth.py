@@ -13,11 +13,11 @@ from werkzeug.security import check_password_hash
 from datetime import timedelta
 from itsdangerous import URLSafeTimedSerializer
 from flask_mail import Message
-# from flask_wtf.csrf import CSRFProtect, csrf_exempt
 
 auth_bp = Blueprint('auth', __name__)
 mail = current_app.mail
 db = current_app.db
+logger = current_app.logger
 csrf = current_app.csrf
 
 
@@ -86,25 +86,28 @@ def verify_reset_token(token, expiration=3600):
     s = URLSafeTimedSerializer(current_app.config['SECRET_KEY'])
     try:
         email = s.loads(token, salt="password-reset-salt", max_age=expiration)
-    except exception as e:
+    except Exception as e:
         return None
     return email
 
 
 def send_reset_email(admin_email, token):
     """send reset email"""
-    msg = Message(
-        subject='Password Reset Request',
-        recipients=[admin_email]
-    )
-    reset_url = url_for(
-        'main.auth.reset_password', token=token, _external=True
-    )
-    msg.body = f'''To reset your password, visit the following link:
-    {reset_url}
-    If you did not make this request, simply ignore this email.
-    '''
-    mail.send(msg)
+    try:
+        msg = Message(
+            subject='Password Reset Request',
+            recipients=[admin_email]
+        )
+        reset_url = url_for(
+            'main.auth.reset_password', token=token, _external=True
+        )
+        msg.body = f'''To reset your password, visit the following link:
+        {reset_url}
+        If you did not make this request, simply ignore this email.
+        '''
+        mail.send(msg)
+    except Exception as e:
+        logger.error(f"Failed to send reset link: {e}")
 
 
 @auth_bp.route("/forgot_password", methods=['GET', 'POST'])
@@ -151,7 +154,6 @@ def change_password_page():
     """return admin change password form"""
     admin_id = get_jwt_identity()
     admin = Admin.query.filter_by(id=admin_id).first()
-    print(admin.id)
     if not admin:
         flash('You are not an admin', 'warning')
         return redirect(url_for('main.home.home_page'))

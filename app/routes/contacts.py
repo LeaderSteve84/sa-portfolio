@@ -12,7 +12,9 @@ db = current_app.db
 logger = current_app.logger
 
 
-@contacts_bp.route("/contacts", methods=['GET', 'POST'], strict_slashes=False)
+@contacts_bp.route(
+    "/contacts", methods=['GET', 'POST'], strict_slashes=False
+)
 def create_contact_message():
     """create contact message"""
     form = ContactForm()
@@ -23,24 +25,36 @@ def create_contact_message():
             subject=form.subject.data,
             message=form.message.data
         )
-        db.session.add(contact_message)
-        db.session.commit()
-        flash(
-            "Your message has been successfully submitted. \
-                We'll get back to you soon. Thank You!",
-            'success'
-        )
-        return redirect(url_for('main.contacts.create_contact_message'))
+        try:
+            db.session.add(contact_message)
+            db.session.commit()
+            flash(
+                "Your message has been successfully submitted. \
+                    We'll get back to you soon. Thank You!",
+                'success'
+            )
+            return redirect(
+                url_for('main.contacts.create_contact_message')
+            )
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(
+                url_for('main.contacts.create_contact_message')
+            )
     else:
         if form.errors != {}:
             for error_message in form.errors.values():
                 flash(
-                    'There is an error creating your contact message', 'error'
+                    'There is an error creating your contact message',
+                    'error'
                 )
-    return render_template('create_contact_message.html', form=form)
+        return render_template('create_contact_message.html', form=form)
 
 
-@contacts_bp.route("/contacts/view", methods=['GET'], strict_slashes=False)
+@contacts_bp.route(
+    "/contacts/view", methods=['GET'], strict_slashes=False
+)
 @jwt_required()
 def view_contact_messages():
     """view all contacts"""
@@ -70,9 +84,14 @@ def update_contact_message(message_id):
         contact_message.subject = form.subject.data
         contact_message.message = form.message.data
         contact_message.status = form.status.data
-        db.session.commit()
-        flash('Contact Message updated successfully', 'success')
-        return redirect(url_for('main.contacts.view_contact_messages'))
+        try:
+            db.session.commit()
+            flash('Contact Message updated successfully', 'success')
+            return redirect(url_for('main.contacts.view_contact_messages'))
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.contacts.view_contact_messages'))
     else:
         if form.errors != {}:
             for error_message in form.errors.values():
@@ -96,9 +115,15 @@ def delete_contact_message(message_id):
     """delete a contact"""
     contact_message = ContactMessage.query.get_or_404(message_id)
     if contact_message:
-        db.session.delete(contact_message)
-        db.session.commit()
-        flash('Contact message deleted successfully!', 'success')
+        try:
+            db.session.delete(contact_message)
+            db.session.commit()
+            flash('Contact message deleted successfully!', 'success')
+            return redirect(url_for('main.contacts.view_contact_messages'))
+        except Exception as e:
+            db.session.rollback()
+            flash("Error: " + str(e), "danger")
+            return redirect(url_for('main.contacts.view_contact_messages'))
     else:
         flash('Contact message not found', 'error')
-    return redirect(url_for('main.contacts.view_contact_messages'))
+        return redirect(url_for('main.contacts.view_contact_messages'))
