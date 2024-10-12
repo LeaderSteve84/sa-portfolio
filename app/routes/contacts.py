@@ -46,7 +46,7 @@ def create_contact_message():
         if form.errors != {}:
             for error_message in form.errors.values():
                 flash(
-                    'There is an error creating your contact message',
+                    f"Error: {error_message}. Use correct Email",
                     'error'
                 )
         return render_template('create_contact_message.html', form=form)

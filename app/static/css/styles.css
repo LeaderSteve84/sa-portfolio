@@ -98,3 +98,52 @@ footer ul li {
     text-align: center;
   }
 }
+
+.container {
+  width: 100%;
+  padding: 0; /* Ensure no extra padding */
+}
+
+.table {
+  width: 100%;
+  table-layout: auto;
+}
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scroll */
+ /* white-space: nowrap;*/ 
+ /* Prevent table rows from wrapping */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.dropdown-header, .dropdown-item {
+  padding: .1rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+     position: relative;
+  }
+  body {
+     padding-top: 0;
+  }
+}

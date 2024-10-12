@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
 
     <title>
 	{% block title %}
@@ -44,7 +45,7 @@
 	    <li class="dropdown-header">Resume</li>
             <li><a class="dropdown-item" href="{{ url_for('main.resume.create_resume') }}">Create Resume</a></li>
             <li><a class="dropdown-item" href="{{ url_for('main.resume.list_resume') }}">List Resume</a></li>
-            <li><a class="dropdown-item mt-3 text-warning" href="{{ url_for('main.auth.change_password_page') }}">Change Password</a></li>
+            <li><a class="dropdown-item text-warning" href="{{ url_for('main.auth.change_password_page') }}">Change Password</a></li>
             <br>
             <li><a class="dropdown-item text-danger fw-bold text-center btn bg-primary" href="{{ url_for('main.auth.logoutForm') }}">Log Out</a></li>
           </ul>
@@ -71,6 +72,8 @@
       {% endblock %}
     </section>
 
+    <p class="text-center"><a href="{{url_for('main.admindashboard.admindashboard_page')}}">Back to Your Dashboard</a></p>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -81,7 +84,4 @@
       color: black;
       }
    </style>
-   <footer>
-           <p class="text-center"><a href="{{url_for('main.admindashboard.admindashboard_page')}}">Back to Your Dashboard</a></p>
-   </footer>
 </html
