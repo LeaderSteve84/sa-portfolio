@@ -10,7 +10,7 @@ RUN apt-get update && \
 COPY requirements.txt /root/requirements.txt
 RUN pip3 install --no-cache-dir -r /root/requirements.txt
 
-# Start MySQL service and configure the database
+# Start MySQL service and configure the database.
 RUN service mysql start && \
     mysql -e "CREATE DATABASE IF NOT EXISTS portfolio_db;" && \
     mysql -e "CREATE USER IF NOT EXISTS 'stephen_adah'@'localhost' IDENTIFIED BY 'shalomsmysql2014';" && \
