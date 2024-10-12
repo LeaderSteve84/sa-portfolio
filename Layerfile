@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 # Install required Python packages from requirements.txt
 COPY requirements.txt /root/requirements.txt
-RUN pip3 install --no-cache-dir -r /root/requirements.txt
+RUN pip3 install -r /root/requirements.txt
 
 # Start MySQL service and configure the database.
 RUN service mysql start && \
