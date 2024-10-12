@@ -1,1 +1,4 @@
 .env
+my-portfolio.db
+my-portfolio.log
+wsgi.py
