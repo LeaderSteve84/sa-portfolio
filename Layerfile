@@ -1,5 +1,5 @@
-# Use an Ubuntu 18.04 base for the staging server
-FROM vm/ubuntu:18.04
+# Use an Ubuntu 22.04 base for the staging server
+FROM vm/ubuntu:22.04
 
 # Update package list and install necessary dependencies
 RUN apt-get update && \
