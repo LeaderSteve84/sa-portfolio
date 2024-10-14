@@ -18,7 +18,7 @@ class Admin(db.Model):
     )
     username: Mapped[str] = mapped_column(db.String(length=20), unique=True)
     email: Mapped[str] = mapped_column(db.String(length=30), unique=True)
-    password_hash: Mapped[str] = mapped_column(db.String(length=128))
+    password_hash: Mapped[str] = mapped_column(db.String(length=255))
     phone: Mapped[str] = mapped_column(db.String(length=30), unique=True)
 
     def __repr__(self):
@@ -27,5 +27,5 @@ class Admin(db.Model):
     # password setter
     def set_password(self, password):
         """method to set or change admin password"""
-        hash_password = generate_password_hash(password)
+        hash_password = generate_password_hash(password, method='pbkdf2:sha256', salt_length=16)
         self.password_hash = hash_password
