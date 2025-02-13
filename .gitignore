@@ -1,3 +1,4 @@
 my-portfolio.db
 my-portfolio.log
 .env_dev
+__pycache__

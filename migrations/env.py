@@ -5,7 +5,6 @@ from flask import current_app
 
 from alembic import context
 
-
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
@@ -80,6 +79,7 @@ def run_migrations_online():
     and associate a connection with the context.
 
     """
+
     # this callback is used to prevent an auto-migration from being generated
     # when there are no changes to the schema
     # reference: http://alembic.zzzcomputing.com/en/latest/cookbook.html
