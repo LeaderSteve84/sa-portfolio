@@ -5,7 +5,7 @@ from flask import Flask, render_template
 from flask_mail import Mail, Message
 from app.config import RequestFormatter
 import logging
-from logging.handlers import RotatingFileHandler
+# from logging.handlers import RotatingFileHandler
 from logging.handlers import SMTPHandler
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
@@ -32,13 +32,13 @@ logger.addHandler(streamHandler)
 
 # add file handler to the root logger
 # maxBytes is 50MB size
-fileHandler = RotatingFileHandler(
-    'my-portfolio.log', backupCount=10, maxBytes=52428800
-)
-fileHandler.setLevel(logging.DEBUG)
-fileHandler.setFormatter(formatter)
-logger.addHandler(fileHandler)
 
+# fileHandler = RotatingFileHandler(
+#    'my-portfolio.log', backupCount=10, maxBytes=52428800
+# )
+# fileHandler.setLevel(logging.DEBUG)
+# fileHandler.setFormatter(formatter)
+# logger.addHandler(fileHandler)
 
 # create the base class
 class Base(DeclarativeBase):
