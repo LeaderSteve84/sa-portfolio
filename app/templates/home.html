@@ -75,10 +75,10 @@
                 <p class="card-text text-dark"><strong>Challenges Overcome:</strong> {{ featured_project.challenges}}</p>
                 <p class="card-text text-dark"><strong>Project Duration:</strong> {{ featured_project.date_cmptd}}</p>
                 {% if featured_project.domain_link %}
-                <a href="{{ featured_project.domain_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-github-50.png") }}" alt="github icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Live Demo</a>
+                <a href="{{ featured_project.domain_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-url-website-50.png") }}" alt="url icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Live Demo</a>
                 {% endif %}
                 {% if featured_project.github_link %}
-                <a href="{{ featured_project.github_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-url-website-50.png") }}" alt="url icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Github</a>
+                <a href="{{ featured_project.github_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-github-50.png") }}" alt="github icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Github</a>
                 {% endif %}
                 {% if featured_project.video_link %}
                 <a href="{{ featured_project.video_link }}" class="card-link"><img src="{{ url_for('static', filename="images/icons8-video-24.png") }}" alt="video icon" class="img-fluid rounded" style="width: 25px; height: 25px;">Video Demo</a>
