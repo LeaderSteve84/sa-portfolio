@@ -8,12 +8,12 @@
 <div class="container-fluid my-5">
    <h1 class="h4 fw-bold text-center text-dark" >Resume</h1>
 
-   <div class="row">
+   <div class="row text-center">
    {% if resume %}
     {% for resume in resume %}
      <div class="col.md-4 mb-4">
         <div class="card h-100 shadow">
-          <div class="card-body d-flex justify-content-center align-items-center">
+          <div class="card-body">
 
              {% if resume.resume_image1_link %}
                 <img src="{{ resume.resume_image1_link }}" alt="Resume image 1" class="img-fluid">
@@ -28,7 +28,7 @@
              {% endif %}
 
 	     {% if resume.resume_image4_link %}
-                <img src="{{ resume.resume_image4_link }}" alt="Resume image 4" class="img-fluid mb-3">
+                <img src="{{ resume.resume_image4_link }}" alt="Resume image 4" class="img-fluid">
              {% endif %}
 
              {% if resume.resume_download_link %}
