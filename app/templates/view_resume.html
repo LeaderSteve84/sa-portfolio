@@ -6,27 +6,25 @@
 
 {% block content %}
 <div class="container-fluid my-5">
-   <nav class="d-flex justify-content-center align-items-center mb-4">
-      <h1 class="h4 fw-bold text-center text-dark" >Resume</h1>
-   </nav> 
+   <h1 class="h4 fw-bold text-center text-dark" >Resume</h1>
 
    <div class="row">
    {% if resume %}
     {% for resume in resume %}
      <div class="col.md-4 mb-4">
         <div class="card h-100 shadow">
-          <div class="card-body">
+          <div class="card-body d-flex justify-content-center align-items-center">
 
              {% if resume.resume_image1_link %}
-                <img src="{{ resume.resume_image1_link }}" alt="Resume image 1" class="img-fluid mb-3">
+                <img src="{{ resume.resume_image1_link }}" alt="Resume image 1" class="img-fluid">
              {% endif %}
 	     
 	     {% if resume.resume_image2_link %}
-                <img src="{{ resume.resume_image2_link }}" alt="Resume image 2" class="img-fluid mb-3">
+                <img src="{{ resume.resume_image2_link }}" alt="Resume image 2" class="img-fluid">
              {% endif %}
 
 	     {% if resume.resume_image3_link %}
-                <img src="{{ resume.resume_image3_link }}" alt="Resume image 3" class="img-fluid mb-3">
+                <img src="{{ resume.resume_image3_link }}" alt="Resume image 3" class="img-fluid">
              {% endif %}
 
 	     {% if resume.resume_image4_link %}
