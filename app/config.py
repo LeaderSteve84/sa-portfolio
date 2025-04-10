@@ -21,7 +21,7 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER')
-    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+    # SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = os.environ.get(
         'SQLALCHEMY_TRACK_MODIFICATIONS'
     )
@@ -31,6 +31,7 @@ class Config:
     JWT_COOKIE_SECURE = os.environ.get('JWT_COOKIE_SECURE')
     JWT_COOKIE_CSRF_PROTECT = os.environ.get('JWT_COOKIE_CSRF_PROTECT')
     PROPAGATE_EXCEPTIONS = os.environ.get('PROPAGATE_EXCEPTIONS')
+    SUPABASE_DB_URI = os.environ.get('SUPABASE_DB_URL')
 
 # config for flask caching
 cache_config = {

@@ -14,6 +14,8 @@ from flask_jwt_extended import JWTManager
 from flask_wtf.csrf import CSRFProtect
 from flask_caching import Cache
 from .config import cache_config
+from supabase import create-client
+import os
 
 # configuration logging before app creation,
 # for stream, file and mail handlers.
@@ -77,6 +79,12 @@ def create_app():
     # Initialize JWT Manager
     jwt.init_app(app)
     app.jwt = jwt
+    
+    # Supabase client for database access
+    supabase = create_client(
+        os.environ.get("SUPABASE_URL"),
+        os.environ.get("SUPABASE_KEY")
+    )
 
     # initialize CSRFProtect instance
     csrf.init_app(app)
