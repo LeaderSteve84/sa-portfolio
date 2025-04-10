@@ -14,7 +14,7 @@ from flask_jwt_extended import JWTManager
 from flask_wtf.csrf import CSRFProtect
 from flask_caching import Cache
 from .config import cache_config
-from supabase import create-client
+from supabase import create_client
 import os
 
 # configuration logging before app creation,
