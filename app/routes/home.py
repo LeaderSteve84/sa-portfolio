@@ -9,7 +9,7 @@ cache = current_app.cache
 
 # home/landing page route
 @home_bp.route("/", methods=['GET'], strict_slashes=False)
-@cache.cached(timeout=3600)
+@cache.cached(timeout=120)
 def home_page():
     """landing/home page route"""
     featured_projects = FeaturedProject.query.all()
